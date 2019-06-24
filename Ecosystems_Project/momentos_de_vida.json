@@ -1,0 +1,180 @@
+{
+	"ecosistema":{
+			      "momentoDeVida":"habitat",
+			      "idMomentoDeVida":5,
+			      "servicio":"inversion",
+			      "idServicio": 1
+				 },
+
+
+   "datosPersonales":{
+  	
+  					  "tipoIdentificacion": "CEDULA",
+					  "numeroIdentificacion": "10",
+					  "nombres": "Usuario 1",
+					  "apellidos": "Testeado Primero",
+        			  "genero": "Masculino",
+					  "ocupacion":{
+								    "tipoOcupacion": ["Trabajar", "Estudiar"],
+								    "idPais":57,
+								    "idDepartamento": 1,
+								    "idCiudad": 1,
+								    "idBarrio": 10,
+								    "coordenadasTrabajo": [{"latitud":6.287564996179178,"longitud":-75.541417192529254}],
+								    "coordenadasEstudio": [{"latitud":9.123453456779178,"longitud":-63.987654321529254}]
+								   },
+        			  "ingresosFinancieros" : 12345,
+    				  "capacidadEndeudamiento" : 2345,
+    				  "edad": 18,
+					  "fechaNacimiento": {
+					    "dia": 15,
+					    "mes": 8,
+					    "anyo": 2000
+										}
+					},
+					
+	"preguntasHabitar" : {
+								"compartirCon": [{							 
+												  "relacion": "Padres",
+												  "cantidad": 10
+												 }],
+																				  
+							    "compartirGastos": "si",
+							    "cantidadCompartirGastos": 1,
+							    "modoTransporte": [{"transporte":"Publico","idTransporte": 1}],
+							    "preguntas": [
+										    {
+										       "idPregunta": "1",
+										       "respuestasRq": [
+										        {
+										          "idRespuesta": "3",
+										          "valor": "1"
+										        }
+										      ]
+										    },
+										    {
+										      "idPregunta": "2",
+										      "respuestasRq": [
+										        {
+										          "idRespuesta": "5",
+										          "valor": "1"
+										        }
+										      ]
+										    },
+										    {
+										      "idPregunta": "3",
+										      "respuestasRq": [
+										        {
+										          "idRespuesta": "8",
+										          "valor": "1"
+										        }
+										      ]
+										    },
+										    {
+										      "idPregunta": "4",
+										      "respuestasRq": [
+										        {
+										          "idRespuesta": "11",
+										          "valor": "1"
+										        }
+										      ]
+										    },
+										    {
+										      "idPregunta": "5",
+										      "respuestasRq": [
+										        {
+										          "idRespuesta": "14",
+										          "valor": "1"
+										        }
+										      ]
+										    },
+										    {
+										      "idPregunta": "6",
+										      "respuestasRq": [
+										        {
+										          "idRespuesta": "20",
+
+										        "valor": 1
+										        }
+										      ]
+										    }]
+								
+							  },
+
+
+	"preguntasInvertir" : {
+							"inversionMinima":60000000,
+							"inversionMaxima":2000000000,
+							"invertirDesde": 60000000,
+	                         "invertirHasta": 1000000000, 
+							    "preguntas": [
+											    {
+											       "idPregunta": "7",
+											       "respuestasRq": [
+											        {
+											          "elegirZona": 1,
+											          "valor" : "1",
+											    	  "zona" : [{
+										          			   "totalZonas" : 3,
+													           "zona1" :{
+													          			"nombreDepartamento":"uno",
+													          			"idDepartamento":1,
+													          			"nombreCiudad":"uno",
+													          			"idCiudad":2,
+													          			"nombreBarrio":"uno",
+													          			"idBarrio":3
+													        			},
+													        	"zona2" :{
+													          			"nombreDepartamento":"dos",
+													          			"idDepartamento":4,
+													          			"nombreCiudad":"dos",
+													          			"idCiudad":5,
+													          			"nombreBarrio":"dos",
+													          			"idBarrio":6
+													        			},	
+													          "zona3" :{
+													          			"nombreDepartamento":"tres",
+													          			"idDepartamento":7,
+													          			"nombreCiudad":"tres",
+													          			"idCiudad":8,
+													          			"nombreBarrio":"tres",
+													          			"idBarrio":9
+													        			}
+										        			}]
+											        }
+											    				 ]
+											    },
+											    {
+											      "idPregunta": "8",
+											      "respuestasRq": [
+											        {
+											          "idRespuesta": "5",
+											          "valor": "1"
+											        }
+											      ]
+											    },
+											    {
+											      "idPregunta": "9",
+											      "respuestasRq": [
+											        {
+											          "idRespuesta": "23",
+											          "valor": "1"
+											        }
+											      ]
+											    },
+											    {
+											      "idPregunta": "10",
+											      "respuestasRq": [
+											        {
+											          "idRespuesta": ["26","27","28","29","30"],
+											          
+											          "valor": "1"
+											        }
+											      ]
+											    }
+											    
+										    ]
+								
+							}
+										    
+}
