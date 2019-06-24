@@ -1,0 +1,1287 @@
+INFO:werkzeug:127.0.0.1 - - [07/Sep/2018 12:11:16] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-09-07 12:13:09 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-09-07 12:13:09 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-09-07 12:13:09 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-09-07 12:13:09 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-09-07 12:13:09 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-09-07 12:13:09 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-09-07 12:13:09 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [07/Sep/2018 12:13:09] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-09-07 12:13:54 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-09-07 12:13:54 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-09-07 12:13:54 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-09-07 12:13:54 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-09-07 12:13:54 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-09-07 12:13:54 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-09-07 12:13:54 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [07/Sep/2018 12:13:54] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-09-13 12:51:27 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-09-13 12:51:27 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-09-13 12:51:27 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-09-13 12:51:27 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-09-13 12:51:27 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-09-13 12:51:27 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-09-13 12:51:27 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [13/Sep/2018 12:51:27] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:09:45 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:09:45 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:09:45 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:09:45 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:09:45 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:09:45 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:09:45 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:09:45] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:11:14 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:11:14 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:11:14 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:11:14 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:11:14 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:11:14 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:11:14 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:11:14] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:12:03 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:12:03 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:12:03 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:12:03 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:12:03 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:12:03 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:12:03 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:12:03] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:12:42 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:12:42 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:12:42 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:12:42 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:12:42 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:12:42 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:12:42 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:12:42] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:13:39 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:13:39 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:13:39 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:13:39 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:13:39 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:13:39 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:13:39 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:13:39] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:14:47 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:14:47 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:14:47 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:14:47 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:14:47 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:14:47 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:14:47 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:14:47] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:15:53 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:15:53 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:15:53 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:15:53 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:15:53 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:15:53 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:15:53 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:15:54] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:16:19 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:16:19 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:16:19 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:16:19 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:16:19 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:16:19 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:16:19 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:16:19] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:17:15 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:17:15 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:17:15 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:17:15 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:17:15 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:17:15 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:17:15 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:17:15] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:17:41 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:17:41 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:17:41 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:17:41 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:17:41 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:17:41 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:17:41 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:17:41] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:19:21 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:19:21 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:19:21 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:19:21 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:19:21 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:19:21 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:19:21 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:19:21] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:19:38 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:19:38 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:19:38 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:19:38 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:19:38 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:19:38 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:19:38 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:19:39] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:22:24 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:22:24 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:22:24 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:22:24 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:22:24 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:22:24 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:22:24 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:22:24] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:23:13 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:23:13 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:23:13 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:23:13 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:23:13 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:23:13 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:23:13 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:23:13] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:29:06 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:29:06 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:29:06 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:29:06 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:29:06 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:29:06 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:29:06 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:29:06] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:37:32 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:37:32 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:37:32 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:37:32 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:37:32 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:37:32 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:37:32 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:37:32] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:40:09 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:40:09 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:40:09 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:40:09 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:40:09 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:40:09 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:40:09 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:40:10] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:50:23 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:50:23 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:50:23 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:50:23 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:50:23 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:50:23 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:50:23 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:50:23] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:50:58 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:50:58 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:50:58 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:50:58 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:50:58 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:50:58 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:50:58 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:50:58] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:51:39] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:51:40] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:52:05] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:54:10 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:54:10 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:54:10 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:54:10 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:54:10 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:54:10 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:54:10 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:54:10] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:56:29 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:56:29 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:56:29 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:56:29 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:56:29 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:56:29 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:56:29 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:56:29] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:57:19 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:57:19 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:57:19 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:57:19 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:57:19 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:57:19 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:57:19 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:57:19] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 11:59:16 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 11:59:16 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:59:16 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 11:59:16 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 11:59:16 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 11:59:16 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 11:59:16 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 11:59:16] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:00:02 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:00:02 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:00:02 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:00:02 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:00:02 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:00:02 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:00:02 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:00:02] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:00:44 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:00:44 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:00:44 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:00:44 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:00:44 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:00:44 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:00:44 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:00:44] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:02:19 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:02:19 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:02:19 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:02:19 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:02:19 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:02:19 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:02:19 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:02:19] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:03:22 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:03:22 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:03:22 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:03:22 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:03:22 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:03:22 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:03:22 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:03:22] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:03:46 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:03:46 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:03:46 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:03:46 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:03:46 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:03:46 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:03:46 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:03:47] "POST / HTTP/1.1" 500 -
+INFO:root:2018-10-17 12:04:30 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:04:30 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:04:30 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:04:30 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:04:30 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:04:30 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:04:30 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:04:30] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:04:44 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:04:44 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:04:44 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:04:44 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:04:44 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:04:44 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:04:44 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:04:44] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:05:22 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:05:22 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:05:22 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:05:22 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:05:22 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:05:22 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:05:22 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:05:22] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:06:48 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:06:48 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:06:48 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:06:48 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:06:48 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:06:48 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:06:48 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:06:48] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:07:17 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:07:17 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:07:17 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:07:17 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:07:17 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:07:17 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:07:17 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:07:17] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:07:34 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:07:34 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:07:34 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:07:34 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:07:34 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:07:34 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:07:34 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:07:34] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:08:08 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:08:08 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:08:08 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:08:08 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:08:08 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:08:08 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:08:08 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:08:08] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:08:51 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:08:51 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:08:51 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:08:51 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:08:51 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:08:51 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:08:51 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:08:51] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:10:06 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:10:06 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:10:06 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:10:06 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:10:06 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:10:06 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:10:06 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:10:06] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:10:31 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:root:2018-10-17 12:10:31 [DESCRIPTION] -> initials variables for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:10:31 [DESCRIPTION] -> Variables Weight for Habitat Module and Investment Service load and assigned successfully
+INFO:root:2018-10-17 12:10:31 [DESCRIPTION] -> Recalculate variables read for form in Habitat Module and Investment Service Reassigned successfully
+INFO:root:2018-10-17 12:10:31 [DESCRIPTION] -> Ideal property wished for Habitat Module and Investment Service assigned and saved successfully
+INFO:root:2018-10-17 12:10:31 [DESCRIPTION] -> successfull query in database 
+INFO:root:2018-10-17 12:10:31 [DESCRIPTION] -> database connection close
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:10:31] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:11:16] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:11:50] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:12:17] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:12:41] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:13:07] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:16:04] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:17:52] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:18:20] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:18:47 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:18:47] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:22:34] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:22:50] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:23:40] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:24:22] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:25:05] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:25:26 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:25:26] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:25:52] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:26:58 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:26:58] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:27:33 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:27:33] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:29:27 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:29:27] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:32:09] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:32:38] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:33:16] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:33:49] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:34:25] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 12:43:01 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:43:01] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:44:02] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:47:52] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:50:18] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:51:00] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 12:53:45] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:01:17] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:01:45] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:02:18] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:03:02] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:03:33] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:03:48] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:04:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:05:15] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:06:09] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:06:37] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:07:21] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 13:08:37] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 14:37:56] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 14:38:39] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 14:39:50] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/resultado.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:37:18] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:37:58] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:38:16] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:38:31] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:39:12] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:39:28] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:39:52] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:40:14] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:40:43] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:41:19] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:42:11] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:44:37] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:45:10] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:45:49] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:47:21] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:root:2018-10-17 15:48:20 [DESCRIPTION] -> Access to Ecosystem in the Investment Service, from Habitat Life Moment Module
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:48:20] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:53:16] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 15:59:26] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:07:54] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:09:35] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:10:44] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:11:43] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:12:34] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:13:25] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:14:09] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:15:00] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/SERVER/api_server_start.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:15:46] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:17:05] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:17:53] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:18:14] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:18:50] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:19:13] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:19:35] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:20:14] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:20:33] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:20:53] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:21:19] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:21:46] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:21:58] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:22:28] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:23:25] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:23:54] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:24:11] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:24:23] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:24:35] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:25:18] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:25:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:26:26] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:27:00] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:27:49] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:28:19] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:28:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:30:26] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:30:48] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:31:17] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:32:12] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:32:42] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:32:54] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:33:12] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 16:34:21] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 18:02:14] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 18:02:36] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 18:02:56] "POST / HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/CONTROLLER/routing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 18:03:25] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2018 18:08:23] "POST / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/a/Downloads/Ecosystems_Project/COMPONENTS/ecosystem.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 231-781-757

@@ -1,0 +1,6 @@
+MYSQL_HOST     = 'xxxxxxxx'
+MYSQL_PORT     = '3306'
+MYSQL_USER     = 'xxxxxxxx'
+MYSQL_PASSWORD = 'xxxxxxxx'
+MYSQL_SCHEMA   = 'divergente'
+MYSQL_CHARSET  = 'utf8'
