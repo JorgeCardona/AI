@@ -62,7 +62,7 @@ class Servicios(object):
         datos = list(map(lambda x: 'BAJA HUMEDAD' if x==0 else 'ALTA HUMEDAD', datos))
         
         # crea el dataframe que se va a guardar con todo lo que se uso para la prediccion
-        lista_dataframes = [pd.DataFrame({'Clasificador': ultimo_mejor_clasificador,'listado_componentes_principales':[listado_componentes_principales],'nombre_clasificador_entrenado_usado':nombre_clasificador_entrenado, 'Prediccion' :[datos], 'Cantidad de Datos Cargados':[{'Filas' : data_original.shape[0] - 1, 'Columnas' : data_original.shape[1]}], 'data_procesada_para_prediccion':[data_subida_para_prediccion], 'fecha':[str(datetime.now())]})]
+        lista_dataframes = [pd.DataFrame({'Clasificador': ultimo_mejor_clasificador,'listado_componentes_principales':[listado_componentes_principales],'nombre_clasificador_entrenado_usado':nombre_clasificador_entrenado, 'Prediccion' :[datos], 'Cantidad de Datos Cargados':[{'Filas' : data_original.shape[0], 'Columnas' : data_original.shape[1]}], 'data_procesada_para_prediccion':[data_subida_para_prediccion], 'fecha':[str(datetime.now())]})]
         
         # guarda la informacion en base de datos del mejor clasificador en este entrenamiento
         conexion, _, _, coleccion_prediccion = MongoDB().conexion_mongoDB()
