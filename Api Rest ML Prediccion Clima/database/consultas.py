@@ -45,7 +45,7 @@ class AccesoDB(object):
     def consultar_informacion(self, consulta =''):
             
         # conecta a la base de datos y trae toda la informacion guardada
-        conexion, coleccion, coleccion_clasificador = MongoDB().conexion_mongoDB()
+        conexion, coleccion, coleccion_clasificador, coleccion_prediccion = MongoDB().conexion_mongoDB()
 
         if(consulta != ''):
 

@@ -28,6 +28,7 @@ URL_CONEXION     = "mongodb://localhost:27017/"
 NOMBRE_BD        = 'db'
 NOMBRE_COLECCION = 'clima'    
 NOMBRE_COLECCION_CLASIFICADOR = 'mejor_clasificador'
+NOMBRE_COLECCION_PREDICCION = 'datos_prediccion'
 
 # configuraciones de los modelos
 CANTIDAD_DE_VALIDACIONES = 10
@@ -36,3 +37,4 @@ PRECISION = 2
 LIMITE_BINARIZACION = 24.99
 NOMBRE_COLUMNA_BINARIZADA = 'HumedadBinarizadaPrediccion'
 COLUMNA_DECISION = 'relative_humidity_3pm' 
+TOTAL_DIMENSIONES_PCA = 7

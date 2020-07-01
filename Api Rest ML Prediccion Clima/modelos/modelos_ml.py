@@ -20,6 +20,7 @@ from configuraciones.config import DIRECTORIO_MODELOS
 from configuraciones.config import DIRECTORIO_ARCHIVOS
 from configuraciones.config import CANTIDAD_DE_VALIDACIONES
 from configuraciones.config import PRECISION
+from configuraciones.config import TOTAL_DIMENSIONES_PCA
 
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
@@ -42,7 +43,7 @@ class ModelosML(object):
         # eilimino la variable objetivo
         dataframe_original = dataframe_original.drop(columns=[nombre_columna_binarizada])
 
-        modelo = PCA(n_components=5).fit(dataframe_original)
+        modelo = PCA(n_components=TOTAL_DIMENSIONES_PCA).fit(dataframe_original)
         
         pc = modelo.transform(dataframe_original)
 
@@ -89,7 +90,7 @@ class ModelosML(object):
 
         for i in range(len(conf_matrix)):
 
-            conf_matrix_porcentual.append(round((conf_matrix[i][i] / sum(conf_matrix[i])) * 100, 2))
+            conf_matrix_porcentual.append(round((conf_matrix[i][i] / sum(conf_matrix[i])) * 100, PRECISION))
 
         conf_matrix_porcentual = sum(conf_matrix_porcentual) / len(conf_matrix_porcentual)
 

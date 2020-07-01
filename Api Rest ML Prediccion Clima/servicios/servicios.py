@@ -27,7 +27,7 @@ import numpy as np
 class Servicios(object):
 
     
-    def predecir(self, directorio_archivo, nombre_columna_binarizada, columna_decision, limite_binarizacion):
+    def predecir(self, directorio_archivo, nombre_columna_binarizada, columna_decision, limite_binarizacion, coleccion_clasificador):
 
         # carga la informacion de la base de datos del mejor clasificador, los componentes principales, mejor modelo entrenado
         datos_en_db = AccesoDB().consultar_informacion('mejorclasificador')        
@@ -41,9 +41,11 @@ class Servicios(object):
         listado_nombres_columnas = [i for i in listado_componentes_principales if i != nombre_columna_binarizada]
 
         # fue el dataset que se quiere validar para prediccion
-        data_subida_para_prediccion = self.crear_dataframe_original (directorio_archivo, nombre_columna_binarizada, columna_decision, limite_binarizacion)
-        data_subida_para_prediccion = data_subida_para_prediccion.filter(listado_nombres_columnas, axis=1)
-
+        data_original = self.crear_dataframe_original (directorio_archivo, nombre_columna_binarizada, columna_decision, limite_binarizacion)
+        data_subida_para_prediccion = data_original.filter(listado_nombres_columnas, axis=1)
+        # realiza pretratamiento de data, no acepta columnas con datos vacios
+        data_subida_para_prediccion = data_subida_para_prediccion.dropna()
+        
         # se ubica en el directorio donde estan los clasificadores entrenados
         os.chdir(DIRECTORIO_MODELOS)
 
@@ -54,10 +56,17 @@ class Servicios(object):
         os.chdir(DIRECTORIO_ARCHIVOS)
 
         # obtiene los datos predecidos
-        datos = clasificador_entrenado.predict(data_subida_para_prediccion).tolist()
+        datos = clasificador_entrenado.predict(data_subida_para_prediccion)
 
         # reemplazo los valores numericos por etiquetas para la predccion
         datos = list(map(lambda x: 'BAJA HUMEDAD' if x==0 else 'ALTA HUMEDAD', datos))
+        
+        # crea el dataframe que se va a guardar con todo lo que se uso para la prediccion
+        lista_dataframes = [pd.DataFrame({'Clasificador': ultimo_mejor_clasificador,'listado_componentes_principales':[listado_componentes_principales],'nombre_clasificador_entrenado_usado':nombre_clasificador_entrenado, 'Prediccion' :[datos], 'Cantidad de Datos Cargados':[{'Filas' : data_original.shape[0] - 1, 'Columnas' : data_original.shape[1]}], 'data_procesada_para_prediccion':[data_subida_para_prediccion], 'fecha':[str(datetime.now())]})]
+        
+        # guarda la informacion en base de datos del mejor clasificador en este entrenamiento
+        conexion, _, _, coleccion_prediccion = MongoDB().conexion_mongoDB()
+        datos_en_BD = AccesoDB().guardar_datos(lista_dataframes, conexion, coleccion_prediccion)
 
         print('Prediccion API ', datos)
 
@@ -129,7 +138,7 @@ class Servicios(object):
                 mc = ModelosML().obtener_mejor_clasificador(CLASIFICADORES[j], datos_para_entrenamiento[i], '')
                 lista_resultados.append(mc)
 
-        conexion, coleccion, coleccion_clasificador = MongoDB().conexion_mongoDB()
+        conexion, _, coleccion_clasificador, _ = MongoDB().conexion_mongoDB()
 
         nombre_clasificador_entrenado = ''
         mejor_clasificador = ''
@@ -141,7 +150,7 @@ class Servicios(object):
                 mejor_clasificador = lista_resultados[i]['clasificador']
                 nombre_clasificador_entrenado = lista_resultados[i]['nombre_clasificador_entrenado']
 
-        lista_dataframes = [pd.DataFrame( {'mejor_clasificador':[mejor_clasificador], 'nombre_clasificador_entrenado' : nombre_clasificador_entrenado, 'lista_nombre_componentes_principales':[listado_nombres_columnas],'fecha':[str(datetime.now())]})]
+        lista_dataframes = [pd.DataFrame( {'Clasificadores Evaluados' :[CLASIFICADORES],'mejor_clasificador':[mejor_clasificador], 'nombre_clasificador_entrenado' : nombre_clasificador_entrenado, 'lista_nombre_componentes_principales':[listado_nombres_columnas],'fecha':[str(datetime.now())]})]
 
         # guarda la informacion en base de datos del mejor clasificador en este entrenamiento
         datos_en_BD = AccesoDB().guardar_datos(lista_dataframes, conexion, coleccion_clasificador)
@@ -215,10 +224,11 @@ class Servicios(object):
 
         lista_dataframes = self.crear_dataframes_procesados(df_original)
 
-        conexion, coleccion, coleccion_clasificador = MongoDB().conexion_mongoDB()
+        conexion, coleccion, _, _ = MongoDB().conexion_mongoDB()
 
         # guarda la informacion en base de datos
         datos_en_BD = AccesoDB().guardar_datos(lista_dataframes, conexion, coleccion)
 
         return datos_en_BD
+
 
