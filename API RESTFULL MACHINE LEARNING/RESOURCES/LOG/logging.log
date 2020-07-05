@@ -1,0 +1,20 @@
+INFO:root:directory C:\Users\QiDimMak\Documents\AI\API RESTFULL MACHINE LEARNING/RESOURCES/FILES Created
+INFO:root:directory C:\Users\QiDimMak\Documents\AI\API RESTFULL MACHINE LEARNING/RESOURCES/TRAINED_MACHINE_LEARNING_MODELS Created
+INFO:root:{'message': 'File save Successfull in : C:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING/RESOURCES/FILES\\2020-07-04 22-17-11.381925 dailyweather.  copia.xlsx'}
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 22:17:11] "[37mPOST /save_data HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\UTILS\\save_files.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\UTILS\\save_files.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\UTILS\\save_files.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\UTILS\\save_files.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:directory C:\Users\QiDimMak\Documents\AI\API RESTFULL MACHINE LEARNING/RESOURCES/FILES Created
+INFO:root:directory C:\Users\QiDimMak\Documents\AI\API RESTFULL MACHINE LEARNING/RESOURCES/TRAINED_MACHINE_LEARNING_MODELS Created
+INFO:root:{'message': 'File save Successfull in : C:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING/RESOURCES/FILES\\2020-07-04 22-18-09.158028 dailyweather.  copia.xlsx'}
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 22:18:09] "[37mPOST /save_data HTTP/1.1[0m" 200 -

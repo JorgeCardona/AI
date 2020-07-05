@@ -1,20 +1,24 @@
-############################################################################################
-################################ Descripcion################################################
+###############################################################################################################
+################################ Meatadata Footbar Description ################################################
 __author__ = "Jorge Cardona"
-__copyright__ = "Copyright 2020, The Cogent Project"
+__copyright__ = "Copyright 2020, Machine Learning Projects"
 __credits__ = "Jorge Cardona"
 __license__ = "MIT"
 __version__ = "1.0"
-__maintainer__ = "Jorge cardona "
+__maintainer__ = "Jorge Cardona"
 __email__ = "https://github.com/JorgeCardona"
 __status__ = "Production"
-###############################################################################################
-###############################################################################################
+###############################################################################################################
+###############################################################################################################
+
 import pathlib
+import os
+os.chdir('..')
 
 # directorios donde se guarda la informacion de la API
-DIRECTORIO_ARCHIVOS = str(pathlib.Path(__file__).parent.absolute()) + '/datasets'
-DIRECTORIO_MODELOS  = str(pathlib.Path(__file__).parent.absolute()) + '/modelos entrenados'
+ROOT_DIRECTORY = str(pathlib.Path(__file__).parent.absolute()) 
+FILES_DIRECTORY = ROOT_DIRECTORY + '/modelos'
+MODLES_DIRECTORY = ROOT_DIRECTORY + '/modelos entrenados'
 MAX_CONTENT_LENGTH  = 16 * 1024 * 1024
 
 # son los clasificadores que se van a usar en el analisis
@@ -38,3 +42,8 @@ LIMITE_BINARIZACION = 24.99
 NOMBRE_COLUMNA_BINARIZADA = 'HumedadBinarizadaPrediccion'
 COLUMNA_DECISION = 'relative_humidity_3pm' 
 TOTAL_DIMENSIONES_PCA = 7
+
+
+print('ROOT_DIRECTORY', ROOT_DIRECTORY)
+print('FILES_DIRECTORY', FILES_DIRECTORY)
+print('MODLES_DIRECTORY', MODLES_DIRECTORY)
