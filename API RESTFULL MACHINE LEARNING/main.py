@@ -22,6 +22,7 @@ from CONFIGURATION.config import FLASK_PORT, FLASK_DEBUG, UPLOAD_FILES_DIRECTORY
 from CONFIGURATION.config import TRAINING_PORCENTAGE, BINARIZATION_LIMIT, TARGET_COLUMN, BINARIZATED_TARGET_COLUMN
 from UTILS.save_files import Save
 from VALIDATIONS_AND_EXCEPTIONS.validations import Validator
+from SERVICES.services import Services
 
 # configuracion de flask
 app = Flask('MachineLearnig Suite - Jorge Cardona')
@@ -32,12 +33,12 @@ app.debug = FLASK_DEBUG
 
 
 @app.route('/save_data', methods=['POST'])
-def hello():
-	# crea los directorios para almacenar los archivos
-	datos = Save().create_directory()
-	Validator().validate_save_file(request)
+def save_data():
+	# crea los directorios para almacenar los archivos 
+	message = Services().save_data(request)
 		
-	return "Hello World!"
+	# retorna el resultado del procesamiento
+	return message
 
 	
 if __name__ == "__main__":    	

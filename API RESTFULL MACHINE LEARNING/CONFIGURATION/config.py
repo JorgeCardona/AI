@@ -15,15 +15,15 @@ import os
 import pathlib
 import logging
 
-
 # lee la ruta del directorio del proyecto
-ROOT_DIRECTORY = os.getcwd()
+ROOT_DIRECTORY = str(os.getcwd()).replace('\\','/')
 # asigna los directorios para acceder a los recursos de la API
 RESOURCES_DIRECTORY      = ROOT_DIRECTORY      + '/RESOURCES'
 LOG_FILE_NAME            = 'logging.log'
 LOG_FOLDER               = RESOURCES_DIRECTORY + '/LOG'
 LOG_DIRECTORY            = LOG_FOLDER          + '/' + LOG_FILE_NAME
 UPLOAD_FILES_DIRECTORY   = RESOURCES_DIRECTORY + '/FILES'
+FILE_LOCATION_LABEL      = 'FILE_LOCATION'
 CONFIGURATION_DIRECTORY  = RESOURCES_DIRECTORY + '/CONFIGURATION'
 TRAINED_MODELS_DIRECTORY = RESOURCES_DIRECTORY + '/TRAINED_MACHINE_LEARNING_MODELS'
 MAIN_DIRECTORIES         = [LOG_FOLDER, UPLOAD_FILES_DIRECTORY, TRAINED_MODELS_DIRECTORY]
@@ -34,7 +34,7 @@ FLASK_DEBUG = True
 # archivos soportados y tamano maximo permitido
 MAX_CONTENT_LENGTH      = 16 * 1024 * 1024
 ALLOWED_SAVE_SERVICES   = ['SUPERVISED','NLP','COMPUTER_VISION','TEXT_ANALYTICS']
-ALLOWED_EXTENTION_FILES = set(['csv','xls','xlsx'])
+ALLOWED_EXTENTION_FILES = set(['CSV','XLS','XLSX'])
 
 # credenciales de la base de datos
 #MONGODB
@@ -53,6 +53,11 @@ MYSQL_USER                  = 'root'
 MYSQL_PASS                  = ''
 MYSQL_DATABASE_NAME         = 'db'
 MYSQL_URL_CONNECTION        = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASS  + '@' +  MYSQL_HOST + ':' + MYSQL_PORT +'/' + MYSQL_DATABASE_NAME + MYSQL_CHARSET
+
+
+# dataframe
+NA_REPLACE_SYMBOL = '^-^'
+
 
 # Tablas y colecciones para persistencia
 ALL_DATA     = 'clima'

@@ -17,7 +17,7 @@ from datetime import datetime
 
 from UTILS.util import Util
 from VALIDATIONS_AND_EXCEPTIONS.exceptions import Exceptions
-from CONFIGURATION.config import MAIN_DIRECTORIES, LOG_FILE_NAME, LOG_FOLDER
+from CONFIGURATION.config import MAIN_DIRECTORIES, LOG_FILE_NAME, LOG_FOLDER, FILE_LOCATION_LABEL
 
 class Save(object):
         
@@ -30,20 +30,24 @@ class Save(object):
             if not os.path.exists(i):
                 os.makedirs(i)
                 # guarda el log
-                logging.info('directory '+ i + ' Created')              
+                logging.info('directory ' + i + ' Created')              
 
 
-    def save_upload_file(self, file, file_name, directory):
+    def save_upload_file(self, file_info, file_name, directory):
 
+        # crea los directorios donde se va a guardar los archivos a procesar y los modelos entrenados
+        self.create_directory()
+
+        # variable que guarda el emnsaje a retornar
         message = ''        
 
         # genera el nombre del archivo que se va a guardar sin caracteres especiales
-        file_name = str(str(datetime.now()) + ' ' + Util().clean_string_for_special_characters(file_name)).replace(':','-')
+        rename_file_name = str(str(datetime.now()) + ' ' + Util().clean_string_for_special_characters(file_name)).replace(':','-')
 
         # intenta realizar el proceso
         try:
             # guarda el archivo cargado en la carpeta de archivos cargados
-            file.save(os.path.join(directory, file_name))
+            file_info.save(os.path.join(directory, rename_file_name))
 
         # el proceso fallo y genera una exception
         except Exception as ex:
@@ -53,8 +57,10 @@ class Save(object):
         
         # el proceso se ejecuto con exito
         else:
-
-            message = {'message' : 'File save Successfull in : ' + directory + '\\' + file_name}
+            # define la ruta de acceso al archivo cargado
+            FILE_LOCATION = directory + '/' + rename_file_name
+            # guarda el mensaje de exito
+            message = {'message' : 'Original Upload File : ' + file_name + ' Was Saved Successfull Like  : ' + rename_file_name +' in ' + directory, FILE_LOCATION_LABEL:FILE_LOCATION}
 
         # retorna el mensaje generado en el proceso
         finally:
