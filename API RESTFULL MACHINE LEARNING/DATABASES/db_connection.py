@@ -16,9 +16,9 @@ import pymysql
 from sqlalchemy import create_engine
 from enum import Enum
 
-from configuration.config import MONGODB_URL_CONNECTION, MONGODB_DATABASE_NAME
-from configuration.config import MYSQL_URL_CONNECTION, MYSQL_DATABASE_NAME
-from utils.tables_collections import StoreData
+from CONFIGURATION.config import MONGODB_URL_CONNECTION, MONGODB_DATABASE_NAME
+from CONFIGURATION.config import MYSQL_URL_CONNECTION, MYSQL_DATABASE_NAME
+from UTILS.tables_collections import StoreData
 
 
 class ConnectionDB(object):
@@ -28,7 +28,7 @@ class ConnectionDB(object):
 
         connection  = MongoClient(MONGODB_URL_CONNECTION)
         database = connection[MONGODB_DATABASE_NAME]
-        database_collection  = database[collection.name]
+        database_collection  = database[collection.value]
 
         # retorna el objeto de conexion
         return connection, database_collection

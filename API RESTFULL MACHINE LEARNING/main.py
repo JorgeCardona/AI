@@ -34,8 +34,12 @@ app.debug = FLASK_DEBUG
 
 @app.route('/save_data', methods=['POST'])
 def save_data():
+    	
+	# captura el tipo de base de datos en la que se quiere persistir la informacion
+	database_name = request.args.get('db')
+
 	# crea los directorios para almacenar los archivos 
-	message = Services().save_data(request)
+	message = Services().save_data(request, database_name)
 		
 	# retorna el resultado del procesamiento
 	return message

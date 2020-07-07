@@ -1,9 +1,22 @@
+############################################################################################
+################################ Descripcion################################################
+__author__ = "Jorge Cardona"
+__copyright__ = "Copyright 2020, MACHINE LEARNING PROJECT"
+__credits__ = "Jorge Cardona"
+__license__ = "MIT"
+__version__ = "1.0"
+__maintainer__ = "Jorge cardona "
+__email__ = "https://github.com/JorgeCardona"
+__status__ = "Production"
+###############################################################################################
+###############################################################################################
+
 import logging
 import numpy as np
 import pandas as pd
 from pandas   import DataFrame
 from datetime import datetime
-from CONFIGURATION.config import NA_REPLACE_SYMBOL
+from CONFIGURATION.config import NA_REPLACE_SYMBOL, NA_RECOVERY_VALUE, ID_FOR_DATA_SAVE
 
 
 class DataFrameProcess(object):
@@ -74,14 +87,17 @@ class DataFrameProcess(object):
         # elimina TODAS LAS FILAS que solo tienen un solo valor
         data_frame = data_frame.drop(delete_rows_list)
 
-        # retorna los valores NaN donde los tenia en el dataframe
-        data_frame = data_frame.replace(NA_REPLACE_SYMBOL, np.nan)
+        # retorna los valores NA_RECOVERY_VALUE donde tenia los NaN o NaT en el dataframe
+        data_frame = data_frame.replace(NA_REPLACE_SYMBOL, NA_RECOVERY_VALUE)
+
+        # se le asigna un identificador de carga a los datos
+        data_frame[ID_FOR_DATA_SAVE] = str(datetime.now())
 
         # guarda el log de las columnas eliminadas del dataframe
-        if(len(delete_columns_list) > 0) : logging.info('Columns deleted from dataframe : ' + str(delete_columns_list))
+        if(len(delete_columns_list) > 0) : logging.info('Columns deleted from dataframe for has unique value : ' + str(delete_columns_list))
 
         # guarda el log de las filas eliminadas del dataframe
-        if(len(delete_rows_list) > 0) : logging.info('Rows deleted from dataframe : ' + str(delete_rows_list))
+        if(len(delete_rows_list) > 0) : logging.info('Rows deleted from dataframe for has unique value : ' + str(delete_rows_list))
 
         # retorna el dataframe preprocesado
         return data_frame

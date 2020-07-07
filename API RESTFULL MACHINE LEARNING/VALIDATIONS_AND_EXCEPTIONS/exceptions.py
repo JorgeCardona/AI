@@ -34,8 +34,9 @@ class Exceptions(object):
 
         errors = {
         74: 'corrupted file or unsupported attached file type',
-        400.0: "Invalid Key for Service",
-        400.1: 'No File Attached',
+        400.0: 'No compatible DataBase',
+        400.1: 'Invalid Key for Service',
+        400.2: 'No File Attached',
         800:'Unable to create file on disk'
 
         }

@@ -1,5 +1,5 @@
 from enum import Enum
-from configuration.config import ALL_DATA, PREDICTION, CLASIFICATOR
+from CONFIGURATION.config import ALL_DATA, PREDICTION, CLASIFICATOR
 
 class StoreData(Enum):
 
