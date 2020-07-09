@@ -56,7 +56,7 @@ class DataFrameProcess(object):
         return delete_rows_list[::-1]
 
     # elimina columnas y filas que sean repetidas o con valores NaN
-    def basic_preprocessing_dataframe(self, data_frame:DataFrame, file_directory_location):
+    def basic_preprocessing_dataframe(self, data_frame:DataFrame):
 
         # elimina TODAS LAS COLUMNAS donde las celdas TENGAN VALOR NaN o NaT.
         data_frame = data_frame.T.dropna(how='all').T
@@ -125,7 +125,7 @@ class DataFrameProcess(object):
         data_frame, file_directory_location = self.create_data_frame_from_file(file_directory_location)
 
         # realiza el primer preprocesamiento del dataset
-        data_frame = self.basic_preprocessing_dataframe(data_frame, file_directory_location)
+        data_frame = self.basic_preprocessing_dataframe(data_frame)
 
         # retorna el dataset con el preprocesaamiento basico
         return data_frame
