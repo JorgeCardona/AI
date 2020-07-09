@@ -28,18 +28,16 @@ class Validator(object):
         if(not database_type):
             
             # lanza la excepcion debido al fallo
-            return [Exceptions().validation_exception(400.0), '', '']
+            return [Exceptions().obtain_message(400.0), '', '']
 
         # obtiene el nombre de la key enviaada en la peticion
         key_name_service   = self.allowed_services(list(request.files))
-
-        print(33333333333,key_name_service)
  
         # valida que exista una key de servicio permitida 
         if(not key_name_service):
             
             # lanza la excepcion debido al fallo
-            return [Exceptions().validation_exception(400.1), '', '']
+            return [Exceptions().obtain_message(400.1), '', '']
 
         # obtiene la informacion del archivo adjuntado
         file_info = request.files[key_name_service]
@@ -51,7 +49,7 @@ class Validator(object):
         if (not file_name):
 
             # lanza la excepcion debido al fallo
-            return [Exceptions().validation_exception(400.2),'','']
+            return [Exceptions().obtain_message(400.2),'','']
 
         # valida si la extension del archivo es valida para la carga de datos
         file_allowed = self.allowed_file(file_name)
@@ -60,7 +58,7 @@ class Validator(object):
         if (not file_allowed):
 
             # lanza la excepcion debido al fallo
-            return [Exceptions().validation_exception(74),'','']
+            return [Exceptions().obtain_message(74),'','']
 
         # retorna los valores obtenidos del archivo y la peticion del servicio
         return key_name_service, file_info, file_name

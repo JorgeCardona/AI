@@ -28,6 +28,7 @@ FILE_LOCATION_LABEL      = 'FILE_LOCATION'
 CONFIGURATION_DIRECTORY  = RESOURCES_DIRECTORY + '/CONFIGURATION'
 TRAINED_MODELS_DIRECTORY = RESOURCES_DIRECTORY + '/TRAINED_MACHINE_LEARNING_MODELS'
 MAIN_DIRECTORIES         = [LOG_FOLDER, UPLOAD_FILES_DIRECTORY, TRAINED_MODELS_DIRECTORY]
+URL_COMPLEMENTARY        = '_URL_CONNECTION'
 
 # configuraciones flash 
 logging.basicConfig(filename=LOG_DIRECTORY, level=logging.INFO)
@@ -40,12 +41,13 @@ ALLOWED_SAVE_SERVICES   = ['SUPERVISED','NLP','COMPUTER_VISION','TEXT_ANALYTICS'
 ALLOWED_EXTENTION_FILES = set(['CSV','XLS','XLSX'])
 
 # credenciales de la base de datos
+DATA_DATABASE_NAME           = 'db'
+
 #MONGODB
 MONGODB_HOST                  = 'localhost'
 MONGODB_PORT                  = '27017'
 MONGODB_USER                  = ''
 MONGODB_PASS                  = ''
-MONGODB_DATABASE_NAME         = 'db'
 MONGODB_URL_CONNECTION        = 'mongodb://' + MONGODB_HOST +':' + MONGODB_PORT +'/'
 
 
@@ -55,12 +57,12 @@ MYSQL_HOST                  = 'localhost'
 MYSQL_PORT                  = '3306'
 MYSQL_USER                  = 'root'
 MYSQL_PASS                  = ''
-MYSQL_DATABASE_NAME         = 'db'
-MYSQL_URL_CONNECTION        = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASS  + '@' +  MYSQL_HOST + ':' + MYSQL_PORT +'/' + MYSQL_DATABASE_NAME + MYSQL_CHARSET
+MYSQL_TABLE                 = ''
+MYSQL_URL_CONNECTION        = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASS  + '@' +  MYSQL_HOST + ':' + MYSQL_PORT +'/' + DATA_DATABASE_NAME + MYSQL_CHARSET
 
 
 # database types
-DATA_BASES_TYPES = ['MONGODB','MYSQL']
+DATA_BASES_TYPES = ['MONGODB','MYSQL', 'ORACLE','POSTGRESQL','MARIADB']
 
 # dataframe
 NA_REPLACE_SYMBOL = '^-^'

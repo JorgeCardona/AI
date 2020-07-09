@@ -16,36 +16,38 @@ from UTILS.util import Util
 
 class Exceptions(object):
 
-    def validation_exception(self, exception_number, message = ''):
+    # consulta el mensaje que se retorna al usuario
+    def obtain_message(self, code, message = ''):
     
         # obtiene el valor de respuesta de la excepción
-        response = self.exception(exception_number, message)
+        response = self.message(code, message)
 
         # mensaje para registro en el log
         logging.exception('a new exception it was generated {}'.format(response))
 
-        # retorna la excepcion generada
+        # retorna el mensaje generado
         return response
 
-    def exception (self, error, message=''):
+
+    # tiene los mensajes creados para la api
+    def message (self, code, message=''):
 
         # elimina caracteres expeciales del mensaje para evitar fallos posteriores
         message = Util().clean_string_for_special_characters(message)
 
-        errors = {
-        74: 'corrupted file or unsupported attached file type',
-        400.0: 'No compatible DataBase',
-        400.1: 'Invalid Key for Service',
-        400.2: 'No File Attached',
-        800:'Unable to create file on disk'
-
+        codes = {
+            74: 'corrupted file or unsupported attached file type',
+            400.0: 'No compatible DataBase',
+            400.1: 'Invalid Key for Service',
+            400.2: 'No File Attached',
+            800: 'Unable to create file on disk'
         }
 
         # valida si el error hace parte de los errores personalizados
-        if error in errors:
+        if code in codes:
 
              # obtiene el mensaje de error
-            message = errors.get(error)
+            message = codes.get(code)
 
         # retorna el error
-        return json.dumps({'error':{'code':error, 'message':message}})
+        return json.dumps({'error':{'code':code, 'message':message}})

@@ -53,7 +53,7 @@ class Save(object):
         except Exception as ex:
 
             # lanza la excepcion debido al fallo
-            message = Exceptions().validation_exception(800, ex)
+            message = Exceptions().obtain_message(800, ex)
         
         # el proceso se ejecuto con exito
         else:

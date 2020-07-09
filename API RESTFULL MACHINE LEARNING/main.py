@@ -23,6 +23,7 @@ from CONFIGURATION.config import TRAINING_PORCENTAGE, BINARIZATION_LIMIT, TARGET
 from UTILS.save_files import Save
 from VALIDATIONS_AND_EXCEPTIONS.validations import Validator
 from SERVICES.services import Services
+from UTILS.tables_collections import StoreData
 
 # configuracion de flask
 app = Flask('MachineLearnig Suite - Jorge Cardona')
@@ -38,14 +39,14 @@ def save_data():
 	# captura el tipo de base de datos en la que se quiere persistir la informacion
 	database_name = request.args.get('db')
 
+	table = StoreData.SAVE_ALL_DATA
+
 	# crea los directorios para almacenar los archivos 
-	message = Services().save_data(request, database_name)
+	message = Services().save_data(request, database_name, table)
 		
 	# retorna el resultado del procesamiento
 	return message
 
-	
+# inicializa la aplicacion	
 if __name__ == "__main__":    	
 	app.run(port=FLASK_PORT)
-	
-	

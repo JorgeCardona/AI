@@ -6,8 +6,6 @@ from UTILS.save_files import Save
 from PREPROCESSING.dataframe import DataFrameProcess
 from DATABASES.db_connection import ConnectionDB
 from DATABASES.db_dao import DAO
-from UTILS.tables_collections import StoreData
-
 
 class Services(object):
 
@@ -25,20 +23,20 @@ class Services(object):
         return message
 
     # guarda la informacion en base de datos
-    def save_data(self, request, database_name):
+    def save_data(self, request, database_name, table):
 
         # obtiene el mensaje de ejecutar la copia del archivo
         copy_file_message = self.copy_file_to_folder(database_name, request)
 
         # crea un dataframe del archivo cargado, si no existe ninguna excepcion
-        data_frame = DataFrameProcess().load_data_frame_for_save_in_database(copy_file_message[FILE_LOCATION_LABEL]) if ( type(copy_file_message) != dict) else {}
+        data_frame = DataFrameProcess().load_data_frame_for_save_in_database(copy_file_message[FILE_LOCATION_LABEL]) if not 'error' in copy_file_message else {}
 
         # carga el nombre de la table donde se va a guardar la informacion
-        save_in = StoreData.SAVE_ALL_DATA
+        save_in_table = table
 
         # guarda la informacion en base de datos, si no existe ninguna excepcion
-        datos_en_BD = DAO().save([data_frame], database_name, save_in) if (type(data_frame) != dict) else {}
-        
+        datos_en_BD = DAO().save(data_frame, database_name, save_in_table) if (type(data_frame) != dict) else {}
+               
         # mensaje de retorno al usuario
         message = {'copy_file_message':copy_file_message, 'save_data_message':datos_en_BD}
 
