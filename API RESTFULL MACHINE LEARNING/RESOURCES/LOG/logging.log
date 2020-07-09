@@ -5757,3 +5757,201 @@ INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:04:48] "[37mPOST /save_data?db=mong
 INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\main.py', reloading
 INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\main.py', reloading
 INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\main.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\DATABASES\\db_dao.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\DATABASES\\db_dao.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\DATABASES\\db_dao.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-13-45.025539 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-13-45.025539 test.xlsx'}
+INFO:root:Columns deleted from dataframe for has unique value : ['dos', 'cuatro', 'cuatro.1', 'cuatro.2']
+INFO:root:Rows deleted from dataframe for has unique value : [12, 5]
+INFO:root:a new success action it was generated {"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:root:{"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:13:45] "[37mPOST /save_data?db=mysql HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\DATABASES\\db_connection.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\DATABASES\\db_connection.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\DATABASES\\db_connection.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\DATABASES\\db_connection.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-22-55.576676 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-22-55.576676 test.xlsx'}
+INFO:root:Columns deleted from dataframe for has unique value : ['dos', 'cuatro', 'cuatro.1', 'cuatro.2', 'file_directory_location']
+INFO:root:Rows deleted from dataframe for has unique value : [12, 5]
+INFO:root:a new success action it was generated {"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:root:{"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:22:55] "[37mPOST /save_data?db=mysql HTTP/1.1[0m" 200 -
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-24-00.986463 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-24-00.986463 test.xlsx'}
+INFO:root:Columns deleted from dataframe for has unique value : ['dos', 'cuatro', 'cuatro.1', 'cuatro.2', 'file_directory_location']
+INFO:root:Rows deleted from dataframe for has unique value : [12, 5]
+INFO:root:a new success action it was generated {"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:root:{"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:24:01] "[37mPOST /save_data?db=mysql HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-24-32.336123 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-24-32.336123 test.xlsx'}
+INFO:root:Columns deleted from dataframe for has unique value : ['dos', 'cuatro', 'cuatro.1', 'cuatro.2', 'file_directory_location']
+INFO:root:Rows deleted from dataframe for has unique value : [12, 5]
+INFO:root:a new success action it was generated {"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:root:{"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:24:32] "[37mPOST /save_data?db=mysql HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\CONFIGURATION\\config.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\CONFIGURATION\\config.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\CONFIGURATION\\config.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\CONFIGURATION\\config.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-31-17.876110 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-31-17.876110 test.xlsx'}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:31:17] "[35m[1mPOST /save_data?db=mysql HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-31-47.458567 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-31-47.458567 test.xlsx'}
+INFO:root:Columns deleted from dataframe for has unique value : ['dos', 'cuatro', 'cuatro.1', 'cuatro.2']
+INFO:root:Rows deleted from dataframe for has unique value : [12, 5]
+INFO:root:a new success action it was generated {"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:root:{"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:31:47] "[37mPOST /save_data?db=mysql HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-35-22.950856 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-35-22.950856 test.xlsx'}
+INFO:root:Columns deleted from dataframe for has unique value : ['dos', 'cuatro', 'cuatro.1', 'cuatro.2']
+INFO:root:Rows deleted from dataframe for has unique value : [12, 5]
+INFO:root:a new success action it was generated {"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:root:{"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:35:23] "[37mPOST /save_data?db=mysql HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\main.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\main.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\main.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\main.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:{'message': 'Original Upload File : test.xlsx Was Saved Successfull Like  : 2020-07-08 21-36-42.119371 test.xlsx in C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES', 'FILE_LOCATION': 'C:/Users/QiDimMak/Documents/AI/API RESTFULL MACHINE LEARNING/RESOURCES/FILES/2020-07-08 21-36-42.119371 test.xlsx'}
+INFO:root:Columns deleted from dataframe for has unique value : ['dos', 'cuatro', 'cuatro.1', 'cuatro.2']
+INFO:root:Rows deleted from dataframe for has unique value : [12, 5]
+INFO:root:a new success action it was generated {"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:root:{"Success": {"code": 200.1, "message": "Save file Successfully in database"}}
+INFO:werkzeug:127.0.0.1 - - [08/Jul/2020 21:36:42] "[37mPOST /save_data?db=mysql HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\CONFIGURATION\\config.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\CONFIGURATION\\config.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\CONFIGURATION\\config.py', reloading
+INFO:werkzeug: * Restarting with windowsapi reloader
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 339-683-105
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\QiDimMak\\Documents\\AI\\API RESTFULL MACHINE LEARNING\\PREPROCESSING\\dataframe.py', reloading

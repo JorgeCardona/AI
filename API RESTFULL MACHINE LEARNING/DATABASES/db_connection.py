@@ -17,7 +17,7 @@ from sqlalchemy import create_engine
 from enum import Enum
 
 from CONFIGURATION.config import MONGODB_URL_CONNECTION
-from CONFIGURATION.config import DATA_DATABASE_NAME, URL_COMPLEMENTARY, MYSQL_URL_CONNECTION
+from CONFIGURATION.config import DATA_DATABASE_NAME, MYSQL_URL_CONNECTION
 from UTILS.tables_collections import StoreData
 
 

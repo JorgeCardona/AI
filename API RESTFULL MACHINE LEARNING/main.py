@@ -39,6 +39,7 @@ def save_data():
 	# captura el tipo de base de datos en la que se quiere persistir la informacion
 	database_name = request.args.get('db')
 
+	# define en cual tabla se quiere guardar
 	table = StoreData.SAVE_ALL_DATA
 
 	# crea los directorios para almacenar los archivos 

@@ -60,8 +60,6 @@ class DAO(object):
     # guarda la informacion en la base de datos sql que sea declarada para la api y que se haya solicitado en la peticion
     def save_sql_database(self, data_frame, data_base_type, save_in_table):
 
-        message = ''
-
         # inicia el intento de guardar los datos
         try:
             # obtiene el objeto de conexion a base de datos

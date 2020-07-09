@@ -16,7 +16,7 @@ import numpy as np
 import pandas as pd
 from pandas   import DataFrame
 from datetime import datetime
-from CONFIGURATION.config import NA_REPLACE_SYMBOL, NA_RECOVERY_VALUE, ID_FOR_DATA_SAVE
+from CONFIGURATION.config import NA_REPLACE_SYMBOL, NA_RECOVERY_VALUE, ID_FOR_DATA_SAVE, FILE_DIRECTORY_LOCATION
 
 
 class DataFrameProcess(object):
@@ -55,10 +55,8 @@ class DataFrameProcess(object):
         # retorna la lista de las filas que debes eliminar
         return delete_rows_list[::-1]
 
-
-
     # elimina columnas y filas que sean repetidas o con valores NaN
-    def basic_preprocessing_dataframe(self, data_frame:DataFrame):
+    def basic_preprocessing_dataframe(self, data_frame:DataFrame, file_directory_location):
 
         # elimina TODAS LAS COLUMNAS donde las celdas TENGAN VALOR NaN o NaT.
         data_frame = data_frame.T.dropna(how='all').T
@@ -90,9 +88,6 @@ class DataFrameProcess(object):
         # retorna los valores NA_RECOVERY_VALUE donde tenia los NaN o NaT en el dataframe
         data_frame = data_frame.replace(NA_REPLACE_SYMBOL, NA_RECOVERY_VALUE)
 
-        # se le asigna un identificador de carga a los datos
-        data_frame[ID_FOR_DATA_SAVE] = str(datetime.now())
-
         # guarda el log de las columnas eliminadas del dataframe
         if(len(delete_columns_list) > 0) : logging.info('Columns deleted from dataframe for has unique value : ' + str(delete_columns_list))
 
@@ -120,17 +115,17 @@ class DataFrameProcess(object):
             df_original = pd.read_csv(file_directory_location)
 
         # retorna el dataset original leido
-        return df_original
+        return df_original, file_directory_location
 
 
     # crea un dataframe con el preproesamiento minimo basico
     def basic_clean_data_frame(self, file_directory_location : str):
 
         # crea el dataframe del archivo
-        data_frame = self.create_data_frame_from_file(file_directory_location)
+        data_frame, file_directory_location = self.create_data_frame_from_file(file_directory_location)
 
         # realiza el primer preprocesamiento del dataset
-        data_frame = self.basic_preprocessing_dataframe(data_frame)
+        data_frame = self.basic_preprocessing_dataframe(data_frame, file_directory_location)
 
         # retorna el dataset con el preprocesaamiento basico
         return data_frame
@@ -140,6 +135,9 @@ class DataFrameProcess(object):
     
         # obtiene el dataframe con el preprocesameinto minimo basico
         data_frame = self.basic_clean_data_frame(file_directory_location)
+
+        # se le asigna un identificador de carga a los datos
+        data_frame[ID_FOR_DATA_SAVE] = file_directory_location
 
         # retorna el dataframe procesado y listo para gusradr en base de datos
         return data_frame
