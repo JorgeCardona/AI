@@ -35,6 +35,7 @@ FILE_DIRECTORY_LOCATION  = 'FILE_DIRECTORY_LOCATION'
 logging.basicConfig(filename=LOG_DIRECTORY, level=logging.INFO)
 FLASK_PORT = 5000
 FLASK_DEBUG = True
+FLASH_ENVIROMENT = 'development'
 
 # archivos soportados y tamano maximo permitido
 MAX_CONTENT_LENGTH      = 16 * 1024 * 1024
@@ -61,9 +62,17 @@ MYSQL_PASS                  = ''
 MYSQL_TABLE                 = ''
 MYSQL_URL_CONNECTION        = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASS  + '@' +  MYSQL_HOST + ':' + MYSQL_PORT +'/' + DATA_DATABASE_NAME + MYSQL_CHARSET
 
+# POSTGRES
+'postgresql://user@localhost:5432/mydb'
+POSTGRES_HOST                  = 'localhost'
+POSTGRES_PORT                  = '5432'
+POSTGRES_USER                  = 'postgres'
+POSTGRES_PASS                  = 'postgres'
+POSTGRES_TABLE                 = ''
+POSTGRES_URL_CONNECTION        = 'postgresql://' + POSTGRES_USER + ':' + POSTGRES_PASS  + '@' +  POSTGRES_HOST + ':' + POSTGRES_PORT +'/' + DATA_DATABASE_NAME
 
 # database types
-DATA_BASES_TYPES = ['MONGODB','MYSQL', 'ORACLE','POSTGRESQL','MARIADB']
+DATA_BASES_TYPES = ['MONGODB','MYSQL', 'ORACLE','POSTGRES','MARIADB']
 
 # dataframe
 NA_REPLACE_SYMBOL = '^-^'

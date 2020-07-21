@@ -114,15 +114,18 @@ class DataFrameProcess(object):
             # lee el dataset  
             df_original = pd.read_csv(file_directory_location)
 
+        # se le asigna un identificador de carga a los datos
+        df_original[ID_FOR_DATA_SAVE] = file_directory_location
+
         # retorna el dataset original leido
-        return df_original, file_directory_location
+        return df_original
 
 
     # crea un dataframe con el preproesamiento minimo basico
     def basic_clean_data_frame(self, file_directory_location : str):
 
         # crea el dataframe del archivo
-        data_frame, file_directory_location = self.create_data_frame_from_file(file_directory_location)
+        data_frame = self.create_data_frame_from_file(file_directory_location)
 
         # realiza el primer preprocesamiento del dataset
         data_frame = self.basic_preprocessing_dataframe(data_frame)

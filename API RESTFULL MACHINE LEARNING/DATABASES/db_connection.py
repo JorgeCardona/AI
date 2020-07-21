@@ -17,7 +17,7 @@ from sqlalchemy import create_engine
 from enum import Enum
 
 from CONFIGURATION.config import MONGODB_URL_CONNECTION
-from CONFIGURATION.config import DATA_DATABASE_NAME, MYSQL_URL_CONNECTION
+from CONFIGURATION.config import DATA_DATABASE_NAME, MYSQL_URL_CONNECTION, POSTGRES_URL_CONNECTION
 from UTILS.tables_collections import StoreData
 
 
@@ -28,7 +28,8 @@ class ConnectionDB(object):
 
         # almacena los datos de conexion de cada base de datos mysql
         database_url = {
-            'MYSQL': MYSQL_URL_CONNECTION
+            'MYSQL': MYSQL_URL_CONNECTION,
+            'POSTGRES': POSTGRES_URL_CONNECTION
         }
 
         # valida si el error hace parte de los errores personalizados
