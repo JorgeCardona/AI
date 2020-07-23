@@ -15,6 +15,9 @@ import os
 import pathlib
 import logging
 
+# keys del request para guradar la informacion
+KEYS_FROM_REQUEST = ['SERVICE', 'DATABASE-TYPE', 'DATABASE', 'TABLE']
+
 # lee la ruta del directorio del proyecto
 ROOT_DIRECTORY = str(os.getcwd()).replace('\\','/')
 
@@ -39,7 +42,7 @@ FLASH_ENVIROMENT = 'development'
 
 # archivos soportados y tamano maximo permitido
 MAX_CONTENT_LENGTH      = 16 * 1024 * 1024
-ALLOWED_SAVE_SERVICES   = ['SUPERVISED','NLP','COMPUTER_VISION','TEXT_ANALYTICS']
+ALLOWED_SAVE_SERVICES   = ['SUPERVISED','NLP','COMPUTER_VISION','TEXT_ANALYTICS','UNSUPERVISED']
 ALLOWED_EXTENTION_FILES = set(['CSV','XLS','XLSX'])
 
 # credenciales de la base de datos
@@ -52,27 +55,22 @@ MONGODB_USER                  = ''
 MONGODB_PASS                  = ''
 MONGODB_URL_CONNECTION        = 'mongodb://' + MONGODB_HOST +':' + MONGODB_PORT +'/'
 
-
 # MYSQL
 MYSQL_CHARSET               = '?charset=utf8mb4&binary_prefix=true'
 MYSQL_HOST                  = 'localhost'
 MYSQL_PORT                  = '3306'
 MYSQL_USER                  = 'root'
-MYSQL_PASS                  = ''
+MYSQL_PASS                  = '12345678'
 MYSQL_TABLE                 = ''
 MYSQL_URL_CONNECTION        = 'mysql+pymysql://' + MYSQL_USER + ':' + MYSQL_PASS  + '@' +  MYSQL_HOST + ':' + MYSQL_PORT +'/' + DATA_DATABASE_NAME + MYSQL_CHARSET
 
 # POSTGRES
-'postgresql://user@localhost:5432/mydb'
 POSTGRES_HOST                  = 'localhost'
 POSTGRES_PORT                  = '5432'
 POSTGRES_USER                  = 'postgres'
 POSTGRES_PASS                  = 'postgres'
 POSTGRES_TABLE                 = ''
 POSTGRES_URL_CONNECTION        = 'postgresql://' + POSTGRES_USER + ':' + POSTGRES_PASS  + '@' +  POSTGRES_HOST + ':' + POSTGRES_PORT +'/' + DATA_DATABASE_NAME
-
-# database types
-DATA_BASES_TYPES = ['MONGODB','MYSQL', 'ORACLE','POSTGRES','MARIADB']
 
 # dataframe
 NA_REPLACE_SYMBOL = '^-^'
@@ -84,6 +82,17 @@ ID_FOR_DATA_SAVE  = 'ID_FILE_DIRECTORY_LOCATION'
 ALL_DATA     = 'clima'
 PREDICTION   = 'datos_prediccion'
 CLASIFICATOR = 'mejor_clasificador'
+
+
+# database types
+DATA_BASES_TYPES = ['MONGODB','MYSQL','POSTGRES']
+
+DEFAULT_SERVICE              = ALLOWED_SAVE_SERVICES[0]
+DEFAULT_DATABASE_TYPE        = DATA_BASES_TYPES[0]
+DEFAULT_DATABASE_NAME        = DATA_DATABASE_NAME
+DEFAULT_TABLE_NAME           = ALL_DATA
+DATA_BASE_DEFAULT_VALUES     = [DEFAULT_SERVICE, DEFAULT_DATABASE_TYPE, DEFAULT_DATABASE_NAME, DEFAULT_TABLE_NAME]
+
 
 # tratamiento de data para entrenamiento
 

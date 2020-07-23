@@ -16,7 +16,6 @@ from UTILS.util import Util
 
 class Success(object):
 
-
     # consulta el mensaje que se retorna al usuario
     def obtain_message(self, code, message = ''):
     
@@ -48,4 +47,4 @@ class Success(object):
             message = codes.get(code)
 
         # retorna el error
-        return json.dumps({'Success':{'code':code, 'message':message}})
+        return {'Success':{'code':code, 'message':message}}

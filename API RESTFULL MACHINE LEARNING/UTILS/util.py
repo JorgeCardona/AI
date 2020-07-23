@@ -18,6 +18,6 @@ class Util(object):
     # elimina caracteres expeciales del mensaje para evitar fallos posteriores
     def clean_string_for_special_characters(self, name :str) -> str:   
         
-        return re.sub('[^A-Za-z0-9\.\s]+','',str(name))
+        return re.sub('[^A-Za-z0-9\.]+','',str(name))
 
 

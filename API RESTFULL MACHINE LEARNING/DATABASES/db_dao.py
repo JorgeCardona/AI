@@ -18,6 +18,7 @@ from CONFIGURATION.config import URL_COMPLEMENTARY
 from VALIDATIONS_AND_EXCEPTIONS.exceptions import Exceptions
 from VALIDATIONS_AND_EXCEPTIONS.success_messages import Success
 
+
 class DAO(object):
 
     # guarda en base de datos nosql como MONGODB
@@ -58,15 +59,15 @@ class DAO(object):
 
 
     # guarda la informacion en la base de datos sql que sea declarada para la api y que se haya solicitado en la peticion
-    def save_sql_database(self, data_frame, data_base_type, save_in_table):
+    def save_sql_database(self, data_frame, data_base_type, database_name, save_in_table):
 
         # inicia el intento de guardar los datos
         try:
             # obtiene el objeto de conexion a base de datos
-            connection, table = ConnectionDB().connection_sql(data_base_type, save_in_table)            
+            connection = ConnectionDB().connection_sql(data_base_type, database_name)     
 
             # crea la tabla si no existe y adiciona los datos a la base de datos
-            data_frame.to_sql(table, con = connection, index=False, if_exists ='append')
+            data_frame.to_sql(save_in_table, con = connection, index=False, if_exists ='append')
 
         # hubo un fallo al guardar 
         except Exception as ex:
@@ -89,7 +90,7 @@ class DAO(object):
 
 
     # guarda los dataframes en base de datos
-    def save(self, data_frame, data_base_type, save_in_table):     
+    def save(self, data_frame, data_base_type, database_name, save_in_table):     
 
         # valida si se quiere guardar en mongodb
         if (data_base_type.upper() == 'MONGODB'):
@@ -99,8 +100,4 @@ class DAO(object):
 
         else:
             # guarda en base de datos SQL
-            return self.save_sql_database(data_frame, data_base_type.upper(), save_in_table)
-
-
-
-
+            return self.save_sql_database(data_frame, data_base_type.upper(), database_name, save_in_table)
