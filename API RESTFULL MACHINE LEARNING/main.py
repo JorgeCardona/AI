@@ -19,7 +19,6 @@ import json
 from flask import Flask, jsonify, request, redirect
 
 from CONFIGURATION.config import FLASK_PORT, FLASK_DEBUG, UPLOAD_FILES_DIRECTORY, MAX_CONTENT_LENGTH
-from CONFIGURATION.config import TRAINING_PORCENTAGE, BINARIZATION_LIMIT, TARGET_COLUMN, BINARIZATED_TARGET_COLUMN
 from UTILS.save_files import Save
 from VALIDATIONS_AND_EXCEPTIONS.validations import Validator
 from SERVICES.services import Services
