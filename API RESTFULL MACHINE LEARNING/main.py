@@ -20,7 +20,6 @@ from flask import Flask, jsonify, request, redirect
 
 from CONFIGURATION.config import FLASK_PORT, FLASK_DEBUG, UPLOAD_FILES_DIRECTORY, MAX_CONTENT_LENGTH
 from UTILS.save_files import Save
-from VALIDATIONS_AND_EXCEPTIONS.validations import Validator
 from SERVICES.services import Services
 from UTILS.tables_collections import StoreData
 
