@@ -31,6 +31,7 @@ app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 app.debug = FLASK_DEBUG
 
 
+# endpoint guardar datos
 @app.route('/save_data', methods=['POST'])
 def save_data():
     	
