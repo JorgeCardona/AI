@@ -14,6 +14,8 @@ V0.1: Versión script
 #-------------------------------------------------------------------------
 """
 
+#data location intro
+
 #IMPORTA EL SCRIPT QUE INICIA LA APLICACION PARA RECIBIR PETICIONES
 from COMPONENTS.SERVER.api_server_start import *
 
