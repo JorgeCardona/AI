@@ -1,0 +1,108 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.10.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id "org.sonarqube" version "3.2.0"
+	id 'jacoco'
+}
+
+ext {
+
+	// variables Version
+	logstashLogbackEncoder = '6.6'
+	openApiVersion = '1.5.8'
+	actuatorVersion = '2.4.4'
+	junitVersion = '4.13.2'
+	jacocoToolVersion = "0.8.5"
+
+	// SonarQube variables
+	sonarQubeVersion = '3.8.0.2131'
+	sonarQubeHost = 'http://localhost:9000'
+	sonarQubeLogin = 'b16a51272de56b9142e79500d1505d8f262d46bf'
+
+	// package for Excluding
+	 excludePackage = 'jorge/cardona/concepts'
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectName", "Spring Boot Concepts"
+		property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+		property "sonar.java.source", "11"
+		property "sonar.java.coveragePlugin", "jacoco"
+		property "sonar.jacoco.reportPaths", "build/jacoco/test/jacocoTestReport.xml"
+		property 'sonar.host.url', sonarQubeHost
+		property 'sonar.login', sonarQubeLogin
+	}
+}
+
+group = 'jorge.cardona'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: openApiVersion
+
+	// https://mvnrepository.com/artifact/net.logstash.logback/logstash-logback-encoder
+	implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: logstashLogbackEncoder
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.3.10.RELEASE'
+
+	// https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-core
+	implementation group: 'io.swagger.core.v3', name: 'swagger-core', version: '2.1.9'
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	compileOnly 'org.projectlombok:lombok'
+
+	// https://mvnrepository.com/artifact/com.h2database/h2
+	runtimeOnly 'com.h2database:h2'
+
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+	finalizedBy jacocoTestReport // report is always generated after tests run
+}
+jacoco {
+	toolVersion = jacocoToolVersion
+	reportsDir = file("$buildDir/jacoco")
+}
+
+jacocoTestReport {
+	dependsOn test
+	afterEvaluate {
+		classDirectories.setFrom(files(classDirectories.files.collect {
+			fileTree(dir: it, exclude: [
+					"$excludePackage/SecurityApplication**",
+					"$excludePackage/configuration/**"
+			])
+		}))
+	}
+	reports {
+		xml.enabled true
+		html.enabled true
+	}
+}
