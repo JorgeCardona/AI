@@ -1,0 +1,52 @@
+# Install Sonar
+- Install Sonar in Docker
+  * docker pull sonarqube
+- Start the server by running:
+  * docker run -d --name sonarqube -p 9000:9000 <image_name>
+- Log in to http://localhost:9000 with System Administrator credentials (login=admin, password=admin).
+- Click the Create new project button to analyze your first project.
+
+# Publish Project in Sonarqube
+- gradle sonarqube
+
+# Sonar Metrics
+
+[![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=alert_status)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Bugs](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=bugs)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Reliability Rating](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=reliability_rating)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Vulnerabilities](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=vulnerabilities)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Security Rating](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=security_rating)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+
+
+[![Technical Debt](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=sqale_index)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Code Smells](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=code_smells)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Maintainability Rating](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=sqale_rating)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+
+[![Coverage](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=coverage)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Duplicated Lines (%)](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=duplicated_lines_density)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+[![Lines of Code](http://localhost:9000/api/project_badges/measure?project=org.sonarqube%3Ajava-gradle-simple&metric=ncloc)](http://localhost:9000/dashboard?id=org.sonarqube%3Ajava-gradle-simple)
+
+### Reference Documentation
+For further reference, please consider the following sections:
+
+* [Official Gradle documentation](https://docs.gradle.org)
+* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.10.RELEASE/gradle-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.3.10.RELEASE/gradle-plugin/reference/html/#build-image)
+* [Spring Web](https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#boot-features-developing-web-applications)
+* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.4.5/reference/htmlsingle/#boot-features-jpa-and-spring-data)
+
+### Guides
+The following guides illustrate how to use some features concretely:
+
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
+* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+
+### Additional Links
+These additional references should also help you:
+
+* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
+  <br>
+  https://www.tutorialspoint.com/hibernate/hibernate_mapping_types.htm
+
