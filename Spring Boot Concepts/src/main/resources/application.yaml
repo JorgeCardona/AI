@@ -4,13 +4,22 @@ server:
 config:
   password:${PASSWORD:}
 
+cloud:
+  release: 13
+  name: Load Properties From Yaml
+  enable: true
+
+# custom label
 version:
   app:
     release: 1
-    name :
-      Spring Boot Concepts
+    name : 'Spring Boot Concepts'
 
 spring:
+  # start logo
+  banner:
+    location: /banner/logo.txt
+  # database configuration
   datasource:
     username: sa
     password: ${PASSWORD:}

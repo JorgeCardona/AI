@@ -21,3 +21,9 @@ public class SpringBootSomeConceptsApplication {
 // LogBack Json
 // Profiles
 // Sonar
+// gitignore
+// rest template
+// banner
+// cargar datos de yaml con @ConfigurationProperties(prefix = "yaml")
+// save log every day and compress it
+// cross origin
