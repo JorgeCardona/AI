@@ -1,6 +1,5 @@
 package jorge.cardona.concepts.controller;
 
-
 import jorge.cardona.concepts.entity.Nature;
 import jorge.cardona.concepts.service.NatureService;
 import org.springframework.beans.factory.annotation.Autowired;

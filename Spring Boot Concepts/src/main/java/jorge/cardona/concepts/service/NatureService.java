@@ -25,13 +25,11 @@ public class NatureService {
 
     public Nature saveNature(Nature nature) {
 
-        Nature n = natureRepository.save(nature);
-        return n;
+        return natureRepository.save(nature);
     }
 
     public List<Nature> saveListNature(List<Nature> nature) {
 
-        List<Nature> n = natureRepository.saveAll(nature);
-        return n;
+        return natureRepository.saveAll(nature);
     }
 }

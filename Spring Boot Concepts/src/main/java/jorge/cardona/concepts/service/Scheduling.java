@@ -38,8 +38,8 @@ public class Scheduling {
     @Scheduled(fixedDelay = 1000)
     public void loadYamlProperties() {
 
-        System.out.println("Name " + loadYamlProperties.getName());
-        System.out.println("Release " + loadYamlProperties.getRelease());
-        System.out.println("Enable " + loadYamlProperties.isEnable());
+        log.info("Name " + loadYamlProperties.getName());
+        log.info("Release " + loadYamlProperties.getRelease());
+        log.info("Enable " + loadYamlProperties.isEnable());
     }
 }
