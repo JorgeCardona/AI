@@ -96,8 +96,10 @@ jacocoTestReport {
 	afterEvaluate {
 		classDirectories.setFrom(files(classDirectories.files.collect {
 			fileTree(dir: it, exclude: [
-					"$excludePackage/SecurityApplication**",
-					"$excludePackage/configuration/**"
+					"$excludePackage/configuration/**",
+					"$excludePackage/entity/Nature**",
+					"$excludePackage/repository/**"
+
 			])
 		}))
 	}

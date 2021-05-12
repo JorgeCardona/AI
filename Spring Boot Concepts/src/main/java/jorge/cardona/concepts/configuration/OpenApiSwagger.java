@@ -13,9 +13,9 @@ public class OpenApiSwagger {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Spring Boot Concepts API")
+                        .title("Spring Boot Concepts API by Jorge Cardona")
                         .version("1.0")
-                        .description("Concepts Spring Boot")
+                        .description("Multiples Tips for Spring Boot Projects")
                         .termsOfService("https://github.com/JorgeCardona")
                         .license(new License()
                                 .name("Copyright")
