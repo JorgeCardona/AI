@@ -15,13 +15,14 @@
     <include resource="./templates/appender-file.xml"/>
     <include resource="./templates/appender-console.xml"/>
 
-    <logger name="org.springframework" level="WARN"/>
-    <logger name="ai.dydu.registry" level="WARN"/>
-    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
-    <logger name="org.hibernate.SQL" level="DEBUG"/>
-    <logger name="org.hibernate.type" level="TRACE"/>
+<!--    <logger name="org.springframework" level="WARN"/>-->
+<!--    <logger name="ai.dydu.registry" level="WARN"/>-->
+<!--    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>-->
+<!--    <logger name="org.hibernate.SQL" level="DEBUG"/>-->
+<!--    <logger name="org.hibernate.type" level="TRACE"/>-->
 
-    <root level="ERROR">
+    <!--http://www.slf4j.org/api/org/apache/log4j/Level.html-->
+    <root level="INFO">
         <appender-ref ref="FILE"/>
        <appender-ref ref="standard_output_to_console"/>
     </root>

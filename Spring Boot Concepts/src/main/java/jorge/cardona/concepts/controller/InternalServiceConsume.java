@@ -1,5 +1,10 @@
 package jorge.cardona.concepts.controller;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Contact;
+import io.swagger.v3.oas.annotations.info.Info;
+import io.swagger.v3.oas.annotations.info.License;
+import io.swagger.v3.oas.annotations.servers.Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -12,8 +17,17 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/consume")
 @CrossOrigin(origins = "http://localhost:3000", methods= {RequestMethod.GET, RequestMethod.POST})
+
+/*
+@OpenAPIDefinition(servers = { @Server(url = "https://myserver1.com"),
+        @Server(url = "https://myserver2.com") },
+        info = @Info(title = "the title", version = "v1", description = "My API",
+                license = @License(name = "Apache 2.0", url = "http://foo.bar"),
+                contact = @Contact(url = "http://gigantic-server.com", name = "Fred", email = "Fred@gigagantic-server.com")))
+
+ */
 public class InternalServiceConsume {
 
     @Bean(name="remoteRestTemplate")
@@ -25,6 +39,7 @@ public class InternalServiceConsume {
     @Qualifier(value = "remoteRestTemplate")
     private RestTemplate rest;
 
+    @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/consume")
     public ResponseEntity consume(){
 
@@ -33,6 +48,7 @@ public class InternalServiceConsume {
         return new ResponseEntity(result, HttpStatus.OK);
     }
 
+    @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/crossorigin")
     public ResponseEntity crossOrigin(){
 

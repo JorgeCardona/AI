@@ -12,18 +12,21 @@ public class SpringBootSomeConceptsApplication {
 
 }
 
-// Release Version
-// JPA
-// H2 DataBase
-// Actuator
-// Swagger
-// Tareas Automaticas Repetitivas
-// LogBack Json
+// Release Version --
+// JPA --
+// H2 DataBase --
+// Actuator --
+// Swagger --
+// Tareas Automaticas Repetitivas --
+// LogBack Json - compress log --
+// Sonar --
+// context path --
+// rest template --
+// banner --
+// cargar datos de yaml con @ConfigurationProperties(prefix = "yaml") --
+// save log every day and compress it --
+// cross origin --
+// Gitignore
 // Profiles
-// Sonar
-// gitignore
-// rest template
-// banner
-// cargar datos de yaml con @ConfigurationProperties(prefix = "yaml")
-// save log every day and compress it
-// cross origin
+// Mongorepository
+// GRAPHQL
