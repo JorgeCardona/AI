@@ -34,17 +34,22 @@ spring:
   jpa:
     database-platform=org: hibernate.dialect.H2Dialect
 
-#open API Swagger - http://localhost:8080/doc/swagger-ui.html
+#open API Swagger - http://localhost:8080/api
 springdoc:
   swagger-ui:
     path: /
   api-docs:
     path: /json
 
-
-#actuator - http://localhost:8080/actuator
+#actuator - http://localhost:8080/api/actuator
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+# graphQL console -  - http://localhost:8080/api/gui
+graphql:
+  spqr:
+    gui:
+      enabled: true

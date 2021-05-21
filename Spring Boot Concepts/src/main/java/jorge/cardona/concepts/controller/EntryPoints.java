@@ -4,13 +4,17 @@ import jorge.cardona.concepts.entity.Nature;
 import jorge.cardona.concepts.service.NatureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
 @RequestMapping("/nature")
+
 @CrossOrigin(origins = "http://localhost:3000", methods= {RequestMethod.GET, RequestMethod.POST})
 public class EntryPoints {
 
@@ -19,15 +23,20 @@ public class EntryPoints {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/getall")
-    public ResponseEntity nature(){
+    @ResponseBody
+    public ResponseEntity natureJson(){
 
-        return new ResponseEntity(natureService.getNatureList(), HttpStatus.OK);
+        return ResponseEntity.ok(natureService.getNatureList());
     }
 
     @ResponseStatus(HttpStatus.OK)
     @PostMapping(path = "/save")
-    public ResponseEntity save(@RequestBody Nature nature){
+    public ResponseEntity save(@Valid @RequestBody Nature nature, Errors errors){
 
+        if(errors.hasErrors()){
+
+            return ResponseEntity.badRequest().body(errors.getAllErrors());
+        }
         return new ResponseEntity(natureService.saveNature(nature), HttpStatus.OK);
     }
 

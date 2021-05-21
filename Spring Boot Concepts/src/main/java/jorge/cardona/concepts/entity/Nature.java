@@ -9,10 +9,12 @@ import org.hibernate.annotations.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.sql.Timestamp;
 import java.util.UUID;
-
 
 @Data
 @Builder
@@ -33,6 +35,9 @@ public class Nature {
 
     @NotNull
     @Column(name = "kingdom")
+    @Size(min = 3, max = 10)
+    @NotBlank(message = "Name is mandatory")
+    @Pattern(regexp = "^[\\p{Alnum}]{1,32}$")
     private String kingdom;
 
     @NotNull
