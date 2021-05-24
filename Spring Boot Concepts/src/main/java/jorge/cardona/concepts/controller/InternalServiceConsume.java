@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 
@@ -56,6 +57,26 @@ public class InternalServiceConsume {
         map.put("Cross Origin", "Allowed");
         map.put("State", "Authorized");
         map.put("Date", LocalDateTime.now());
+
+        return ResponseEntity.ok(map);
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping(path = "/url")
+    public ResponseEntity url(HttpServletRequest httpServletRequest){
+
+
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("RequestURL ", httpServletRequest.getRequestURL());
+        map.put("ContextPath ", httpServletRequest.getContextPath());
+        map.put("PathInfo ", httpServletRequest.getPathInfo());
+        map.put("Method ", httpServletRequest.getMethod());
+        map.put("Cookies ", httpServletRequest.getCookies());
+        map.put("HeaderNames ", httpServletRequest.getHeaderNames());
+        map.put("UserPrincipal ", httpServletRequest.getUserPrincipal());
+        map.put("Session ", httpServletRequest.getSession());
+        map.put("AuthType ", httpServletRequest.getAuthType());
+        map.put("Date ", LocalDateTime.now());
 
         return ResponseEntity.ok(map);
     }
