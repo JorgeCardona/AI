@@ -67,15 +67,10 @@ public class InternalServiceConsume {
 
 
         HashMap<Object, Object> map = new HashMap<>();
-        map.put("RequestURL ", httpServletRequest.getRequestURL());
         map.put("ContextPath ", httpServletRequest.getContextPath());
-        map.put("PathInfo ", httpServletRequest.getPathInfo());
         map.put("Method ", httpServletRequest.getMethod());
-        map.put("Cookies ", httpServletRequest.getCookies());
-        map.put("HeaderNames ", httpServletRequest.getHeaderNames());
-        map.put("UserPrincipal ", httpServletRequest.getUserPrincipal());
-        map.put("Session ", httpServletRequest.getSession());
-        map.put("AuthType ", httpServletRequest.getAuthType());
+        map.put("RequestURL ", httpServletRequest.getRequestURL());
+        map.put("ServletPath ", httpServletRequest.getServletPath());
         map.put("Date ", LocalDateTime.now());
 
         return ResponseEntity.ok(map);
