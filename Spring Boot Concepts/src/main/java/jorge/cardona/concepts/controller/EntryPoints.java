@@ -1,6 +1,9 @@
 package jorge.cardona.concepts.controller;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import jorge.cardona.concepts.entity.Nature;
+import jorge.cardona.concepts.repository.NatureInterfaceRepository;
+import jorge.cardona.concepts.repository.NatureRepository;
 import jorge.cardona.concepts.service.NatureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,10 +24,20 @@ public class EntryPoints {
     @Autowired
     NatureService natureService;
 
+    NatureInterfaceRepository natureInterfaceRepository;
+
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/getall")
     @ResponseBody
     public ResponseEntity natureJson(){
+
+        return ResponseEntity.ok(natureInterfaceRepository.getNatureList());
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping(path = "/getallrepo")
+    @ResponseBody
+    public ResponseEntity natureJsonRepo(){
 
         return ResponseEntity.ok(natureService.getNatureList());
     }
@@ -47,6 +60,7 @@ public class EntryPoints {
         return new ResponseEntity(natureService.saveListNature(nature), HttpStatus.OK);
     }
 
+    @Hidden
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/internal")
     public ResponseEntity test(){

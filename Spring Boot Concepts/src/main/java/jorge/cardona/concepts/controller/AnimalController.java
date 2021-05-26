@@ -5,6 +5,7 @@ import io.leangen.graphql.annotations.GraphQLContext;
 import io.leangen.graphql.annotations.GraphQLMutation;
 import io.leangen.graphql.annotations.GraphQLQuery;
 import io.leangen.graphql.spqr.spring.annotations.GraphQLApi;
+import io.swagger.v3.oas.annotations.Hidden;
 import jorge.cardona.concepts.entity.Animal;
 import jorge.cardona.concepts.repository.AnimalRepository;
 import lombok.AllArgsConstructor;

@@ -45,6 +45,8 @@ public class SpringBootSomeConceptsApplication {
 // save log every day and compress it --
 // cross origin --
 // @valid errors --
+// Hide URL from Swagger documentation - @Hidden
+// HttpServletRequest
 // Gitignore
 // Profiles
 // Mongorepository
