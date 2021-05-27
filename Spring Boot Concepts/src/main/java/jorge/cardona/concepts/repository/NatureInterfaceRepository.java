@@ -10,7 +10,6 @@ import java.util.UUID;
 @Repository
 public interface NatureInterfaceRepository {
 
-
     List<Nature> getNatureList();
 
     Optional<Nature> getNatureById(UUID id);

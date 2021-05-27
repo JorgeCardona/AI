@@ -46,6 +46,7 @@ public class SpringBootSomeConceptsApplication {
 // cross origin --
 // @valid errors --
 // Hide URL from Swagger documentation - @Hidden
+// multiples examples swagger, parameters, headers
 // HttpServletRequest
 // Gitignore
 // Profiles

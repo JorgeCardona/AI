@@ -1,9 +1,17 @@
 package jorge.cardona.concepts.controller;
 
 import io.swagger.v3.oas.annotations.Hidden;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.Parameters;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jorge.cardona.concepts.entity.Nature;
 import jorge.cardona.concepts.repository.NatureInterfaceRepository;
-import jorge.cardona.concepts.repository.NatureRepository;
 import jorge.cardona.concepts.service.NatureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,8 +32,64 @@ public class EntryPoints {
     @Autowired
     NatureService natureService;
 
+    @Autowired
     NatureInterfaceRepository natureInterfaceRepository;
 
+
+    @Operation(summary = "Nature Elements",
+            description = "Obtain Elements and Details about the nature"
+    )
+    @Tag(name = "Get All Registers from Nature")
+    @ApiResponses({    @ApiResponse(responseCode = "400", description = "Bad Request",
+            content = @Content(mediaType = MediaType.TEXT_HTML_VALUE,
+                    examples = { @ExampleObject(
+                            value ="Unauthorized")})),
+            @ApiResponse(responseCode = "401", description = "Unauthorized",
+                    content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
+                            examples = {
+
+                                    @ExampleObject(
+                                            name = "List of Elements of Nature",
+                                            value = "[\n" +
+                                                    "    {\n" +
+                                                    "        \"id\": \"2140224c-342e-44db-acbc-72162b381d69\",\n" +
+                                                    "        \"kingdom\": \"Plant\",\n" +
+                                                    "        \"description\": \"Trees, plants and other species of vegetation make up part of the Plantae kingdom - one of the oldest, and characterised by its immobile, multicellular and eukaryotic nature. These autotrophic things, whose cells contain cellulose and chlorophyll are essential for life on Earth since they release oxygen through photosynthesis. As regards their method of reproduction, this may be either sexual or asexual.\",\n" +
+                                                    "        \"createDateTime\": \"2021-05-26T23:24:24.618+00:00\",\n" +
+                                                    "        \"updateDateTime\": \"2021-05-26T23:24:24.618+00:00\"\n" +
+                                                    "    },\n" +
+                                                    "    {\n" +
+                                                    "        \"id\": \"084e860e-c8a4-4ea3-a9af-4f47a6dcd697\",\n" +
+                                                    "        \"kingdom\": \"Animal\",\n" +
+                                                    "        \"description\": \"The kingdom Animalia is the most evolved and is divided into two large groups - vertebrates and invertebrates. These animals are multi-celled, heterotrophic eukaryotes with aerobic respiration, sexual reproduction and the ability to move. This kingdom is one of the most diverse and comprises mammals, fish, birds, reptiles, amphibians, insects, molluscs and annelids, among others.\",\n" +
+                                                    "        \"createDateTime\": \"2021-05-26T23:24:24.650+00:00\",\n" +
+                                                    "        \"updateDateTime\": \"2021-05-26T23:24:24.650+00:00\"\n" +
+                                                    "    }\n" +
+                                                    "]",
+                                            summary = "List Element",
+                                            description = "some examples about of nature"
+                                    ),
+                                    @ExampleObject(
+                                            name = "One Element of Nature",
+                                            value = "    {\n" +
+                                                    "        \"id\": \"6b6eb2b2-1fbd-4337-a5db-3c93a37e5266\",\n" +
+                                                    "        \"kingdom\": \"Monera\",\n" +
+                                                    "        \"description\": \"This is the kingdom of microscopic living things and groups together the prokaryotes (archaea and bacteria). This group is present in all habitats and is made up of single-cell things with no defined nucleus. Most bacteria are aerobic and heterotrophic, while the archaea are usually anaerobic and their metabolism is chemosynthetic.\",\n" +
+                                                    "        \"createDateTime\": \"2021-05-26T23:24:24.660+00:00\",\n" +
+                                                    "        \"updateDateTime\": \"2021-05-26T23:24:24.660+00:00\"\n" +
+                                                    "    }",
+                                            summary = "Unique Element",
+                                            description = "One example about of nature"
+                                    ) }
+                    )
+            )})
+
+    @Parameters({
+            @Parameter(name = "QUERY", required = true, in = ParameterIn.QUERY, example = "1") ,
+            @Parameter(name = "COOKIE", required = true, in = ParameterIn.COOKIE, example = "SESSION_ID") ,
+            @Parameter(name = "PATH", required = true, in = ParameterIn.PATH, example = "vegetal") ,
+            @Parameter(name = "HEADER", required = true, in = ParameterIn.HEADER, example = "Authorization")
+    })
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/getall")
     @ResponseBody
