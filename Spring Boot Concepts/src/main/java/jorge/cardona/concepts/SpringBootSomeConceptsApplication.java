@@ -47,6 +47,7 @@ public class SpringBootSomeConceptsApplication {
 // @valid errors --
 // Hide URL from Swagger documentation - @Hidden
 // multiples examples swagger, parameters, headers
+// add SecurityScheme Authorization Header
 // HttpServletRequest
 // Gitignore
 // Profiles
