@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "1d8382ba-069a-4e38-b76c-d6f723d27138",
+		"name": "Spring Boot Concepts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Nature Get All Registers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/nature/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"nature",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nature Save One Object Validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kingdom\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/nature/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"nature",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nature Save One Object Ok",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"kingdom\": \"Universe\",\r\n        \"description\": \"The universe is everything. It includes all of space, and all the matter and energy that space contains. It even includes time itself and, of course, it includes you. Earth and the Moon are part of the universe, as are the other planets and their many dozens of moons.\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/nature/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"nature",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nature Save Objects List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    [\r\n        {\r\n        \"kingdom\": \"Plant\",\r\n        \"description\": \"Trees, plants and other species of vegetation make up part of the Plantae kingdom - one of the oldest, and characterised by its immobile, multicellular and eukaryotic nature. These autotrophic things, whose cells contain cellulose and chlorophyll are essential for life on Earth since they release oxygen through photosynthesis. As regards their method of reproduction, this may be either sexual or asexual.\"\r\n    },\r\n    {\r\n        \"kingdom\": \"Animal\",\r\n        \"description\": \"The kingdom Animalia is the most evolved and is divided into two large groups - vertebrates and invertebrates. These animals are multi-celled, heterotrophic eukaryotes with aerobic respiration, sexual reproduction and the ability to move. This kingdom is one of the most diverse and comprises mammals, fish, birds, reptiles, amphibians, insects, molluscs and annelids, among others.\"\r\n    },\r\n    {\r\n        \"kingdom\": \"Protist\",\r\n        \"description\": \"This group is the most primitive of the eukaryotics and all the others are descendants of it. The Protista kingdom is paraphyletic - it contains the common ancestor but not all its descendants - and it includes those eukaryotic organisms that are not deemed to be animals, plants or fungi such as protozoa. As it is so heterogeneous it is difficult to categorise it, since its members have very little in common\"\r\n    },\r\n    {\r\n        \"kingdom\": \"Fungi\",\r\n        \"description\": \"This name is used to designate the fungi kingdom which includes yeasts, moulds and all species of mushrooms and toadstools. These multicellular aerobic heterotrophic eukaryotes have chitin in their cell walls, feed off other living things, and reproduce through spores.\"\r\n    },\r\n\t    {\r\n        \"kingdom\": \"Monera\",\r\n        \"description\": \"This is the kingdom of microscopic living things and groups together the prokaryotes (archaea and bacteria). This group is present in all habitats and is made up of single-cell things with no defined nucleus. Most bacteria are aerobic and heterotrophic, while the archaea are usually anaerobic and their metabolism is chemosynthetic.\"\r\n    }\r\n    ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/nature/savelist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"nature",
+						"savelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actuator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/actuator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"actuator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HttpServletRequest Get Request Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/consume/url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"consume",
+						"url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongo Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/fruitinfo/allfruits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fruitinfo",
+						"allfruits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongo Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fruitId\": \"301\",\r\n  \"fruitName\": \"Grape\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/fruitinfo/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fruitinfo",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongo Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fruitId\": \"301\",\r\n  \"fruitName\": \"Strawberry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/fruitinfo/update/301",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fruitinfo",
+						"update",
+						"301"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongo One User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/fruitinfo/301",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fruitinfo",
+						"301"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongo Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/fruitinfo/delete/301",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fruitinfo",
+						"delete",
+						"301"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongo SaveAll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"fruitId\": \"201\",\r\n        \"fruitName\": \"Cherry\"\r\n    },\r\n    {\r\n        \"fruitId\": \"101\",\r\n        \"fruitName\": \"Apple\"\r\n    },\r\n    {\r\n        \"fruitId\": \"301\",\r\n        \"fruitName\": \"Grape\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/fruitinfo/saveall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fruitinfo",
+						"saveall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GrapQl Create",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQl getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "GrapQl GetById GraphQl",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{ animal(id: 1) { name } }",
+						"variables": ""
+					},
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grapql GetById Json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"{ animal(id: 1) { name } }\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
