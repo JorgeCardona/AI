@@ -18,6 +18,12 @@ version:
     name : 'Spring Boot Concepts'
 
 spring:
+  #mongoDb Config
+  data:
+    mongodb:
+      database: fruit_db
+      port: 27017
+      host: localhost
   # start logo
   banner:
     location: /banner/logo.txt

@@ -26,7 +26,7 @@ public class OpenApiSwagger {
 
 
         return new OpenAPI()
-                //.servers(server)
+                .servers(server)
                 .info(new Info()
                         .title("Spring Boot Concepts API by Jorge Cardona")
                         .version("1.0")

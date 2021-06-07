@@ -5,6 +5,8 @@ import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.info.License;
 import io.swagger.v3.oas.annotations.servers.Server;
+import jorge.cardona.concepts.entity.Nature;
+import jorge.cardona.concepts.util.RequestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 
@@ -73,6 +76,6 @@ public class InternalServiceConsume {
         map.put("ServletPath ", httpServletRequest.getServletPath());
         map.put("Date ", LocalDateTime.now());
 
-        return ResponseEntity.ok(map);
+        return ResponseEntity.ok(RequestResponse.response(httpServletRequest.getServletPath(), HttpStatus.OK, map));
     }
 }
