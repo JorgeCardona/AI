@@ -20,7 +20,7 @@ public class Animal {
     @Id
     @GeneratedValue
     @GraphQLQuery(name = "id", description = "An Animal's id")
-    private long id;
+    private Long id;
 
     @GraphQLQuery(name = "name", description = "An Animal's name")
     private String name;

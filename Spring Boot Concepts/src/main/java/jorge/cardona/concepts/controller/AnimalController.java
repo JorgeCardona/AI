@@ -34,12 +34,17 @@ public class AnimalController {
     }
 
     @GraphQLMutation(name = "saveAnimal") // CREATE
-    public Animal saveFood(@GraphQLArgument(name = "animal") Animal animal) {
+    public Animal saveAnimal(@GraphQLArgument(name = "animal") Animal animal) {
         return animalRepository.save(animal);
     }
 
+    @GraphQLMutation(name = "saveAnimalList") // CREATE LIST
+    public Iterable<Animal> saveAnimalList(@GraphQLArgument(name = "animalList") List<Animal> animalList) {
+        return animalRepository.saveAll(animalList);
+    }
+
     @GraphQLMutation(name = "deleteAnimal") // DELETE
-    public void deleteFood(@GraphQLArgument(name = "id") Long id) {
+    public void deleteAnimal(@GraphQLArgument(name = "id") Long id) {
         animalRepository.deleteById(id);
     }
 

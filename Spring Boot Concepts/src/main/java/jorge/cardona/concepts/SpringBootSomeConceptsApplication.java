@@ -24,7 +24,7 @@ public class SpringBootSomeConceptsApplication {
 		return args -> {
 			Stream.of("Dog", "Cat", "Bird", "Fish").forEach(name -> {
 				Animal animal = Animal.builder().name(name).build();
-				animalController.saveFood(animal);
+				animalController.saveAnimal(animal);
 			});
 			animalController.getAnimals().forEach(System.out::println);
 		};
