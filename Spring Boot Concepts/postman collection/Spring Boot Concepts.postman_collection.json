@@ -555,6 +555,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GrapQl isFriendly GraphQl",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{ \r\n    isFriendly(friend:\r\n            {name:\"Duck\"}\r\n                        )\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"graphql"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

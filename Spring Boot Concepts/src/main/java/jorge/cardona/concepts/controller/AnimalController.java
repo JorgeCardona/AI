@@ -49,7 +49,7 @@ public class AnimalController {
     }
 
     @GraphQLQuery(name = "isFriendly") // Calculated property of animal
-    public boolean isFriendly(@GraphQLContext Animal animal) {
-        return !Arrays.asList("Cat", "Dog").contains(animal.getName());
+    public boolean tender(@GraphQLArgument(name = "friend") Animal animal) {
+        return !Arrays.asList("Shark", "Snake").contains(animal.getName());
     }
 }
