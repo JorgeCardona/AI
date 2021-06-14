@@ -45,6 +45,7 @@ public class SpringBootSomeConceptsApplication {
 }
 
 // Release Version --
+// final for constants
 // JPA --
 // H2 DataBase --
 // Actuator --

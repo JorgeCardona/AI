@@ -10,6 +10,7 @@ import jorge.cardona.concepts.util.RequestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +23,7 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping("/consume")
-@CrossOrigin(origins = "http://localhost:3000", methods= {RequestMethod.GET, RequestMethod.POST})
+//@CrossOrigin(origins = "http://localhost:9999", methods= {RequestMethod.GET, RequestMethod.POST})
 
 /*
 @OpenAPIDefinition(servers = { @Server(url = "https://myserver1.com"),
@@ -54,11 +55,15 @@ public class InternalServiceConsume {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/crossorigin")
-    public ResponseEntity crossOrigin(){
+    public ResponseEntity crossOrigin(HttpServletRequest httpServletRequest){
 
         HashMap<Object, Object> map = new HashMap<>();
         map.put("Cross Origin", "Allowed");
         map.put("State", "Authorized");
+        map.put("Origin", httpServletRequest.getHeader(HttpHeaders.ORIGIN));
+        map.put("FullPath Request", httpServletRequest.getRequestURI());
+        map.put("RequestURL ", httpServletRequest.getRequestURL());
+        map.put("ServicePath", httpServletRequest.getServletPath());
         map.put("Date", LocalDateTime.now());
 
         return ResponseEntity.ok(map);

@@ -24,6 +24,7 @@ public class NatureService implements NatureInterfaceRepository {
         return natureRepository.findById(id);
     }
 
+
     public Nature saveNature(Nature nature) {
 
         return natureRepository.save(nature);
