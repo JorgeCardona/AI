@@ -1,6 +1,6 @@
 package jorge.cardona.concepts.repository;
 
-import jorge.cardona.concepts.entity.Nature;
+import jorge.cardona.concepts.entity.NatureEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,11 +10,11 @@ import java.util.UUID;
 @Repository
 public interface NatureInterfaceRepository {
 
-    List<Nature> getNatureList();
+    List<NatureEntity> getNatureList();
 
-    Optional<Nature> getNatureById(UUID id);
+    Optional<NatureEntity> getNatureById(UUID id);
 
-    Nature saveNature(Nature nature);
+    NatureEntity saveNature(NatureEntity natureEntity);
 
-    List<Nature> saveListNature(List<Nature> nature);
+    List<NatureEntity> saveListNature(List<NatureEntity> natureEntity);
 }

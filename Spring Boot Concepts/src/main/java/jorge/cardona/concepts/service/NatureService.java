@@ -1,6 +1,6 @@
 package jorge.cardona.concepts.service;
 
-import jorge.cardona.concepts.entity.Nature;
+import jorge.cardona.concepts.entity.NatureEntity;
 import jorge.cardona.concepts.repository.NatureInterfaceRepository;
 import jorge.cardona.concepts.repository.NatureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,22 +16,22 @@ public class NatureService implements NatureInterfaceRepository {
     @Autowired
     NatureRepository natureRepository;
 
-    public List<Nature> getNatureList() {
+    public List<NatureEntity> getNatureList() {
         return natureRepository.findAll();
     }
 
-    public Optional<Nature> getNatureById(UUID id) {
+    public Optional<NatureEntity> getNatureById(UUID id) {
         return natureRepository.findById(id);
     }
 
 
-    public Nature saveNature(Nature nature) {
+    public NatureEntity saveNature(NatureEntity natureEntity) {
 
-        return natureRepository.save(nature);
+        return natureRepository.save(natureEntity);
     }
 
-    public List<Nature> saveListNature(List<Nature> nature) {
+    public List<NatureEntity> saveListNature(List<NatureEntity> natureEntity) {
 
-        return natureRepository.saveAll(nature);
+        return natureRepository.saveAll(natureEntity);
     }
 }

@@ -2,8 +2,9 @@ package jorge.cardona.concepts;
 
 import jorge.cardona.concepts.controller.AnimalController;
 import jorge.cardona.concepts.controller.FruitController;
-import jorge.cardona.concepts.entity.Animal;
-import jorge.cardona.concepts.entity.Fruit;
+import jorge.cardona.concepts.entity.AnimalEntity;
+import jorge.cardona.concepts.entity.FruitEntity;
+import jorge.cardona.concepts.mappers.AnimalMapper;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +15,11 @@ import java.util.stream.Stream;
 @SpringBootApplication
 public class SpringBootSomeConceptsApplication {
 
+	@Bean
+	public AnimalMapper animalMapper(){
+		return new AnimalMapper();
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootSomeConceptsApplication.class, args);
 	}
@@ -23,8 +29,8 @@ public class SpringBootSomeConceptsApplication {
 	ApplicationRunner initH2(AnimalController animalController) {
 		return args -> {
 			Stream.of("Dog", "Cat", "Bird", "Fish").forEach(name -> {
-				Animal animal = Animal.builder().name(name).build();
-				animalController.saveAnimal(animal);
+				AnimalEntity animalEntity = AnimalEntity.builder().name(name).build();
+				animalController.saveAnimal(animalEntity);
 			});
 			animalController.getAnimals().forEach(System.out::println);
 		};
@@ -34,8 +40,8 @@ public class SpringBootSomeConceptsApplication {
 	ApplicationRunner initEmbeddedMongo(FruitController fruitController) {
 		return args -> {
 			Stream.of("Banana", "Guama", "Chontaduro", "Coconut").forEach(name -> {
-				Fruit fruit = Fruit.builder().fruitName(name).build();
-				fruitController.creatFruit(fruit);
+				FruitEntity fruitEntity = FruitEntity.builder().fruitName(name).build();
+				fruitController.creatFruit(fruitEntity);
 			});
 			fruitController.getfruitinfo().forEach(System.out::println);
 		};
@@ -72,3 +78,4 @@ public class SpringBootSomeConceptsApplication {
 // Profiles
 // Mongorepository---
 // GRAPHQL---
+// anotaciones propias

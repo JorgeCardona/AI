@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @Builder(toBuilder = true)
 @Document(collection = "fruit-test")
-public class Fruit {
+public class FruitEntity {
 
 	@Id
 	private String fruitId;

@@ -1,25 +1,20 @@
 package jorge.cardona.concepts.controller;
 
-import io.swagger.v3.oas.annotations.*;
+import io.swagger.v3.oas.annotations.Hidden;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
-import io.swagger.v3.oas.annotations.headers.Header;
-import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.security.SecurityScheme;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import jorge.cardona.concepts.entity.Nature;
+import jorge.cardona.concepts.entity.NatureEntity;
 import jorge.cardona.concepts.repository.NatureInterfaceRepository;
 import jorge.cardona.concepts.service.NatureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
@@ -28,9 +23,9 @@ import javax.validation.Valid;
 import java.util.List;
 
 
+@OpenAPIDefinition()
 @RestController
 @RequestMapping("/nature")
-
 @CrossOrigin(origins = "http://localhost:3000", methods= {RequestMethod.GET, RequestMethod.POST})
 public class NatureController {
 
@@ -129,7 +124,6 @@ public class NatureController {
     @SecurityRequirement(name = "BasicAuth")
     @SecurityRequirement(name = "BearerAuth")
     @SecurityRequirement(name = "ApiKeyAuth")
-    //@SecurityRequirement(name = "oAuth2")
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/getallrepo")
     @ResponseBody
@@ -141,20 +135,20 @@ public class NatureController {
 
     @ResponseStatus(HttpStatus.OK)
     @PostMapping(path = "/save")
-    public ResponseEntity save(@Valid @RequestBody Nature nature, Errors errors){
+    public ResponseEntity save(@Valid @RequestBody NatureEntity natureEntity, Errors errors){
 
         if(errors.hasErrors()){
 
             return ResponseEntity.badRequest().body(errors.getAllErrors());
         }
-        return new ResponseEntity(natureService.saveNature(nature), HttpStatus.OK);
+        return new ResponseEntity(natureService.saveNature(natureEntity), HttpStatus.OK);
     }
 
     @ResponseStatus(HttpStatus.OK)
     @PostMapping(path = "/savelist")
-    public ResponseEntity list(@RequestBody List<Nature> nature){
+    public ResponseEntity list(@RequestBody List<NatureEntity> natureEntity){
 
-        return new ResponseEntity(natureService.saveListNature(nature), HttpStatus.OK);
+        return new ResponseEntity(natureService.saveListNature(natureEntity), HttpStatus.OK);
     }
 
     @Hidden

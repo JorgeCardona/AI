@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @Builder(toBuilder = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class Animal {
+public class AnimalEntity {
 
     @Id
     @GeneratedValue

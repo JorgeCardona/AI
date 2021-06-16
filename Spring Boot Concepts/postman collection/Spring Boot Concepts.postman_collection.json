@@ -6,12 +6,47 @@
 	},
 	"item": [
 		{
-			"name": "Nature Get All Registers",
+			"name": "Actuator",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/nature/getall",
+					"raw": "{{UrlPathConcepts}}/actuator",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"actuator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actuator Enviroment Variables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/actuator/env",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"actuator",
+						"env"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actuator Scheduled Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/actuator/scheduledtasks",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -19,6 +54,24 @@
 					"port": "8080",
 					"path": [
 						"api",
+						"actuator",
+						"scheduledtasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nature Get All Registers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/nature/getall",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
 						"nature",
 						"getall"
 					]
@@ -41,14 +94,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/nature/save",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/nature/save",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"nature",
 						"save"
 					]
@@ -71,14 +121,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/nature/save",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/nature/save",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"nature",
 						"save"
 					]
@@ -101,36 +148,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/nature/savelist",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/nature/savelist",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"nature",
 						"savelist"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Actuator",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/actuator",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"actuator"
 					]
 				}
 			},
@@ -142,14 +166,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/consume/url",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/consume/url",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"consume",
 						"url"
 					]
@@ -163,14 +184,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/fruitinfo/allfruits",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/fruitinfo/allfruits",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"fruitinfo",
 						"allfruits"
 					]
@@ -193,14 +211,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/fruitinfo/create",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/fruitinfo/create",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"fruitinfo",
 						"create"
 					]
@@ -223,14 +238,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/fruitinfo/update/301",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/fruitinfo/update/301",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"fruitinfo",
 						"update",
 						"301"
@@ -240,7 +252,7 @@
 			"response": []
 		},
 		{
-			"name": "Mongo One User",
+			"name": "Mongo One Registry",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -257,14 +269,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/fruitinfo/301",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/fruitinfo/301",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"fruitinfo",
 						"301"
 					]
@@ -278,14 +287,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/fruitinfo/delete/301",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/fruitinfo/delete/301",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"fruitinfo",
 						"delete",
 						"301"
@@ -309,16 +315,37 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/fruitinfo/saveall",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/fruitinfo/saveall",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"fruitinfo",
 						"saveall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQl SaveList GraphQl",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\r\n  saveAnimalList(animalList:[\r\n      { name: \"Fish\", type:\"River\" },\r\n      { name: \"Lyon\", type:\"Jungle\" },\r\n      { name: \"Shark\", type:\"Sea\" },\r\n      { name: \"Butterfly\", type:\"Air\" }\r\n  ] ) {\r\n    id\r\n    name\r\n    type\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{UrlPathConcepts}}/graphql",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"graphql"
 					]
 				}
 			},
@@ -339,131 +366,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/graphql",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"graphql"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GraphQl getAll Animals Json",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"query\": \"{ animals { name } }\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"graphql"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GrapQl GetById GraphQl",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "{ animal(id: 1) { name } }",
-						"variables": ""
-					},
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"graphql"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Grapql GetById Json",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"query\": \"{ animal(id: 1) { name } }\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"graphql"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GraphQl getAll Animals GraphQl",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "graphql",
-					"graphql": {
-						"query": "{ animals { name } }",
-						"variables": ""
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
 						"graphql"
 					]
 				}
@@ -488,14 +395,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/graphql",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"graphql"
 					]
 				}
@@ -503,26 +407,131 @@
 			"response": []
 		},
 		{
-			"name": "GraphQl SaveList GraphQl",
+			"name": "GraphQl getAll Animals Json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"{ animals { name } }\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlPathConcepts}}/graphql",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQl getAll Animals GraphQl",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation {\r\n  saveAnimalList(animalList:[\r\n      { name: \"Fish\", type:\"River\" },\r\n      { name: \"Lyon\", type:\"Jungle\" },\r\n      { name: \"Shark\", type:\"Sea\" },\r\n      { name: \"Butterfly\", type:\"Air\" }\r\n  ] ) {\r\n    id\r\n    name\r\n    type\r\n  }\r\n}",
+						"query": "{ animals { name } }",
 						"variables": ""
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/graphql",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GrapQl GetById GraphQl",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// get raw response\r",
+							"const responseService = responseBody\r",
+							"console.log(\"the response of service is: \" + responseService)\r",
+							"\r",
+							"//get object content\r",
+							"const responseJson = pm.response.json();\r",
+							"console.log(responseJson.data.animal)\r",
+							"\r",
+							"//get Headers\r",
+							"console.log(pm.response.headers)\r",
+							"console.log(pm.response.headers.get('Content-Type'))\r",
+							"\r",
+							"//set variable and value\r",
+							"pm.environment.set(\"jwt\", responseJson.data.animal.name);\r",
+							"\r",
+							"//get variable value\r",
+							"console.log(\"jwt \" + pm.environment.get(\"jwt\"))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{ animal(id: 1) { name } }",
+						"variables": ""
+					},
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlPathConcepts}}/graphql",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grapql GetById Json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"{ animal(id: 1) { name } }\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{UrlPathConcepts}}/graphql",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
 						"graphql"
 					]
 				}
@@ -542,14 +551,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/graphql",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/graphql",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"graphql"
 					]
 				}
@@ -569,7 +575,24 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/graphql",
+					"raw": "{{UrlPathConcepts}}/graphql",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cross Origin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/consume/crossorigin",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -577,11 +600,34 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"graphql"
+						"consume",
+						"crossorigin"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "UrlPathConcepts",
+			"value": "http://localhost:8080/api"
+		},
+		{
+			"key": "UrlPathConcepts",
+			"value": ""
+		},
+		{
+			"key": "jwt",
+			"value": ""
+		},
+		{
+			"key": "delete",
+			"value": ""
+		},
+		{
+			"key": "collectionVariables",
+			"value": ""
 		}
 	]
 }

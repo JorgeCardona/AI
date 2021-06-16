@@ -1,6 +1,6 @@
 package jorge.cardona.concepts.service;
 
-import jorge.cardona.concepts.entity.Fruit;
+import jorge.cardona.concepts.entity.FruitEntity;
 import jorge.cardona.concepts.repository.FruitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,38 +13,38 @@ public class FruitService {
 	@Autowired
 	private FruitRepository fruitRepository;
 
-	public List<Fruit> getAllfruitInfo() {
+	public List<FruitEntity> getAllfruitInfo() {
 
 		return fruitRepository.findAll();
 	}
 
-	public Fruit getFruitByfruitId(String fruitId) {
+	public FruitEntity getFruitByfruitId(String fruitId) {
 		return fruitRepository.findById(fruitId).orElse(null);
 	}
 
-	public Fruit updatefruitInfo(String fruitId, Fruit fruits) {
-		Fruit existingFruitId = fruitRepository.findById(fruitId).orElse(null);
-		existingFruitId.setFruitId(fruits.getFruitId());
-		existingFruitId.setFruitName(fruits.getFruitName());
-		return fruitRepository.save(existingFruitId);
+	public FruitEntity updatefruitInfo(String fruitId, FruitEntity fruits) {
+		FruitEntity existingFruitEntityId = fruitRepository.findById(fruitId).orElse(null);
+		existingFruitEntityId.setFruitId(fruits.getFruitId());
+		existingFruitEntityId.setFruitName(fruits.getFruitName());
+		return fruitRepository.save(existingFruitEntityId);
 	}
 
-	public Fruit createNewfruit(Fruit fruits) {
-		Fruit objFruit = new Fruit();
-		objFruit.setFruitId(fruits.getFruitId());
-		objFruit.setFruitName(fruits.getFruitName());
-		return fruitRepository.save(objFruit);
+	public FruitEntity createNewfruit(FruitEntity fruits) {
+		FruitEntity objFruitEntity = new FruitEntity();
+		objFruitEntity.setFruitId(fruits.getFruitId());
+		objFruitEntity.setFruitName(fruits.getFruitName());
+		return fruitRepository.save(objFruitEntity);
 	}
 
-	public List<Fruit> deleteFruitById(String fruitId){
+	public List<FruitEntity> deleteFruitById(String fruitId){
 		fruitRepository.deleteById(fruitId);
 
 		return fruitRepository.findAll();
 	}
 
-	public List<Fruit> saveFruitList(List<Fruit> fruits){
+	public List<FruitEntity> saveFruitList(List<FruitEntity> fruitEntities){
 
-		fruitRepository.saveAll(fruits);
+		fruitRepository.saveAll(fruitEntities);
 
 		return fruitRepository.findAll();
 	}

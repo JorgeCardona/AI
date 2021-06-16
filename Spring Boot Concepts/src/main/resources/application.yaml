@@ -58,7 +58,7 @@ management:
     web:
       exposure:
         include: "*"
-        exclude: "env,beans"
+        exclude: "mappings"
 
 # graphQL console -  - http://localhost:8080/api/gui
 graphql:

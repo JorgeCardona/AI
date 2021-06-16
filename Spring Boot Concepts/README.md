@@ -1,8 +1,14 @@
+# Enviroment Variables
+```
+ACTUATOR_ENV_VARIABLE_TEST=CONTENT TEST VALUE
+SPRING_PROFILES_ACTIVE=concepts
+```
+
 # Install Sonar
 - Install Sonar in Docker
   * docker pull sonarqube
 - Start the server by running:
-  * docker run -d --name sonarqube -p 9000:9000 <image_name>
+  * docker run -d --name sonarqube_concepts -p 9000:9000 sonarqube
 - Log in to http://localhost:9000 with System Administrator credentials (login=admin, password=admin).
 - Click the Create new project button to analyze your first project.
 

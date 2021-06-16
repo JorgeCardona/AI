@@ -20,7 +20,7 @@ ext {
 	// SonarQube variables
 	sonarQubeVersion = '3.8.0.2131'
 	sonarQubeHost = 'http://localhost:9000'
-	sonarQubeLogin = 'b16a51272de56b9142e79500d1505d8f262d46bf'
+	sonarQubeLogin = '301fbc40ae451984e24194b712ba8a8a697686fb'
 
 	// package for Excluding
 	 excludePackage = 'jorge/cardona/concepts'
@@ -94,6 +94,7 @@ dependencies {
 	// Valida que los objetos cumplan con las restricciones @Valid
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
+	testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
 
 	// uso de aplicaciones GrpahQL
 	// https://mvnrepository.com/artifact/io.leangen.graphql/graphql-spqr-spring-boot-starter
@@ -121,7 +122,8 @@ jacocoTestReport {
 			fileTree(dir: it, exclude: [
 					"$excludePackage/configuration/**",
 					"$excludePackage/entity/Nature**",
-					"$excludePackage/repository/**"
+					"$excludePackage/repository/**",
+					"$excludePackage/controller/**"
 
 			])
 		}))
