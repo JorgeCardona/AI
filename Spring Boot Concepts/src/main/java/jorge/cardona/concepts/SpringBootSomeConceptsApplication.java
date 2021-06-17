@@ -1,52 +1,26 @@
 package jorge.cardona.concepts;
 
-import jorge.cardona.concepts.controller.AnimalController;
-import jorge.cardona.concepts.controller.FruitController;
-import jorge.cardona.concepts.entity.AnimalEntity;
-import jorge.cardona.concepts.entity.FruitEntity;
-import jorge.cardona.concepts.mappers.AnimalMapper;
-import org.springframework.boot.ApplicationRunner;
+import jorge.cardona.concepts.order.Numbers;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import java.util.stream.Stream;
 
 @SpringBootApplication
-public class SpringBootSomeConceptsApplication {
+public class SpringBootSomeConceptsApplication implements CommandLineRunner {
 
-	@Bean
-	public AnimalMapper animalMapper(){
-		return new AnimalMapper();
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootSomeConceptsApplication.class, args);
 	}
 
+	@Autowired
+	private Numbers positions;
 
-	@Bean
-	ApplicationRunner initH2(AnimalController animalController) {
-		return args -> {
-			Stream.of("Dog", "Cat", "Bird", "Fish").forEach(name -> {
-				AnimalEntity animalEntity = AnimalEntity.builder().name(name).build();
-				animalController.saveAnimal(animalEntity);
-			});
-			animalController.getAnimals().forEach(System.out::println);
-		};
+	@Override
+	public void run(String... strings) throws Exception {
+		positions.printPosition();
 	}
-
-	@Bean
-	ApplicationRunner initEmbeddedMongo(FruitController fruitController) {
-		return args -> {
-			Stream.of("Banana", "Guama", "Chontaduro", "Coconut").forEach(name -> {
-				FruitEntity fruitEntity = FruitEntity.builder().fruitName(name).build();
-				fruitController.creatFruit(fruitEntity);
-			});
-			fruitController.getfruitinfo().forEach(System.out::println);
-		};
-	}
-
 
 }
 
@@ -58,6 +32,7 @@ public class SpringBootSomeConceptsApplication {
 // Swagger --
 // Tareas Automaticas Repetitivas --
 // LogBack Json - compress log --
+// dto - entity
 // Sonar --
 // context path --
 // rest template --

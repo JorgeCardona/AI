@@ -3,6 +3,7 @@ package jorge.cardona.concepts.service;
 import jorge.cardona.concepts.configuration.LoadYamlProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 
 
 @Slf4j
+@Order(1)
 @Service
 @EnableScheduling
 public class Scheduling {
