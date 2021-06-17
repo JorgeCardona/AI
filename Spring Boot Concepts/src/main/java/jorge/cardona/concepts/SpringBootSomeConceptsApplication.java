@@ -7,20 +7,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootSomeConceptsApplication implements CommandLineRunner {
+public class SpringBootSomeConceptsApplication {
 
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootSomeConceptsApplication.class, args);
 	}
 
-	@Autowired
-	private Numbers positions;
 
-	@Override
-	public void run(String... strings) throws Exception {
-		positions.printPosition();
-	}
 
 }
 

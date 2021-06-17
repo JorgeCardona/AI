@@ -5,15 +5,15 @@ import jorge.cardona.concepts.controller.FruitController;
 import jorge.cardona.concepts.entity.AnimalEntity;
 import jorge.cardona.concepts.entity.FruitEntity;
 import jorge.cardona.concepts.mappers.AnimalMapper;
+import jorge.cardona.concepts.order.Numbers;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Stream;
 
 @Component
-public class BeansDataBaseLoad {
+public class InitializeBeans {
 
     @Bean
     public AnimalMapper animalMapper(){
@@ -42,5 +42,10 @@ public class BeansDataBaseLoad {
         };
     }
 
-
+    @Bean
+    ApplicationRunner loadNumberOrder(Numbers positions) {
+        return args -> {
+            positions.printPosition();
+        };
+    }
 }
