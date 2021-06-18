@@ -26,6 +26,7 @@ public class SpringBootSomeConceptsApplication {
 // Sonar --
 // context path --
 // rest template --
+// configureTimeOutRestTemplate--
 // banner --
 // cargar datos de yaml con @ConfigurationProperties(prefix = "yaml") --
 // save log every day and compress it --

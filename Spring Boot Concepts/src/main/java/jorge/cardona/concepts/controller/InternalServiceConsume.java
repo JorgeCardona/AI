@@ -3,7 +3,6 @@ package jorge.cardona.concepts.controller;
 import jorge.cardona.concepts.util.RequestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,11 +20,6 @@ import java.util.HashMap;
 @RequestMapping("/consume")
 //@CrossOrigin(origins = "http://localhost:9999", methods= {RequestMethod.GET, RequestMethod.POST})
 public class InternalServiceConsume {
-
-    @Bean(name="remoteRestTemplate")
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
 
     @Autowired
     @Qualifier(value = "remoteRestTemplate")
