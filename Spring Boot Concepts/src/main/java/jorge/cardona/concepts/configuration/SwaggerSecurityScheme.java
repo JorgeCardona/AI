@@ -6,7 +6,7 @@ import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+
 @SecurityScheme(
         name = "BearerAuth",
         type = SecuritySchemeType.HTTP,
@@ -24,6 +24,6 @@ import org.springframework.context.annotation.Configuration;
         type = SecuritySchemeType.APIKEY,
         in = SecuritySchemeIn.HEADER
 )
-//https://swagger.io/docs/specification/authentication/
+@Configuration
 public class SwaggerSecurityScheme {
 }

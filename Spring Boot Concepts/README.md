@@ -51,7 +51,7 @@ For further reference, please consider the following sections:
 * [Swagger Security](https://swagger.io/docs/specification/authentication/)
 * [Spring Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator)
 * [Lombok](https://projectlombok.org/features/all)
-
+* [CommandLineRunner & ApplicationRunner](https://www.javacodegeeks.com/2019/09/spring-boot-commandlinerunner-and-applicationrunner.html)
 
 ### Additional Links
 These additional references should also help you:

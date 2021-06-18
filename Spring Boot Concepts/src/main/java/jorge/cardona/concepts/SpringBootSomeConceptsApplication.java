@@ -1,20 +1,14 @@
 package jorge.cardona.concepts;
 
-import jorge.cardona.concepts.order.Numbers;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringBootSomeConceptsApplication {
 
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootSomeConceptsApplication.class, args);
 	}
-
-
 
 }
 
@@ -27,6 +21,8 @@ public class SpringBootSomeConceptsApplication {
 // Tareas Automaticas Repetitivas --
 // LogBack Json - compress log --
 // dto - entity
+// ApplicationRunner ---
+// @Order ---
 // Sonar --
 // context path --
 // rest template --
