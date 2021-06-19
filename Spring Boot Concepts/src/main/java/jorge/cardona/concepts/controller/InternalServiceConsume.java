@@ -21,17 +21,28 @@ import java.util.HashMap;
 //@CrossOrigin(origins = "http://localhost:9999", methods= {RequestMethod.GET, RequestMethod.POST})
 public class InternalServiceConsume {
 
+    private String serviceUrlInternal = "http://localhost:8080/api/actuator/env";
+    private String serviceUrlExternal = "http://localhost:8080/api/actuator/health";
+
+    @Autowired
+    private RestTemplate restInternal;
+
     @Autowired
     @Qualifier(value = "remoteRestTemplate")
-    private RestTemplate rest;
+    private RestTemplate restExternal;
+
+
+    @GetMapping(path = "/internalrequest")
+    public ResponseEntity internalrequest(){
+
+        return new ResponseEntity(restInternal.getForObject(serviceUrlInternal, String.class), HttpStatus.OK);
+    }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping(path = "/consume")
-    public ResponseEntity consume(){
+    @GetMapping(path = "/externalrequest")
+    public ResponseEntity externalrequest(){
 
-        String result = rest.getForObject("http://localhost:8080/api/internal", String.class);
-
-        return new ResponseEntity(result, HttpStatus.OK);
+        return new ResponseEntity(restExternal.getForObject(serviceUrlExternal, String.class), HttpStatus.OK);
     }
 
     @ResponseStatus(HttpStatus.OK)

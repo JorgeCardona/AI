@@ -25,7 +25,7 @@ public class SpringBootSomeConceptsApplication {
 // @Order ---
 // Sonar --
 // context path --
-// rest template --
+// rest template -- @Primary
 // configureTimeOutRestTemplate--
 // banner --
 // cargar datos de yaml con @ConfigurationProperties(prefix = "yaml") --
