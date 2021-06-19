@@ -587,21 +587,72 @@
 			"response": []
 		},
 		{
-			"name": "Cross Origin",
+			"name": "Consume - Cross Origin",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/consume/crossorigin",
-					"protocol": "http",
+					"raw": "{{UrlPathConcepts}}/consume/crossorigin",
 					"host": [
-						"localhost"
+						"{{UrlPathConcepts}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
 						"consume",
 						"crossorigin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consume - URL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/consume/url",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"consume",
+						"url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consume - internalrequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/consume/internalrequest",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"consume",
+						"internalrequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consume - externalrequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/consume/externalrequest",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"consume",
+						"externalrequest"
 					]
 				}
 			},
