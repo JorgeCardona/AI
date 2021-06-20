@@ -8,6 +8,7 @@ import jorge.cardona.concepts.mappers.AnimalMapper;
 import jorge.cardona.concepts.order.Numbers;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Stream;
@@ -32,7 +33,20 @@ public class InitializeBeans {
     }
 
     @Bean
-    ApplicationRunner initH2(AnimalController animalController) {
+    @Profile("concepts")
+    ApplicationRunner initH2Dev(AnimalController animalController) {
+        return args -> {
+            Stream.of("Racoon", "Dolphin", "Horse", "Canary").forEach(name -> {
+                AnimalEntity animalEntity = AnimalEntity.builder().name(name).build();
+                animalController.saveAnimal(animalEntity);
+            });
+            animalController.getAnimals().forEach(System.out::println);
+        };
+    }
+
+    @Bean
+    @Profile("defaulta")
+    ApplicationRunner initH2Pdn(AnimalController animalController) {
         return args -> {
             Stream.of("Dog", "Cat", "Bird", "Fish").forEach(name -> {
                 AnimalEntity animalEntity = AnimalEntity.builder().name(name).build();
