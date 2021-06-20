@@ -45,7 +45,7 @@ public class InitializeBeans {
     }
 
     @Bean
-    @Profile("defaulta")
+    @Profile("default")
     ApplicationRunner initH2Pdn(AnimalController animalController) {
         return args -> {
             Stream.of("Dog", "Cat", "Bird", "Fish").forEach(name -> {
