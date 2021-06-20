@@ -151,6 +151,14 @@ public class NatureController {
         return new ResponseEntity(natureService.saveListNature(natureEntity), HttpStatus.OK);
     }
 
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping(path = "/override")
+    public ResponseEntity dataNatureExample(){
+
+        return new ResponseEntity(natureService.dataNatureExample(), HttpStatus.OK);
+    }
+
+
     @Hidden
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(path = "/internal")

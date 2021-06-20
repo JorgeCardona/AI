@@ -80,6 +80,24 @@
 			"response": []
 		},
 		{
+			"name": "Nature Override",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/nature/override",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"nature",
+						"override"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Nature Save One Object Validation",
 			"request": {
 				"method": "POST",

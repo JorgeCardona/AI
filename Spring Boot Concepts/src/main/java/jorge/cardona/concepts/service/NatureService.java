@@ -1,17 +1,16 @@
 package jorge.cardona.concepts.service;
 
 import jorge.cardona.concepts.entity.NatureEntity;
+import jorge.cardona.concepts.extendsoverride.NatureExample;
 import jorge.cardona.concepts.repository.NatureInterfaceRepository;
 import jorge.cardona.concepts.repository.NatureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @Service
-public class NatureService implements NatureInterfaceRepository {
+public class NatureService extends NatureExample implements NatureInterfaceRepository {
 
     @Autowired
     NatureRepository natureRepository;
@@ -36,5 +35,13 @@ public class NatureService implements NatureInterfaceRepository {
     public List<NatureEntity> saveListNature(List<NatureEntity> natureEntity) {
 
         return natureRepository.saveAll(natureEntity);
+    }
+
+
+    @Override
+    public Integer dataNatureExample(){
+
+        NatureService.this.setData(2);
+        return NatureService.this.getData();
     }
 }
