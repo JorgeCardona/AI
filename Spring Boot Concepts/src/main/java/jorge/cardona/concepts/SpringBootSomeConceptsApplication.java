@@ -45,4 +45,5 @@ public class SpringBootSomeConceptsApplication {
 // Profiles
 // Mongorepository---
 // GRAPHQL---
+// dynamically LoadBeans
 // anotaciones propias
