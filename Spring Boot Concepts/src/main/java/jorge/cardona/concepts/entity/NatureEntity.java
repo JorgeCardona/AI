@@ -1,5 +1,7 @@
 package jorge.cardona.concepts.entity;
 
+import jorge.cardona.concepts.adapter.annotations.properties.PropertyAnnotationValidationLenghtDescription;
+import jorge.cardona.concepts.adapter.annotations.properties.PropertyAnotationValidatePropertyLenghtOther;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -36,11 +38,13 @@ public class NatureEntity {
     @NotNull
     @Column(name = "kingdom")
     @Size(min = 3, max = 10)
+    @PropertyAnotationValidatePropertyLenghtOther(message = "the message was changed from original validator message... ")
     @NotBlank(message = "Name is mandatory")
     @Pattern(regexp = "^[\\p{Alnum}]{1,32}$")
     private String kingdom;
 
     @NotNull
+    @PropertyAnnotationValidationLenghtDescription
     @Type(type="text")
     @Column(name = "description")
     private String description;
