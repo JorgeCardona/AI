@@ -1,7 +1,7 @@
 package jorge.cardona.concepts.entity;
 
-import jorge.cardona.concepts.adapter.annotations.properties.PropertyAnnotationValidationLenghtDescription;
-import jorge.cardona.concepts.adapter.annotations.properties.PropertyAnotationValidatePropertyLenghtOther;
+import jorge.cardona.concepts.annotations.properties.PropertyAnnotationValidationLengthDescription;
+import jorge.cardona.concepts.annotations.methods.AnotationValidateContentType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,10 +11,7 @@ import org.hibernate.annotations.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.sql.Timestamp;
 import java.util.UUID;
 
@@ -38,13 +35,14 @@ public class NatureEntity {
     @NotNull
     @Column(name = "kingdom")
     @Size(min = 3, max = 10)
-    @PropertyAnotationValidatePropertyLenghtOther(message = "the message was changed from original validator message... ")
-    @NotBlank(message = "Name is mandatory")
+    @AnotationValidateContentType
+    @NotBlank(message = "kingdom is mandatory")
     @Pattern(regexp = "^[\\p{Alnum}]{1,32}$")
     private String kingdom;
 
     @NotNull
-    @PropertyAnnotationValidationLenghtDescription
+    @AnotationValidateContentType(message = "the message was changed from original and the content must be other characters differents of numbers")
+    @PropertyAnnotationValidationLengthDescription
     @Type(type="text")
     @Column(name = "description")
     private String description;
@@ -60,5 +58,10 @@ public class NatureEntity {
     @UpdateTimestamp
     @Column(name = "updateDateTime")
     private Timestamp updateDateTime;
+
+    @ColumnDefault("1")
+    @Column(name = "rating")
+    @Positive
+    private int rating;
 
 }

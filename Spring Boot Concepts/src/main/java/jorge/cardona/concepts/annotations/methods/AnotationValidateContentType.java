@@ -1,14 +1,16 @@
-package jorge.cardona.concepts.adapter.annotations.properties;
+package jorge.cardona.concepts.annotations.methods;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
 import java.lang.annotation.*;
 
+import static java.lang.annotation.ElementType.*;
+
 @Documented
-@Constraint(validatedBy = ValidatePropertyLenghtOther.class)
-@Target(ElementType.FIELD)
+@Constraint(validatedBy = ValidateContentType.class)
+@Target({ METHOD, FIELD, CONSTRUCTOR, PARAMETER, TYPE_USE })
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PropertyAnotationValidatePropertyLenghtOther {
+public @interface AnotationValidateContentType {
 
     String message() default "{property.invalid.other}";
 

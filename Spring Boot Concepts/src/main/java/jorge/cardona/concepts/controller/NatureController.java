@@ -12,6 +12,9 @@ import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jorge.cardona.concepts.entity.NatureEntity;
 import jorge.cardona.concepts.repository.NatureInterfaceRepository;
 import jorge.cardona.concepts.service.NatureService;
+import jorge.cardona.concepts.errors.ErrorList;
+import jorge.cardona.concepts.errors.ValidationResponse;
+import jorge.cardona.concepts.util.ValidateErrors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -20,6 +23,8 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -34,6 +39,9 @@ public class NatureController {
 
     @Autowired
     NatureInterfaceRepository natureInterfaceRepository;
+
+    @Autowired
+    ValidateErrors validateErrors;
 
 
 //    @Operation(summary = "Nature Elements",
@@ -133,13 +141,18 @@ public class NatureController {
         return ResponseEntity.ok(natureService.getNatureList());
     }
 
+
+
     @ResponseStatus(HttpStatus.OK)
     @PostMapping(path = "/save")
     public ResponseEntity save(@Valid @RequestBody NatureEntity natureEntity, Errors errors){
 
         if(errors.hasErrors()){
 
-            return ResponseEntity.badRequest().body(errors.getAllErrors());
+            // get error list after of validate the object
+            ValidationResponse validationResponse = validateErrors.getErrorList(errors);
+
+            return ResponseEntity.badRequest().body(validationResponse);
         }
         return new ResponseEntity(natureService.saveNature(natureEntity), HttpStatus.OK);
     }
@@ -165,5 +178,14 @@ public class NatureController {
     public ResponseEntity test(){
 
         return new ResponseEntity("INTERNAL SERVICE", HttpStatus.OK);
+    }
+
+
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping(path = "/anotation")
+    public ResponseEntity anotationValidation(@RequestParam("age") String age){
+
+        return new ResponseEntity(age, HttpStatus.OK);
     }
 }

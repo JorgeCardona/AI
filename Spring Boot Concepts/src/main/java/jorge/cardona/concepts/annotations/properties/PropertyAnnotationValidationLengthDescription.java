@@ -1,4 +1,4 @@
-package jorge.cardona.concepts.adapter.annotations.properties;
+package jorge.cardona.concepts.annotations.properties;
 
 
 import javax.validation.Constraint;
@@ -7,12 +7,12 @@ import java.lang.annotation.*;
 
 
 @Documented
-@Constraint(validatedBy = ValidatePropertyLenghtDescription.class)
+@Constraint(validatedBy = ValidatePropertyLengthDescription.class)
 @Target(value={ElementType.FIELD} )
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PropertyAnnotationValidationLenghtDescription {
+public @interface PropertyAnnotationValidationLengthDescription {
 
-    String message() default "{property.invalid.lenght}";
+    String message() default "{property.invalid.length}";
 
     Class<?>[] groups() default {};
 

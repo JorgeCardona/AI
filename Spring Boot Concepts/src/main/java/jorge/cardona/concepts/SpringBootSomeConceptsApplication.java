@@ -47,4 +47,4 @@ public class SpringBootSomeConceptsApplication {
 // Mongorepository---
 // GRAPHQL---
 // dynamically LoadBeans
-// anotaciones propias
+// anotaciones propias - regular expressions
