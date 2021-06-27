@@ -7,15 +7,21 @@ import java.util.regex.Pattern;
 
 public class ValidateContentType implements ConstraintValidator<AnotationValidateContentType, String> {
 
-    private Pattern validation =  Pattern.compile("^[^0-9]*$");
+    private Pattern validation = Pattern.compile("^[^0-9]*$");
 
 
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
 
-        final Matcher matcher = validation.matcher(value);
+        // validate that object parameter is present into request object
+        if (value != null) {
 
-        return matcher.matches() ? true: false;
+            final Matcher matcher = validation.matcher(value);
 
+            return (matcher.matches()) ? true : false;
         }
+
+        return false;
+
+    }
 }
