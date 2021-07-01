@@ -27,6 +27,8 @@ out/
 !**/src/test/**/out/
 **build/
 **gradle
+**gradlew**
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
