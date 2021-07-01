@@ -1,12 +1,9 @@
-package jorge.cardona.concepts.configuration;
+package jorge.cardona.concepts.others.configuration;
 
-import jorge.cardona.concepts.order.Numbers;
+import jorge.cardona.concepts.others.order.Numbers;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
-
-import java.util.stream.Stream;
 
 @Component
 public class InitializeBeans {

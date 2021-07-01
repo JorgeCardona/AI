@@ -1,0 +1,15 @@
+<!--<appender name="standard_output_to_console" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--    <encoder>-->
+<!--        <pattern>-->
+<!--            %d{dd-MM-yyyy HH:mm:ss.SSS} %yellow([%thread]) %highlight(%-5level) %logger{36} .%C %M - %msg%n-->
+<!--        </pattern>-->
+<!--    </encoder>-->
+<!--</appender>-->
+
+<appender name="standard_output_to_console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+        <pattern>
+            %d{dd-MM-yyyy HH:mm:ss.SSS} %yellow([%thread]) %highlight(%-5level) %logger{36} .%C %M - %msg%n
+        </pattern>
+    </encoder>
+</appender>

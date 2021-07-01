@@ -54,6 +54,10 @@ repositories {
 
 dependencies {
 
+	// permite que la aplicacion sea web
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
 	// permite documentar la aplicacion con anotaciones de OpenApi 3 - Swagger
 	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
 	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: openApiVersion
@@ -66,35 +70,39 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.3.10.RELEASE'
 
-	// permite la persistencia de datos usando JPA Repository y CRUD Repository
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-
-	// permite la persistencia de datos usando JPA Repository y Mongo Repository
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb
-	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
-
-	// permite que la aplicacion sea web
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-
 	// Libreria para generar getters, setters, contructores con anotaciones @Data, @Build... y log @Slf4j
 	// https://mvnrepository.com/artifact/org.projectlombok/lombok
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	// Valida que los objetos cumplan con las restricciones @Valid
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
+	testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
+
+
+
+
+	// permite la persistencia de datos usando JPA Repository y CRUD Repository
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
 	// Base de Datos en memoria
 	// https://mvnrepository.com/artifact/com.h2database/h2
 	runtimeOnly 'com.h2database:h2'
+
+
+
+
+	// permite la persistencia de datos usando JPA Repository y Mongo Repository
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
 	// Base de Datos MongoDB NoSQL en memoria
 	// https://mvnrepository.com/artifact/de.flapdoodle.embed/de.flapdoodle.embed.mongo
 	implementation group: 'de.flapdoodle.embed', name: 'de.flapdoodle.embed.mongo'
 
-	// Valida que los objetos cumplan con las restricciones @Valid
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
-	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
-	testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
+
 
 	// uso de aplicaciones GrpahQL
 	// https://mvnrepository.com/artifact/io.leangen.graphql/graphql-spqr-spring-boot-starter

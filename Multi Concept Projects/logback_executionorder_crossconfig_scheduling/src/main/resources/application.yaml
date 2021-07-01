@@ -1,0 +1,68 @@
+server:
+  #port fort expose API
+  port: 8080
+  # start path for the API
+  servlet:
+    context-path: /api
+
+#load Enviroment Variable
+config:
+  password:${PASSWORD:}
+# variables for load usinmg @ConfigurationProperties
+cloud:
+  release: 13
+  name: Load Properties From Yaml
+  enable: true
+
+# custom label
+version:
+  app:
+    release: 1
+    name : 'Spring Boot Concepts'
+
+spring:
+  #mongoDb Config
+  data:
+    mongodb:
+      database: fruit_db
+      port: 27017
+      host: localhost
+  # start logo
+  banner:
+    location: /banner/logo.txt
+  # database configuration
+  datasource:
+    username: sa
+    password: ${config.password:}
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+  # http://localhost:8080/h2-console
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform=org: hibernate.dialect.H2Dialect
+
+#open API Swagger - http://localhost:8080/api
+springdoc:
+  #path for load swagger documentation in html
+  swagger-ui:
+    path: /
+    #path for load swagger documentation in json
+  api-docs:
+    path: /json
+
+#actuator - http://localhost:8080/api/actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "mappings"
+
+# graphQL console -  - http://localhost:8080/api/gui
+graphql:
+  spqr:
+    # enable graphic console for graphql
+    gui:
+      enabled: true

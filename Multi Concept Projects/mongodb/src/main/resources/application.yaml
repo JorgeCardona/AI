@@ -1,0 +1,40 @@
+server:
+  #port fort expose API
+  port: 8080
+  # start path for the API
+  servlet:
+    context-path: /api
+
+# custom label
+version:
+  app:
+    release: 1
+    name : 'Spring Boot Concepts'
+
+spring:
+  #mongoDb Config
+  data:
+    mongodb:
+      database: fruit_db
+      port: 27017
+      host: localhost
+  # start logo
+  banner:
+    location: /banner/logo.txt
+
+#open API Swagger - http://localhost:8080/api
+springdoc:
+  #path for load swagger documentation in html
+  swagger-ui:
+    path: /
+    #path for load swagger documentation in json
+  api-docs:
+    path: /json
+
+#actuator - http://localhost:8080/api/actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "mappings"

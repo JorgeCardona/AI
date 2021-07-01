@@ -1,0 +1,28 @@
+server:
+  #port fort expose API
+  port: 8080
+  # start path for the API
+  servlet:
+    context-path: /api
+
+spring:
+  # start logo
+  banner:
+    location: /banner/logo.txt
+
+#open API Swagger - http://localhost:8080/api
+springdoc:
+  #path for load swagger documentation in html
+  swagger-ui:
+    path: /
+    #path for load swagger documentation in json
+  api-docs:
+    path: /json
+
+#actuator - http://localhost:8080/api/actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "mappings"

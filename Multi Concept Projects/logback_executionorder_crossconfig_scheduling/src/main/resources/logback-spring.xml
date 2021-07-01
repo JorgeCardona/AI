@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="false">
+
+    <shutdownHook class="ch.qos.logback.core.hook.DelayingShutdownHook"/>
+
+    <!-- Configuration file storage address -->
+    <property name="LOG_PATH" value="./log"/>
+    <property name="APP_NAME" value="SpringBoot Concepts"/>
+    <springProperty scope="context" name="version" source="spring.application.version"/>
+
+    <!-- Name of microservice -->
+    <springProperty scope="context" name="VERSION" source="version.app.release"/>
+    <springProperty scope="context" name="APP_NAME" source="version.app.name"/>
+
+    <include resource="./templates/appender-file.xml"/>
+    <include resource="./templates/appender-console.xml"/>
+
+<!--    <logger name="org.springframework" level="WARN"/>-->
+<!--    <logger name="ai.dydu.registry" level="WARN"/>-->
+<!--    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>-->
+<!--    <logger name="org.hibernate.SQL" level="DEBUG"/>-->
+<!--    <logger name="org.hibernate.type" level="TRACE"/>-->
+
+    <!--http://www.slf4j.org/api/org/apache/log4j/Level.html-->
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+       <appender-ref ref="standard_output_to_console"/>
+    </root>
+
+</configuration>
