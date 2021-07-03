@@ -690,7 +690,7 @@
 			"response": []
 		},
 		{
-			"name": "Service First",
+			"name": "Service PathVariable First",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -708,7 +708,24 @@
 			"response": []
 		},
 		{
-			"name": "ServiceSecond",
+			"name": "Service PathVariable None Value Default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/service",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Service PathVariable Second",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -726,7 +743,7 @@
 			"response": []
 		},
 		{
-			"name": "Service Third",
+			"name": "Service PathVariable Third",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -738,6 +755,75 @@
 					"path": [
 						"service",
 						"Third"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Service QueyParam First",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/service?adapter=First",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"service"
+					],
+					"query": [
+						{
+							"key": "adapter",
+							"value": "First"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Service QueyParam Second",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/service?adapter=Second",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"service"
+					],
+					"query": [
+						{
+							"key": "adapter",
+							"value": "Second"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Service QueyParam Third",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{UrlPathConcepts}}/service?adapter=Third",
+					"host": [
+						"{{UrlPathConcepts}}"
+					],
+					"path": [
+						"service"
+					],
+					"query": [
+						{
+							"key": "adapter",
+							"value": "Third"
+						}
 					]
 				}
 			},
