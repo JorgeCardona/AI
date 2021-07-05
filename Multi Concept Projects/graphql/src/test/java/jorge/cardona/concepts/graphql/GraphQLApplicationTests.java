@@ -9,6 +9,6 @@ class GraphQLApplicationTests {
 	@Test
 	void contextLoads() {
 
-		GraphQLApplication.main(new String[] {});
+		//GraphQLApplication.main(new String[] {});
 	}
 }

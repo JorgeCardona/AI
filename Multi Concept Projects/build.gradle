@@ -24,6 +24,31 @@ ext {
 
 	// package for Excluding
 	 excludePackage = 'jorge/cardona/concepts'
+
+
+	// configuracion de los directorios para los reportes con Jacoco
+	jacocoUnifiedReport = "multiConceptProjectsUnifiedReport"
+	jacocoReportsDirectory = "${buildDir}/reports"
+	jacocoXmlReportDirectory = "${jacocoReportsDirectory}/jacoco.xml"
+	jacocoHtmlReportDirectory = "${jacocoReportsDirectory}/jacoco.html"
+	multiConceptProjectsUnifiedReportDirectory = "${jacocoReportsDirectory}/jacoco/${jacocoUnifiedReport}/${jacocoUnifiedReport}.xml"
+
+	// configuracion de directorios y archivos a excluir de pruebas unitarias para reporte de cobertura
+	applicationPackageName   = 'jorge/cardona/concepts'
+}
+
+sonarqube {
+
+	properties {
+		property "sonar.sourceEnconding", "UTF-8"
+		property "sonar.projectName", "Jorge Cardona - Spring Boot Multi Concept Projects"
+		property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+		property "sonar.java.source", "11"
+		property "sonar.java.coveragePlugin", "jacoco"
+		property "sonar.jacoco.reportPaths", multiConceptProjectsUnifiedReportDirectory
+		property 'sonar.host.url', sonarQubeHost
+		property 'sonar.login', sonarQubeLogin
+	}
 }
 
 allprojects {
@@ -34,16 +59,13 @@ allprojects {
 	apply plugin: 'jacoco'
 	apply plugin: 'org.sonarqube'
 
-	// version del jacoco a usar en esta aplicacion esta en build.gradle
-//	jacoco{
-//		toolVersion = "${jacocoVersion}"
-//		reportsDir = file("${jacocoReportsDirectory}")
-//	}
-
 	repositories {
 		mavenCentral()
 	}
 
+	test{
+		useJUnitPlatform();
+	}
 
 	dependencies {
 		// permite que la aplicacion sea web
@@ -71,6 +93,11 @@ allprojects {
 		// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
 		implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
 		testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
+
+		// utilizado para pruebas unitarias
+		testImplementation('org.springframework.boot:spring-boot-starter-test') {
+			exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+		}
 	}
 }
 
@@ -78,4 +105,61 @@ subprojects {
 
 	dependencies {}
 
+	// reportes quedan el el directorio build/reports
+	jacocoTestReport {
+		dependsOn test
+		reports {
+			xml.enabled true
+			xml.destination file("${jacocoXmlReportDirectory}")
+			html.enabled true
+			html.destination file("${jacocoHtmlReportDirectory}")
+			csv.enabled false
+		}
+	}
+
+}
+
+// une los reportes dentro de un directorio, genera reportes individuales y crea un reporte unificado para publicar la cobertura de las pruebas unitarias
+task multiConceptProjectsUnifiedReport(type: JacocoReport) {
+
+	dependsOn = subprojects.jacocoTestReport
+	additionalSourceDirs.setFrom files(subprojects.sourceSets.main.allSource.srcDirs)
+	sourceDirectories.setFrom files(subprojects.sourceSets.main.allSource.srcDirs)
+	classDirectories.setFrom files(subprojects.sourceSets.main.output)
+	executionData.setFrom project.fileTree(dir:'.', include: '**/build/jacoco/test.exec')
+
+	// tipos de extensiones de arhivos en los cuales se va a generar reportes
+	reports{
+		html.enabled = true
+		xml.enabled = true
+		csv.enabled = false
+	}
+
+	onlyIf = {
+		true
+	}
+
+	doFirst {
+		executionData.setFrom project.fileTree(dir:'.', include: '**/build/jacoco/test.exec')
+	}
+
+	// excluye todos los archivos y carpetas que no se tienen en cuenta de pruebas unitarias para el reporte final del html, xml y que se sube al sonar
+	afterEvaluate {
+		classDirectories.setFrom(files(classDirectories.files.collect {
+			fileTree(dir: it, exclude:
+					[
+							"${applicationPackageName}/**/config**",
+							"${applicationPackageName}/**/**Application**"
+					])
+		}))
+	}
+}
+
+// tarea creada para ejecuta las tareas multiConceptProjectsUnifiedReport(para crear el reporte ) y luego sonarqube(que publica el reporte)
+task publishSonarCoverage(dependsOn:['multiConceptProjectsUnifiedReport', 'sonarqube'])
+
+tasks.withType(JavaCompile) {
+	options.compilerArgs = [
+			'-Amapstruct.suppressGeneratorTimestamp=true'
+	]
 }
