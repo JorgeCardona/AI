@@ -1,0 +1,8 @@
+rootProject.name = 'Multi_Concept_Projects'
+
+
+include "graphql"
+include 'jpa'
+include 'logback_executionorder_crossconfig_scheduling'
+include 'mongodb'
+include 'multiserviceadapter'

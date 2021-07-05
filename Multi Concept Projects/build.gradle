@@ -1,0 +1,81 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.10.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id "org.sonarqube" version "3.2.0"
+	id 'jacoco'
+}
+
+ext {
+
+	// variables Version
+	logstashLogbackEncoder = '6.6'
+	openApiVersion = '1.5.8'
+	actuatorVersion = '2.4.4'
+	junitVersion = '4.13.2'
+	jacocoToolVersion = "0.8.5"
+	mongoRepositoryVersion = '2.3.11.RELEASE'
+	embedMongoVersion = '3.0.0'
+
+	// SonarQube variables
+	sonarQubeVersion = '3.8.0.2131'
+	sonarQubeHost = 'http://localhost:9000'
+	sonarQubeLogin = '301fbc40ae451984e24194b712ba8a8a697686fb'
+
+	// package for Excluding
+	 excludePackage = 'jorge/cardona/concepts'
+}
+
+allprojects {
+
+	apply plugin: 'org.springframework.boot'
+	apply plugin: 'io.spring.dependency-management'
+	apply plugin: 'java'
+	apply plugin: 'jacoco'
+	apply plugin: 'org.sonarqube'
+
+	// version del jacoco a usar en esta aplicacion esta en build.gradle
+//	jacoco{
+//		toolVersion = "${jacocoVersion}"
+//		reportsDir = file("${jacocoReportsDirectory}")
+//	}
+
+	repositories {
+		mavenCentral()
+	}
+
+
+	dependencies {
+		// permite que la aplicacion sea web
+		// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+		implementation 'org.springframework.boot:spring-boot-starter-web'
+
+		// permite documentar la aplicacion con anotaciones de OpenApi 3 - Swagger
+		// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+		implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: openApiVersion
+
+		// permite generar el log en formato JSON
+		// https://mvnrepository.com/artifact/net.logstash.logback/logstash-logback-encoder
+		implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: logstashLogbackEncoder
+
+		// permite validar el estado de salud de la aplicacion
+		// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+		implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.3.10.RELEASE'
+
+		// Libreria para generar getters, setters, contructores con anotaciones @Data, @Build... y log @Slf4j
+		// https://mvnrepository.com/artifact/org.projectlombok/lombok
+		compileOnly 'org.projectlombok:lombok'
+		annotationProcessor 'org.projectlombok:lombok'
+
+		// Valida que los objetos cumplan con las restricciones @Valid
+		// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+		implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
+		testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.5'
+	}
+}
+
+subprojects {
+
+	dependencies {}
+
+}

@@ -1,0 +1,19 @@
+dependencies {
+
+	// permite que la aplicacion sea web
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// permite la persistencia de datos usando JPA Repository y CRUD Repository
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Base de Datos en memoria
+	// https://mvnrepository.com/artifact/com.h2database/h2
+	runtimeOnly 'com.h2database:h2'
+
+	// Libreria para generar getters, setters, contructores con anotaciones @Data, @Build... y log @Slf4j
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+}
