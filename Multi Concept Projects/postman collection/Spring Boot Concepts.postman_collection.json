@@ -766,12 +766,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{UrlPathConcepts}}/service?adapter=First",
+					"raw": "{{UrlPathConcepts}}/service/adapter?adapter=First",
 					"host": [
 						"{{UrlPathConcepts}}"
 					],
 					"path": [
-						"service"
+						"service",
+						"adapter"
 					],
 					"query": [
 						{
@@ -789,12 +790,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{UrlPathConcepts}}/service?adapter=Second",
+					"raw": "{{UrlPathConcepts}}/service/adapter?adapter=Second",
 					"host": [
 						"{{UrlPathConcepts}}"
 					],
 					"path": [
-						"service"
+						"service",
+						"adapter"
 					],
 					"query": [
 						{
@@ -812,12 +814,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{UrlPathConcepts}}/service?adapter=Third",
+					"raw": "{{UrlPathConcepts}}/service/adapter?adapter=Third",
 					"host": [
 						"{{UrlPathConcepts}}"
 					],
 					"path": [
-						"service"
+						"service",
+						"adapter"
 					],
 					"query": [
 						{

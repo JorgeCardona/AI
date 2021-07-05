@@ -2,10 +2,7 @@ package jorge.cardona.concepts.multiserviceadapter.controller;
 
 import jorge.cardona.concepts.multiserviceadapter.interfaces.ServiceRegistry;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/service")
@@ -17,5 +14,10 @@ public class ServiceController {
     @GetMapping("{service}")
     public String  processGet(@PathVariable String service) {
         return serviceRegistry.getService(service).process();
+    }
+
+    @GetMapping(value = "/adapter")
+    public String  processGetParameterVariable(@RequestParam(name="adapter", required = true, defaultValue = "First") String adapter) {
+        return serviceRegistry.getService(adapter).process();
     }
 }
