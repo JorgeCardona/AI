@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class InitializeBeans {
 
-
     @Bean
     ApplicationRunner loadNumberOrder(Numbers positions) {
         return args -> {

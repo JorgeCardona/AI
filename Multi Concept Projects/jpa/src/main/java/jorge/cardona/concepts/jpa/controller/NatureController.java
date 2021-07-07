@@ -139,7 +139,7 @@ public class NatureController {
 
     @ResponseStatus(HttpStatus.OK)
     @PostMapping(path = "/save")
-    public ResponseEntity save(@Valid @RequestBody NatureEntity natureEntity, Errors errors){
+    public ResponseEntity saveNature(@Valid @RequestBody NatureEntity natureEntity, Errors errors){
 
         if(errors.hasErrors()){
 

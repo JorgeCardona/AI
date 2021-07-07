@@ -19,7 +19,7 @@ spring:
     password: ${config.password:}
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
-  # http://localhost:8080/h2-console
+  # http://localhost:8080/api/h2-console
   h2:
     console:
       enabled: true
@@ -41,4 +41,4 @@ management:
     web:
       exposure:
         include: "*"
-        exclude: "mappings"
+        exclude: "mappings, env"

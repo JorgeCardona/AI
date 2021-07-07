@@ -2,7 +2,7 @@ package jorge.cardona.concepts.multiserviceadapter.service;
 import jorge.cardona.concepts.multiserviceadapter.interfaces.AdapterService;
 import org.springframework.stereotype.Service;
 
-@Service("First")
+@Service(value = "First")
 public class FirstService implements AdapterService {
 
     int serviceCall = 1;
