@@ -67,6 +67,12 @@ gradle build
 
 CREATE AND RUN DOCKER IMAGE
 ```
-docker build -t jorge-cardona-springboot-concepts .
+docker build -t jorge-cardona-springboot-concepts:1.0.0 .
 docker run --name jorge-cardona -p 8080:8080 -v /data/LogsFolder:/logs jorge-cardona-springboot-concepts
+```
+
+CREATE TAG AND PUSH IMAGE DOCKERHUB
+```
+docker tag jorge-cardona-springboot-concepts:1.0.0 jorgecardona/public:jorge-cardona-springboot-concepts
+docker push jorgecardona/public:jorge-cardona-springboot-concepts
 ```
