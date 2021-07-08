@@ -1,4 +1,4 @@
-# Enviroment Variables
+https://patorjk.com/software/taag/#p=display&v=0&f=Sta# Enviroment Variables
 ```
 ACTUATOR_ENV_VARIABLE_TEST=CONTENT TEST VALUE
 SPRING_PROFILES_ACTIVE=concepts
@@ -60,12 +60,14 @@ These additional references should also help you:
   <br>
   https://www.tutorialspoint.com/hibernate/hibernate_mapping_types.htm
 
-CREATE JAR FROM APPLICATION
+# CREATE JAR FROM APPLICATION
 ```
 gradle build
 ```
 
-DOCKERFILE
+# DOCKERFILE Configuration
+#### put Dockerfile, in the same directory of jar, build/libs
+### create a file named Dockerfile copy and paste the next commands
 ```
 FROM adoptopenjdk/openjdk11:alpine-jre
 
@@ -79,13 +81,14 @@ EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
-CREATE AND RUN DOCKER IMAGE
+# CREATE AND RUN DOCKER IMAGE
+#### open a console in the directory where is the Dockerfile
 ```
 docker build -t jorge-cardona-springboot-concepts:1.0.0 .
 docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFolder:/logs jorge-cardona-springboot-concepts:1.0.0
 ```
 
-CREATE TAG AND PUSH IMAGE DOCKERHUB
+# CREATE TAG AND PUSH IMAGE DOCKERHUB
 ```
 docker login
 docker tag jorge-cardona-springboot-concepts:1.0.0 jorgecardona/springboot_concepts:1.0.0
@@ -97,8 +100,36 @@ docker push jorgecardona/springboot_concepts:1.0.0
 https://hub.docker.com/r/adoptopenjdk/openjdk11/
 ```
 
-# Download and Run docker image for DOCKERHUB
+# Download and Run docker image for DOCKERHUB in local machine
 ```
 docker pull jorgecardona/springboot_concepts:1.0.0
 docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFolder:/logs jorgecardona/springboot_concepts:1.0.0
+```
+
+# Docker compose Configuration
+### create a file named docker-compose.yaml copy and paste the next commands
+```
+version: '3'
+services:
+  uno:
+    image: jorgecardona/springboot_concepts:1.0.0
+    ports:
+    - "8080:8080"
+  dos:
+    image: jorgecardona/springboot_concepts:1.0.0
+    ports:
+    - "8081:8080"
+```
+
+# Run and stop docker-compose
+#### open console when is docker-compose.yaml file and execute this command
+```
+### for start 
+docker-compose up
+
+### for stop containers
+docker-compose stop
+
+### for stop and remove containers
+docker-compose down
 ```

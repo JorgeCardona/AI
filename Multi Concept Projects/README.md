@@ -65,8 +65,9 @@ These additional references should also help you:
 gradle build
 ```
 
-# DOCKERFILE
+# DOCKERFILE Configuration
 #### put Dockerfile, in the same directory of jar, build/libs
+### create a file named Dockerfile copy and paste the next commands
 ```
 FROM adoptopenjdk/openjdk11:alpine-jre
 
@@ -104,3 +105,33 @@ https://hub.docker.com/r/adoptopenjdk/openjdk11/
 docker pull jorgecardona/springboot_concepts:1.0.0
 docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFolder:/logs jorgecardona/springboot_concepts:1.0.0
 ```
+
+# Docker compose Configuration
+### create a file named docker-compose.yaml copy and paste the next commands
+```
+version: '3'
+services:
+  uno:
+    image: jorgecardona/springboot_concepts:1.0.0
+    ports:
+    - "8080:8080"
+  dos:
+    image: jorgecardona/springboot_concepts:1.0.0
+    ports:
+    - "8081:8080"
+```
+
+# Run and stop docker-compose 
+#### open console when is docker-compose.yaml file and execute this command
+```
+### for start 
+docker-compose up
+
+### for stop containers
+docker-compose stop
+
+### for stop and remove containers
+docker-compose down
+```
+
+
