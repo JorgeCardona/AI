@@ -1,4 +1,4 @@
-https://patorjk.com/software/taag/#p=display&v=0&f=Sta# Enviroment Variables
+# Enviroment Variables
 ```
 ACTUATOR_ENV_VARIABLE_TEST=CONTENT TEST VALUE
 SPRING_PROFILES_ACTIVE=concepts

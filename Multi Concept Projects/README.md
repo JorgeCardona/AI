@@ -1,4 +1,4 @@
-https://patorjk.com/software/taag/#p=display&v=0&f=Sta# Enviroment Variables
+# Enviroment Variables
 ```
 ACTUATOR_ENV_VARIABLE_TEST=CONTENT TEST VALUE
 SPRING_PROFILES_ACTIVE=concepts
@@ -6,9 +6,9 @@ SPRING_PROFILES_ACTIVE=concepts
 
 # Install Sonar
 - Install Sonar in Docker
-    * docker pull sonarqube
+  * docker pull sonarqube
 - Start the server by running:
-    * docker run -d --name sonarqube_concepts -p 9000:9000 sonarqube
+  * docker run -d --name sonarqube_concepts -p 9000:9000 sonarqube
 - Log in to http://localhost:9000 with System Administrator credentials (login=admin, password=admin).
 - Click the Create new project button to analyze your first project.
 
@@ -121,7 +121,7 @@ services:
     - "8081:8080"
 ```
 
-# Run and stop docker-compose 
+# Run and stop docker-compose
 #### open console when is docker-compose.yaml file and execute this command
 ```
 ### for start 
@@ -133,5 +133,3 @@ docker-compose stop
 ### for stop and remove containers
 docker-compose down
 ```
-
-
