@@ -68,17 +68,23 @@ gradle build
 CREATE AND RUN DOCKER IMAGE
 ```
 docker build -t jorge-cardona-springboot-concepts:1.0.0 .
-docker run --name jorge-cardona -p 8080:8080 -v /data/LogsFolder:/logs jorge-cardona-springboot-concepts
+docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFolder:/logs jorge-cardona-springboot-concepts:1.0.0
 ```
 
 CREATE TAG AND PUSH IMAGE DOCKERHUB
 ```
-docker tag jorge-cardona-springboot-concepts:1.0.0 jorgecardona/public:jorge-cardona-springboot-concepts
-docker push jorgecardona/public:jorge-cardona-springboot-concepts
+docker login
+docker tag jorge-cardona-springboot-concepts:1.0.0 jorgecardona/springboot_concepts:1.0.0
+docker push jorgecardona/springboot_concepts:1.0.0
 ```
 
-DOWNLOAD AND RUN IMAGE SPRINGBOOT-CONCEPTS
+# Docker Images Java openjdk11 Versions
 ```
-docker pull jorgecardona/public:jorge-cardona-springboot-concepts
-docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFolder:/logs "IMAGE ID"
+https://hub.docker.com/r/adoptopenjdk/openjdk11/
+```
+
+# Download and Run docker image for DOCKERHUB
+```
+docker pull jorgecardona/springboot_concepts:1.0.0
+docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFolder:/logs jorgecardona/springboot_concepts:1.0.0
 ```
