@@ -68,5 +68,5 @@ gradle build
 CREATE AND RUN DOCKER IMAGE
 ```
 docker build -t jorge-cardona-springboot-concepts .
-docker run -p 8080:8080 jorge-cardona-springboot-concepts
+docker run --name jorge-cardona -p 8080:8080 -v /data/LogsFolder:/logs jorge-cardona-springboot-concepts
 ```
