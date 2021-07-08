@@ -6,9 +6,4 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpringBootSomeConceptsApplicationTests {
 
-	@Test
-	void contextLoads() {
-		SpringBootSomeConceptsApplication.main(new String[] {});
-	}
-
 }

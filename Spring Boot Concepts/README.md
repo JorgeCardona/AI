@@ -60,3 +60,13 @@ These additional references should also help you:
   <br>
   https://www.tutorialspoint.com/hibernate/hibernate_mapping_types.htm
 
+CREATE JAR FROM APPLICATION
+```
+gradle build
+```
+
+CREATE AND RUN DOCKER IMAGE
+```
+docker build -t jorge-cardona-springboot-concepts .
+docker run -p 8080:8080 jorge-cardona-springboot-concepts
+```
