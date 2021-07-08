@@ -25,7 +25,7 @@ bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
+!biuld/libs/Dockerfile
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
