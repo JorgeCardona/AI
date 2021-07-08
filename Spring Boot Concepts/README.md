@@ -76,3 +76,9 @@ CREATE TAG AND PUSH IMAGE DOCKERHUB
 docker tag jorge-cardona-springboot-concepts:1.0.0 jorgecardona/public:jorge-cardona-springboot-concepts
 docker push jorgecardona/public:jorge-cardona-springboot-concepts
 ```
+
+DOWNLOAD AND RUN IMAGE SPRINGBOOT-CONCEPTS
+```
+docker pull jorgecardona/public:jorge-cardona-springboot-concepts
+docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFolder:/logs "IMAGE ID"
+```
