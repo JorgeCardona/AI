@@ -1,20 +1,20 @@
 version: '3'
 services:
-  app1:
+  springboot_concepts:
     image: jorgecardona/springboot_concepts:1.0.0
     ports:
     - "5001-5003:8080"
     deploy:
         replicas: 3
     networks:
-        - "chat_net"
+        - "jorgecardona_net"
   nginx:
     build: ./nginx 
     ports:
     - "8080:80"
     networks:
-        - "chat_net"
+        - "jorgecardona_net"
     depends_on:
-      - app1
+      - springboot_concepts
 networks: 
-    chat_net:
+    jorgecardona_net:
