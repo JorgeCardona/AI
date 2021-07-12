@@ -1,4 +1,4 @@
-package jorge.cardona.concepts.controller;
+package jorge.cardona.concepts.others.controller;
 
 import jorge.cardona.concepts.others.util.RequestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
