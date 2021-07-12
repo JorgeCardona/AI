@@ -3,6 +3,7 @@ package jorge.cardona.concepts.controller;
 import jorge.cardona.concepts.util.RequestResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,9 @@ public class InternalServiceConsume {
 
     private String serviceUrlInternal = "http://localhost:8080/api/actuator/env";
     private String serviceUrlExternal = "http://localhost:8080/api/actuator/health";
+
+    @Autowired
+    RequestResponse data;
 
     @Autowired
     private RestTemplate restInternal;
@@ -56,7 +60,7 @@ public class InternalServiceConsume {
         map.put("FullPath Service to Request", httpServletRequest.getRequestURI());
         map.put("Complete URl Server to RequestURL", httpServletRequest.getRequestURL());
         map.put("ServicePath", httpServletRequest.getServletPath());
-        map.put("Headres", httpServletRequest.getLocalName());
+        map.put("Headers", httpServletRequest.getLocalName());
         map.put("Date", LocalDateTime.now());
 
         return ResponseEntity.ok(map);
@@ -66,14 +70,14 @@ public class InternalServiceConsume {
     @GetMapping(path = "/url")
     public ResponseEntity url(HttpServletRequest httpServletRequest){
 
-
         HashMap<Object, Object> map = new HashMap<>();
         map.put("ContextPath ", httpServletRequest.getContextPath());
         map.put("Method ", httpServletRequest.getMethod());
         map.put("RequestURL ", httpServletRequest.getRequestURL());
         map.put("ServletPath ", httpServletRequest.getServletPath());
         map.put("Date ", LocalDateTime.now());
+        map.put("LocalPort ", httpServletRequest.getLocalPort());
 
-        return ResponseEntity.ok(RequestResponse.response(httpServletRequest.getServletPath(), HttpStatus.OK, map));
+        return ResponseEntity.ok(data.response(httpServletRequest.getServletPath(), HttpStatus.OK, map));
     }
 }

@@ -60,6 +60,9 @@ management:
         include: "*"
         exclude: "mappings"
 
+#Uses java.util.UUID.randomUUID()
+id: ${random.uuid}
+
 # graphQL console -  - http://localhost:8080/api/gui
 graphql:
   spqr:

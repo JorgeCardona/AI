@@ -21,22 +21,9 @@ version:
     name : 'Spring Boot Concepts'
 
 spring:
-  #mongoDb Config
-  data:
-    mongodb:
-      database: fruit_db
-      port: 27017
-      host: localhost
   # start logo
   banner:
     location: /banner/logo.txt
-  # database configuration
-  datasource:
-    username: sa
-    password: ${config.password:}
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
-  # http://localhost:8080/h2-console
   h2:
     console:
       enabled: true
@@ -60,9 +47,5 @@ management:
         include: "*"
         exclude: "mappings"
 
-# graphQL console -  - http://localhost:8080/api/gui
-graphql:
-  spqr:
-    # enable graphic console for graphql
-    gui:
-      enabled: true
+#Uses java.util.UUID.randomUUID()
+id: ${random.uuid}
