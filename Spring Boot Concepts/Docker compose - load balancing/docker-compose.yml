@@ -1,11 +1,11 @@
 version: '3'
 services:
   springboot_concepts:
-    image: jorgecardona/springboot_concepts:1.0.0
+    image: jorgecardona/springboot_concepts:1.0.1
     ports:
-    - "5001-5003:8080"
+    - "5001-5005:8080"
     deploy:
-        replicas: 3
+        replicas: 5
     networks:
         - "jorgecardona_net"
   nginx:

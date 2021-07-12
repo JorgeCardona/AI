@@ -133,3 +133,9 @@ docker-compose stop
 ### for stop and remove containers
 docker-compose down
 ```
+
+# Validate loadbalancer
+#### open a navigator and put this link
+```
+http://localhost:8080/api/consume/url
+```
