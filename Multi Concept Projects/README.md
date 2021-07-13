@@ -81,6 +81,14 @@ EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
+# SEARCH DOCKER IMAGES in dockerhub using the command line
+#### open a console and put this command
+```
+# docker search topic that you want
+docker search anaconda
+```
+
+
 # CREATE AND RUN DOCKER IMAGE
 #### open a console in the directory where is the Dockerfile
 ```
@@ -134,8 +142,68 @@ docker-compose stop
 docker-compose down
 ```
 
+
+# Docker compose Configuration loadbalancer
+### create a file named docker-compose.yaml copy and paste the next commands
+```
+version: '3'
+services:
+  springboot_concepts:
+    image: jorgecardona/springboot_concepts:1.0.1
+    ports:
+    - "5001-5005:8080"
+    deploy:
+        replicas: 5
+    networks:
+        - "jorgecardona_net"
+  nginx:
+    build: ./nginx 
+    ports:
+    - "8080:80"
+    networks:
+        - "jorgecardona_net"
+    depends_on:
+      - springboot_concepts
+networks: 
+    jorgecardona_net:
+```
+
+# create configuration for NGINX
+#### create a folder with the name nginx in the same folder where docker-compose is, and inside create a file named nginx.conf copy and paste the next commands
+```
+upstream loadbalancer {
+}
+
+server {
+    location / {
+        proxy_pass http://loadbalancer;
+    }
+}
+```
+
+# create Dockerfile for NGINX
+#### in the same folder for the before step create a file named Dockerfile copy and paste the next commands
+```
+FROM nginx
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+```
+
+
 # Validate loadbalancer
 #### open a navigator and put this link
 ```
 http://localhost:8080/api/consume/url
+```
+
+# export image
+#### open console in the directory that you want to save the image and execute this command
+```
+docker save jorgecardona/springboot_concepts:1.00 > jorgecardona_springboot_concepts:1.00.tar
+```
+
+# load image
+#### open the console in the directory where the image you want to load is, and execute this command.
+```
+docker load < jorgecardona_springboot_concepts:1.00.tar
 ```
