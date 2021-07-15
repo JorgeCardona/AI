@@ -207,3 +207,16 @@ docker save jorgecardona/springboot_concepts:1.00 > jorgecardona_springboot_conc
 ```
 docker load < jorgecardona_springboot_concepts:1.00.tar
 ```
+
+# stop docker-compose
+#### Open the console in the directory where the docker-compose file is and that you are running that docker-compose, run this command.
+```
+docker-compose stop
+```
+
+
+# start docker-compose
+#### Open the console in the directory where the docker-compose file is and that docker-compose is paused, execute this command.
+```
+docker-compose start
+```
