@@ -196,14 +196,27 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 http://localhost:8080/api/consume/url
 ```
 
-# export image
+# export docker image
 #### open console in the directory that you want to save the image and execute this command
 ```
 docker save jorgecardona/springboot_concepts:1.00 > jorgecardona_springboot_concepts:1.00.tar
 ```
 
-# load image
+# load docker image
 #### open the console in the directory where the image you want to load is, and execute this command.
 ```
 docker load < jorgecardona_springboot_concepts:1.00.tar
+```
+
+
+# stop docker-compose
+#### Open the console in the directory where the docker-compose file is and that you are running that docker-compose, run this command.
+```
+docker-compose stop
+```
+
+# start docker-compose
+#### Open the console in the directory where the docker-compose file is and that docker-compose is paused, execute this command.
+```
+docker-compose start
 ```
