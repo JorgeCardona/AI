@@ -225,4 +225,5 @@ docker-compose stop
 # start docker-compose
 #### Open the console in the directory where the docker-compose file is and that docker-compose is paused, execute this command.
 ```
-docker
+docker-compose start
+```
