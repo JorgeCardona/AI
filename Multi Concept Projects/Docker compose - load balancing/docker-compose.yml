@@ -6,12 +6,15 @@ services:
     - "5001-5005:8080"
     deploy:
         replicas: 5
+    restart: always
     networks:
         - "jorgecardona_net"
   nginx:
-    build: ./nginx 
+    build: ./nginx
+    container_name: nginx_load_balancer 
     ports:
     - "8080:80"
+    restart: always
     networks:
         - "jorgecardona_net"
     depends_on:

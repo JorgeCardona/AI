@@ -119,14 +119,18 @@ docker run --name jorge-cardona-springboot-concepts -p 8080:8080 -v /data/LogsFo
 ```
 version: '3'
 services:
-  uno:
+  alpha:
     image: jorgecardona/springboot_concepts:1.0.0
     ports:
     - "8080:8080"
-  dos:
+    container_name: springboot_concepts_alpha
+    restart: always
+  beta:
     image: jorgecardona/springboot_concepts:1.0.0
     ports:
     - "8081:8080"
+    container_name: springboot_concepts_beta
+    restart: always
 ```
 
 # Run and stop docker-compose
@@ -154,12 +158,15 @@ services:
     - "5001-5005:8080"
     deploy:
         replicas: 5
+    restart: always
     networks:
         - "jorgecardona_net"
   nginx:
-    build: ./nginx 
+    build: ./nginx
+    container_name: nginx_load_balancer 
     ports:
     - "8080:80"
+    restart: always
     networks:
         - "jorgecardona_net"
     depends_on:
