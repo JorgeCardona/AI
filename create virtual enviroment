@@ -39,4 +39,4 @@ deactivate
 pip uninstall packagename -y
 
 # unistall all packages from requirements.txt
-python -m pip freeze > requirements.txt -y
+pip uninstall -r requirements.txt -y
