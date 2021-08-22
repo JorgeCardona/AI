@@ -40,3 +40,16 @@ pip uninstall packagename -y
 
 # unistall all packages from requirements.txt
 pip uninstall -r requirements.txt -y
+
+
+##############################################################
+################## WINDOWS AND LINUX AND DOCKER ##############
+#############################################################
+# unistall packages one by one
+pip install fastapi
+pip install uvicorn[standard]
+pip install SQLAlchemy
+pip install pytest
+
+# unistall packages in one codeline
+pip install fastapi uvicorn[standard] SQLAlchemy pytest
