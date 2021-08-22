@@ -26,11 +26,17 @@ source virtual_enviroment_name/bin/activate
 # upgrade pip virtualenv
 python -m pip install --upgrade pip
 
-# install dependencies
+# install package
 pip install -r requirements.txt
 
-# export dependencies
+# export all installed packages
 python -m pip freeze > requirements.txt
 
 # deactivate virtualenv
 deactivate
+
+# unistall specific package
+pip uninstall packagename -y
+
+# unistall all packages from requirements.txt
+python -m pip freeze > requirements.txt -y
