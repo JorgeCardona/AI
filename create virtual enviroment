@@ -50,6 +50,7 @@ pip install fastapi
 pip install uvicorn[standard]
 pip install SQLAlchemy
 pip install pytest
+pip install requests
 
 # install packages in one codeline
 pip install fastapi uvicorn[standard] SQLAlchemy pytest requests
