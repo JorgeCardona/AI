@@ -1,0 +1,56 @@
+##############################################################
+###################### JUST ON WINDOWS ######################
+#############################################################
+# install virtualenv windows
+pip install virtualenv
+
+##############################################################
+########################## JUST ON LINUX ######################
+#############################################################
+# install python3-pip
+sudo apt-get install python3-pip
+
+# install virtualenv
+sudo pip3 install virtualenv
+
+##############################################################
+#################### WINDOWS AND LINUX ######################
+#############################################################
+
+# create virtualenv Python 3
+virtualenv  virtual_enviroment_name -p python3
+
+# activate virtualenv
+source virtual_enviroment_name/bin/activate
+
+# upgrade pip virtualenv
+python -m pip install --upgrade pip
+
+# install package
+pip install -r requirements.txt
+
+# export all installed packages
+python -m pip freeze > requirements.txt
+
+# deactivate virtualenv
+deactivate
+
+# uninstall specific package
+pip uninstall packagename -y
+
+# uninstall all packages from requirements.txt
+pip uninstall -r requirements.txt -y
+
+
+##############################################################
+################## WINDOWS AND LINUX AND DOCKER ##############
+#############################################################
+# install packages one by one
+pip install fastapi
+pip install uvicorn[standard]
+pip install SQLAlchemy
+pip install pytest
+pip install requests
+
+# install packages in one codeline
+pip install fastapi uvicorn[standard] SQLAlchemy pytest requests
