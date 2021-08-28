@@ -49,8 +49,14 @@ pip uninstall -r requirements.txt -y
 pip install fastapi
 pip install uvicorn[standard]
 pip install SQLAlchemy
-pip install pytest
 pip install requests
+pip install psycopg2
+pip install pytest
+pip install pytest-cov
+
 
 # install packages in one codeline
-pip install fastapi uvicorn[standard] SQLAlchemy pytest requests
+pip install fastapi uvicorn[standard] SQLAlchemy requests psycopg2 pytest pytest-cov
+
+# execute and create HTML report
+pytest -v --cov=package_to_test --cov-report=html
