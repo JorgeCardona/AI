@@ -33,6 +33,21 @@ class UrlRecovery(BaseModel):
 
 class UrlUpdate(BaseModel):
 
+    original_url: str
+
+    class Config:
+        orm_mode = True
+
+
+class UrlOriginalUrl(BaseModel):
+
+    original_url: str
+
+    class Config:
+        orm_mode = True
+
+class UrlShortUrl(BaseModel):
+
     short_url: str
 
     class Config:

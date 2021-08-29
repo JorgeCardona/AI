@@ -9,6 +9,7 @@ import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 
 const url="http://127.0.0.1:8000/URL/";
+const ENCODING_DECODING_WORD = "CREATING-SHORT-URL"
 
 class App extends Component {
 state={
@@ -62,11 +63,11 @@ peticionPut=()=>{
   })
 }
 
-peticionPut2=(short_url)=>{
+peticionPatch=(short_url)=>{
 	
-	let transform_url = short_url.replaceAll('/', 'CHALLENGE-HEY-URL')
+	let transform_url = short_url.replaceAll('/', ENCODING_DECODING_WORD)
 
-	axios.put(url+transform_url).then(response=>{
+	axios.patch(url+transform_url).then(response=>{
     this.peticionGet();
 	
   })
@@ -149,7 +150,7 @@ console.log(this.state.form);
           <td>{empresa.created_at}</td>
           <td>{empresa.clicks}</td>
           <td>{empresa.original_url}</td>
-          <td ><button className="btn btn-primary" onClick={()=>this.peticionPut2(empresa.short_url)}>{empresa.short_url}</button></td>
+          <td ><button className="btn btn-primary" onClick={()=>this.peticionPatch(empresa.short_url)}>{empresa.short_url}</button></td>
           <td>{empresa.updated_at}</td> 
  <td>
                 <button className="btn btn-primary" onClick={()=>{this.seleccionarEmpresa(empresa); this.modalActualizar()}}><FontAwesomeIcon icon={faEdit}/></button>
