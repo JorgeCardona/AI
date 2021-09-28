@@ -1,4 +1,4 @@
-# docker run -name postgres-challenge -e POSTGRES_DB=challenge -e POSTGRES_PASSWORD=admin -e POSTGRES_USER=root  -d -p 8001:5432 postgres
+# docker run --name postgres-challenge -e POSTGRES_DB=challenge -e POSTGRES_PASSWORD=admin -e POSTGRES_USER=root  -d -p 8001:5432 postgres
 
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
