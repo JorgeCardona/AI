@@ -1,27 +1,45 @@
-##############################################################
+#############################################################
 ###################### JUST ON WINDOWS ######################
 #############################################################
 # install virtualenv windows
 pip install virtualenv
 
 ##############################################################
-########################## JUST ON LINUX ######################
-#############################################################
+########################## JUST ON LINUX #####################
+##############################################################
 # install python3-pip
 sudo apt-get install python3-pip
 
 # install virtualenv
 sudo pip3 install virtualenv
 
-##############################################################
+#############################################################
 #################### WINDOWS AND LINUX ######################
 #############################################################
 
 # create virtualenv Python 3
-virtualenv  virtual_enviroment_name -p python3
+virtualenv -p python3 envname virtual_enviroment_name
+
+# create virtualenv Python 3.7 o custome python version
+virtualenv -p python3.7 envname virtual_enviroment_name
+
+#############################################################
+###################### JUST ON WINDOWS ######################
+#############################################################
+
+# activate virtualenv
+virtual_enviroment_name\Scripts\activate
+
+##############################################################
+########################## JUST ON LINUX #####################
+##############################################################
 
 # activate virtualenv
 source virtual_enviroment_name/bin/activate
+
+#############################################################
+#################### WINDOWS AND LINUX ######################
+#############################################################
 
 # upgrade pip virtualenv
 python -m pip install --upgrade pip
@@ -44,7 +62,7 @@ pip uninstall -r requirements.txt -y
 
 ##############################################################
 ################## WINDOWS AND LINUX AND DOCKER ##############
-#############################################################
+##############################################################
 # install packages one by one
 pip install fastapi
 pip install uvicorn[standard]
