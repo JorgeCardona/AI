@@ -1,4 +1,14 @@
 #############################################################
+#################### READ YAML VARIABLES ####################
+#############################################################
+# lee variable de entorno
+LEYENDO:
+  VARIABLE_DE_ENTORNO_EN_VARIABLE_YAML:${VARIABLE_DE_ENTORNO:}
+  
+# lee una variable del yaml y asigna el valor a otra variable
+NUEVA_VARIABLE_YAML_LEYENDO_VARIABLE_DE_ENTORNO_EN_VARIABLE_YAML: ${LEYENDO.VARIABLE_DE_ENTORNO_EN_VARIABLE_YAML:}
+
+#############################################################
 ###################### JUST ON WINDOWS ######################
 #############################################################
 # install virtualenv windows
@@ -18,10 +28,10 @@ sudo pip3 install virtualenv
 #############################################################
 
 # create virtualenv Python 3
-virtualenv -p python3 envname virtual_enviroment_name
+virtualenv -p python3 virtual_enviroment_name
 
 # create virtualenv Python 3.7 o custome python version
-virtualenv -p python3.7 envname virtual_enviroment_name
+virtualenv -p python3.7 virtual_enviroment_name
 
 #############################################################
 ###################### JUST ON WINDOWS ######################
@@ -59,7 +69,6 @@ pip uninstall packagename -y
 # uninstall all packages from requirements.txt
 pip uninstall -r requirements.txt -y
 
-
 ##############################################################
 ################## WINDOWS AND LINUX AND DOCKER ##############
 ##############################################################
@@ -76,5 +85,8 @@ pip install pytest-cov
 # install packages in one codeline
 pip install fastapi uvicorn[standard] SQLAlchemy requests psycopg2 pytest pytest-cov
 
+##############################################################
+########## PYTHON UNIT TEST COVERAGE HTML REPORT  ############
+##############################################################
 # execute and create HTML report
 pytest -v --cov=package_to_test --cov-report=html
