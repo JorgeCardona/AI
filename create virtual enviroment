@@ -51,6 +51,10 @@ source virtual_enviroment_name/bin/activate
 #################### WINDOWS AND LINUX ######################
 #############################################################
 
+# show every installed package
+pip list
+pip freeze
+
 # upgrade pip virtualenv
 python -m pip install --upgrade pip
 
