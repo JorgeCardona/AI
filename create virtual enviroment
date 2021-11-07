@@ -26,6 +26,8 @@ sudo pip3 install virtualenv
 #############################################################
 #################### WINDOWS AND LINUX ######################
 #############################################################
+# force virtualenv update
+pip install --upgrade --force virtualenv
 
 # create virtualenv Python 3
 virtualenv -p python3 virtual_enviroment_name
