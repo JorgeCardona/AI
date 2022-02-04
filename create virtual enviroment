@@ -96,3 +96,8 @@ pip install fastapi uvicorn[standard] SQLAlchemy requests psycopg2 pytest pytest
 ##############################################################
 # execute and create HTML report
 pytest -v --cov=package_to_test --cov-report=html
+
+# just coverage for the main module
+pytest -v --cov=main --cov-report=html
+# coverage for all modules
+pytest -v --cov=. --cov-report=html
