@@ -101,3 +101,14 @@ pytest -v --cov=package_to_test --cov-report=html
 pytest -v --cov=main --cov-report=html
 # coverage for all modules
 pytest -v --cov=. --cov-report=html
+
+##############################################################
+################## APACHE ZEPPELIN DOCKER  ###################
+##############################################################
+
+docker run -p 8080:8080 zeppelin-simple:0.9.0
+
+##############################################################
+################# JUPYTER NOTEBOOK DOCKER  ###################
+##############################################################
+docker run --rm -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip=0.0.0.0 --port=8888 --no-browser --allow-root"
