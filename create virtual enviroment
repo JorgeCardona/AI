@@ -106,7 +106,7 @@ pytest -v --cov=. --cov-report=html
 ################## APACHE ZEPPELIN DOCKER  ###################
 ##############################################################
 
-docker run -p 8080:8080 zeppelin-simple:0.9.0
+docker run -p 8080:8080 --rm --name zeppelin apache/zeppelin:0.9.0 
 
 ##############################################################
 ################# JUPYTER NOTEBOOK DOCKER  ###################
