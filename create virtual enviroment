@@ -125,4 +125,4 @@ docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona
 ##############################################################
 #################### POSTGRESQL DOCKER  ######################
 ##############################################################
-docker run --name postgres-challenge -e POSTGRES_DB=challenge -e POSTGRES_PASSWORD=admin -e POSTGRES_USER=root  -d -p 8001:5432 postgres
+docker run --name postgres-challenge -e POSTGRES_DB=challenge -e POSTGRES_PASSWORD=12345678 -e POSTGRES_USER=root  -d -p 5432:5432 postgres
