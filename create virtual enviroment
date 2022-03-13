@@ -109,6 +109,11 @@ pytest -v --cov=. --cov-report=html
 docker run -p 8080:8080 --rm --name zeppelin apache/zeppelin:0.9.0 
 
 ##############################################################
+###################  JUPYTER LAB DOCKER  #####################
+##############################################################
+docker run --name lab -i -t -p 8888:8888 jorgecardona/jupyter
+
+##############################################################
 ################# JUPYTER NOTEBOOK DOCKER  ###################
 ##############################################################
-docker run --rm -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip=0.0.0.0 --port=8888 --no-browser --allow-root"
+docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
