@@ -113,7 +113,11 @@ docker run -p 8080:8080 --rm --name zeppelin apache/zeppelin:0.9.0
 ##############################################################
 docker run --name lab -i -t -p 8888:8888 jorgecardona/jupyter
 
+docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter
+
 ##############################################################
 ################# JUPYTER NOTEBOOK DOCKER  ###################
 ##############################################################
+docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
+
 docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
