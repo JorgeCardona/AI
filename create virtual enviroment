@@ -1,27 +1,61 @@
-##############################################################
+#############################################################
+#################### READ YAML VARIABLES ####################
+#############################################################
+# lee variable de entorno
+LEYENDO:
+  VARIABLE_DE_ENTORNO_EN_VARIABLE_YAML:${VARIABLE_DE_ENTORNO:}
+  
+# lee una variable del yaml y asigna el valor a otra variable
+NUEVA_VARIABLE_YAML_LEYENDO_VARIABLE_DE_ENTORNO_EN_VARIABLE_YAML: ${LEYENDO.VARIABLE_DE_ENTORNO_EN_VARIABLE_YAML:}
+
+#############################################################
 ###################### JUST ON WINDOWS ######################
 #############################################################
 # install virtualenv windows
 pip install virtualenv
 
 ##############################################################
-########################## JUST ON LINUX ######################
-#############################################################
+########################## JUST ON LINUX #####################
+##############################################################
 # install python3-pip
 sudo apt-get install python3-pip
 
 # install virtualenv
 sudo pip3 install virtualenv
 
-##############################################################
+#############################################################
 #################### WINDOWS AND LINUX ######################
 #############################################################
+# force virtualenv update
+pip install --upgrade --force virtualenv
 
 # create virtualenv Python 3
-virtualenv  virtual_enviroment_name -p python3
+virtualenv -p python3 virtual_enviroment_name
+
+# create virtualenv Python 3.7 o custome python version
+virtualenv -p python3.7 virtual_enviroment_name
+
+#############################################################
+###################### JUST ON WINDOWS ######################
+#############################################################
+
+# activate virtualenv
+virtual_enviroment_name\Scripts\activate
+
+##############################################################
+########################## JUST ON LINUX #####################
+##############################################################
 
 # activate virtualenv
 source virtual_enviroment_name/bin/activate
+
+#############################################################
+#################### WINDOWS AND LINUX ######################
+#############################################################
+
+# show every installed package
+pip list
+pip freeze
 
 # upgrade pip virtualenv
 python -m pip install --upgrade pip
@@ -41,10 +75,9 @@ pip uninstall packagename -y
 # uninstall all packages from requirements.txt
 pip uninstall -r requirements.txt -y
 
-
 ##############################################################
 ################## WINDOWS AND LINUX AND DOCKER ##############
-#############################################################
+##############################################################
 # install packages one by one
 pip install fastapi
 pip install uvicorn[standard]
@@ -58,5 +91,44 @@ pip install pytest-cov
 # install packages in one codeline
 pip install fastapi uvicorn[standard] SQLAlchemy requests psycopg2 pytest pytest-cov
 
+##############################################################
+########## PYTHON UNIT TEST COVERAGE HTML REPORT  ############
+##############################################################
 # execute and create HTML report
 pytest -v --cov=package_to_test --cov-report=html
+
+# just coverage for the main module
+pytest -v --cov=main --cov-report=html
+# coverage for all modules
+pytest -v --cov=. --cov-report=html
+
+##############################################################
+################## APACHE ZEPPELIN DOCKER  ###################
+##############################################################
+
+docker run -p 8080:8080 --rm --name zeppelin apache/zeppelin:0.9.0 
+
+##############################################################
+###################  JUPYTER LAB DOCKER  #####################
+##############################################################
+docker run --name lab -i -t -p 8888:8888 jorgecardona/jupyter
+
+docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter
+
+##############################################################
+################# JUPYTER NOTEBOOK DOCKER  ###################
+##############################################################
+docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
+
+docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
+
+##############################################################
+#################### POSTGRESQL DOCKER  ######################
+##############################################################
+docker run --name postgres-challenge -e POSTGRES_DB=challenge -e POSTGRES_PASSWORD=12345678 -e POSTGRES_USER=root  -d -p 5432:5432 postgres
+
+##############################################################
+################ WEBS PARA PROBRAR REQUEST  ##################
+##############################################################
+https://httpbin.org/#/
+https://httpbin.org/uuid
