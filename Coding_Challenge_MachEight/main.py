@@ -8,4 +8,7 @@ app = FastAPI()
 @app.get("/{inches}")
 def get_couples(inches: int):
     
-    return RecoveryData(url=URL, inches=inches).get_process_data()
+    return RecoveryData(inches=inches).get_process_data(url=URL)
+
+
+# pytest -v --cov=. --cov-report=html
