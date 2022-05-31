@@ -8,7 +8,7 @@ python 3, fastAPI, uvicorn, pytest, more_itertools, request.
 
 ## Requirements
 ### In a virtual environment or python environment, set the PYTHON_PATH environment variable and later, execute the next command
-pip install requirements.txt
+pip install -r requirements.txt
 
 
 ## Unit Tests
