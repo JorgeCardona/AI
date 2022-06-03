@@ -94,13 +94,21 @@ pip install fastapi uvicorn[standard] SQLAlchemy requests psycopg2 pytest pytest
 ##############################################################
 ########## PYTHON UNIT TEST COVERAGE HTML REPORT  ############
 ##############################################################
+# run unit test for every module
+pytest -v 
+
 # execute and create HTML report
 pytest -v --cov=package_to_test --cov-report=html
 
 # just coverage for the main module
 pytest -v --cov=main --cov-report=html
+
 # coverage for all modules
 pytest -v --cov=. --cov-report=html
+
+# show missing lines for cover unit testing
+pytest -v --cov-report term-missing --cov=directory_where_my_project_is    directory_where_the_unit_test_files_are/
+pytest -v --cov-report term-missing --cov=. test/
 
 ##############################################################
 ################## APACHE ZEPPELIN DOCKER  ###################
