@@ -207,3 +207,9 @@ kubectl delete -f app.yml
 
 # ELIMINA EL SERVICIO CREADO 
 kubectl delete service nombre-servicio-a-eliminar
+
+# ELIMINA TODOS LOS DEPLOYMENTS
+kubectl delete --all deployments
+
+# ELIMINA TODOS LOS SERVICIOS
+kubectl delete --all services
