@@ -147,6 +147,31 @@ https://httpbin.org/uuid
 # elimina todas las imagenes con nombre NONE
 docker rmi $(docker images -f “dangling=true” -q)
 
+# detener todos los contenedores docker que se estan ejecutando
+docker kill $(docker ps -q)
+
+# detener un contenedor docker que se estan ejecutando
+docker stop nombre-del-contenedor
+docker stop id-del-contenedor
+
+# iniciar un contenedor docker que ya fue creado y esta detenido
+docker start nombre-del-contenedor
+docker start id-del-contenedor
+
+# eliminar todas los contenedores creados
+docker rm $(docker ps -a -q)
+
+# eliminar un contenedores especifico
+docker rm nombre-del-contenedor
+docker rm ii-del-contenedor
+
+# eliminar todas las imagenes de docker
+docker rmi $(docker images -q)
+
+# eliminar una imagen docker en especifico
+docker rmi nombre-de-la-imagen-docker
+docker rmi id-de-la-imagen-docker
+
 ##############################################################
 ################### COMANDOS KUBERNETES  #####################
 ##############################################################
