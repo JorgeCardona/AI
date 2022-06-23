@@ -165,6 +165,9 @@ kubectl get services
 # CONSULTAR LOS PODS
 kubectl get pods
 
+# CONSULTAR EL PUERTO DONDE SE ESTAN EJECUTANDO LOS PODS
+kubectl get svc
+
 # CONSULTAR INFORMACION DETALLADA DE LOS PODS
 kubectl describe pod nombre-del-pod-a-revisar-con-detalle
 
@@ -172,10 +175,10 @@ kubectl describe pod nombre-del-pod-a-revisar-con-detalle
 kubectl scale deployment --replicas=5 nombre-del-servicio-a-escalar
 
 # ELIMINAR DESPLIEGUE DE LA IMAGEN 
-kubectl delete deployment jorgecardona/jupyter
+kubectl delete deployment nombre-del-deployment-a-eliminar
 
 # ELIMINAR EL DESPLIEGUE HECHO CON EL ARCHIVO app.YAML
 kubectl delete -f app.yml
 
 # ELIMINA EL SERVICIO CREADO 
-kubectl delete service servicio-creado-con-el-yaml
+kubectl delete service nombre-servicio-a-eliminar
