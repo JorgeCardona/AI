@@ -140,3 +140,36 @@ docker run --name postgres-challenge -e POSTGRES_DB=challenge -e POSTGRES_PASSWO
 ##############################################################
 https://httpbin.org/#/
 https://httpbin.org/uuid
+
+##############################################################
+################### COMANDOS KUBERNETES  #####################
+##############################################################
+# CONSULTAR NODOS
+kubectl get nodes
+
+# CREAR UN DEPLOYMENT
+kubectl apply -f .\archivo-con-codigo-deployment.yaml
+
+# CONSULTAR LOS DEPLOYMENTS
+kubectl get deployments
+
+# CONSULTAR LOS SERVICIOS
+kubectl get services 
+
+# CONSULTAR LOS PODS
+kubectl get pods
+
+# CONSULTAR INFORMACION DETALLADA DE LOS PODS
+kubectl describe pod nombre-del-pod-a-revisar-con-detalle
+
+# ESCALAR UN SERVICIO EN KUBERNETES
+kubectl scale deployment --replicas=5 nombre-del-servicio-a-escalar
+
+# ELIMINAR DESPLIEGUE DE LA IMAGEN 
+kubectl delete deployment jorgecardona/jupyter
+
+# ELIMINAR EL DESPLIEGUE HECHO CON EL ARCHIVO app.YAML
+kubectl delete -f app.yml
+
+# ELIMINA EL SERVICIO CREADO 
+kubectl delete service servicio-creado-con-el-yaml
