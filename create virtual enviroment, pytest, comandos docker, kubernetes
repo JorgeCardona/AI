@@ -196,8 +196,13 @@ kubectl get ns
 # CONSULTAR LOS PODS
 kubectl get pods
 
-# CONSULTAR EL PUERTO DONDE SE ESTAN EJECUTANDO LOS PODS
-kubectl get svc
+# CONSULTAR LAS REPLICAS
+kubectl get replicaset
+kubectl get rs
+
+# CONSULTAR EL ESCALAMIENTO HORIZONTAL DE LOS PODS
+kubectl get horizontalpodautoscaler
+kubectl get hpa
 
 # CONSULTAR INFORMACION DETALLADA DE LOS PODS
 kubectl describe pod nombre-del-pod-a-revisar-con-detalle
