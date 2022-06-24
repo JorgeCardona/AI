@@ -213,3 +213,18 @@ kubectl delete --all deployments
 
 # ELIMINA TODOS LOS SERVICIOS
 kubectl delete --all services
+
+# ELIMINA TODOS LOS NAMESPACES
+kubectl delete --all namespaces
+
+# LISTAR LOS NAMESPACES
+kubectl get namespaces
+
+# ELIMINAR UN NAMESPACE
+kubectl delete namespace nombre-del-name-space-a-eliminar
+
+# CREAR UN NUEVO NAMESPACE
+kubectl create namespace nombre-del-name-space-a-crear
+
+# CAMBIAR A UN NAMESPACE ESPECIFICO
+kubectl config set-context --current --namespace=nombre-del-name-space-a-donde-se-quiere-cambiar
