@@ -183,9 +183,15 @@ kubectl apply -f .\archivo-con-codigo-deployment.yaml
 
 # CONSULTAR LOS DEPLOYMENTS
 kubectl get deployments
+kubectl get deploy
 
 # CONSULTAR LOS SERVICIOS
 kubectl get services 
+kubectl get svc
+
+# CONSULTAR LOS NAMESPACES
+kubectl get namespaces
+kubectl get ns
 
 # CONSULTAR LOS PODS
 kubectl get pods
@@ -216,9 +222,6 @@ kubectl delete --all services
 
 # ELIMINA TODOS LOS NAMESPACES
 kubectl delete --all namespaces
-
-# LISTAR LOS NAMESPACES
-kubectl get namespaces
 
 # ELIMINAR UN NAMESPACE
 kubectl delete namespace nombre-del-name-space-a-eliminar
