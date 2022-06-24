@@ -207,6 +207,9 @@ kubectl get hpa
 # CONSULTAR INFORMACION DETALLADA DE LOS PODS
 kubectl describe pod nombre-del-pod-a-revisar-con-detalle
 
+# CONSULTAR LOG DE LOS PODS
+kubectl logs nombre-del-pod-a-revisar-el-log
+
 # ESCALAR UN SERVICIO EN KUBERNETES
 kubectl scale deployment --replicas=5 nombre-del-servicio-a-escalar
 
