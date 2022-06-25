@@ -245,4 +245,5 @@ kubectl scale deployment --replicas=5 nombre-del-servicio-a-escalar
 kubectl create namespace nombre-del-name-space-a-crear
 
 # CAMBIAR A UN NAMESPACE ESPECIFICO
+kubectl config set-context --namespace=nombre-del-name-space-a-donde-se-quiere-cambiar
 kubectl config set-context --current --namespace=nombre-del-name-space-a-donde-se-quiere-cambiar
