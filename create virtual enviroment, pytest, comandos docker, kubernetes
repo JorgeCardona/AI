@@ -206,6 +206,10 @@ kubectl delete namespace nombre-del-name-space-a-eliminar
 # CONSULTAR NODOS
 kubectl get nodes
 
+# CONSULTAR DEMONSETS
+kubectl get daemonsets
+kubectl get ds
+
 # CREAR UN DEPLOYMENT
 kubectl apply -f .\archivo-con-codigo-deployment.yaml
 
