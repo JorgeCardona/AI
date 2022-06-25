@@ -175,6 +175,34 @@ docker rmi id-de-la-imagen-docker
 ##############################################################
 ################### COMANDOS KUBERNETES  #####################
 ##############################################################
+
+# ELIMINA TODOS LOS NODOS
+kubectl delete --all nodes
+
+# ELIMINA UN NODO ESPECIFICO
+kubectl delete node nombre-del-nodo-a-eliminar
+
+# ELIMINA TODOS LOS DEPLOYMENTS
+kubectl delete --all deployments
+
+# ELIMINAR DEPLOYMENT ESPECIFICO
+kubectl delete deployment nombre-del-deployment-a-eliminar
+
+# ELIMINAR EL DEPLOYMENT HECHO CON EL ARCHIVO app.YAML
+kubectl delete -f app.yml
+
+# ELIMINA TODOS LOS SERVICIOS
+kubectl delete --all services
+
+# ELIMINA EL SERVICIO CREADO 
+kubectl delete service nombre-servicio-a-eliminar
+
+# ELIMINA TODOS LOS NAMESPACES
+kubectl delete --all namespaces
+
+# ELIMINAR UN NAMESPACE
+kubectl delete namespace nombre-del-name-space-a-eliminar
+
 # CONSULTAR NODOS
 kubectl get nodes
 
@@ -212,27 +240,6 @@ kubectl logs nombre-del-pod-a-revisar-el-log
 
 # ESCALAR UN SERVICIO EN KUBERNETES
 kubectl scale deployment --replicas=5 nombre-del-servicio-a-escalar
-
-# ELIMINAR DESPLIEGUE DE LA IMAGEN 
-kubectl delete deployment nombre-del-deployment-a-eliminar
-
-# ELIMINAR EL DESPLIEGUE HECHO CON EL ARCHIVO app.YAML
-kubectl delete -f app.yml
-
-# ELIMINA EL SERVICIO CREADO 
-kubectl delete service nombre-servicio-a-eliminar
-
-# ELIMINA TODOS LOS DEPLOYMENTS
-kubectl delete --all deployments
-
-# ELIMINA TODOS LOS SERVICIOS
-kubectl delete --all services
-
-# ELIMINA TODOS LOS NAMESPACES
-kubectl delete --all namespaces
-
-# ELIMINAR UN NAMESPACE
-kubectl delete namespace nombre-del-name-space-a-eliminar
 
 # CREAR UN NUEVO NAMESPACE
 kubectl create namespace nombre-del-name-space-a-crear
