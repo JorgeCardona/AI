@@ -1,0 +1,17 @@
+# puerto donde se expone la aplicacion
+server:
+    port : 9999
+    # start path for the API
+    servlet:
+        context-path: /
+
+# actuator - http://localhost:9999/actuator
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+                exclude: "mappings"
+
+# para generar el .jar en el directorio .\build\libs
+# gradlew clean build
