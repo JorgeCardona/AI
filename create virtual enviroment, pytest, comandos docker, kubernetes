@@ -265,4 +265,4 @@ minikube start
 
 # INICIAR DASHBOARD MINIKUBE
 minikube dashboard --port 8765
-http://localhost:8765/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
+# http://localhost:8765/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
