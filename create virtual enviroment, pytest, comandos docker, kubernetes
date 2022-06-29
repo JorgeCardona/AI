@@ -255,3 +255,14 @@ kubectl config set-context --current --namespace=nombre-del-name-space-a-donde-s
 # EXPONER UN POD EN UN PUERTO ESPECIFICO
 kubectl port-forward nombre-del-pod-a-exponer 6543:9999#puerto original don de se expone la aplicacion
 springboot-deployment-load-balancer-577c887df6-29z9d
+
+# KUBERNETES DASHBOARD
+kubectl proxy --port 1978
+# http://localhost:1978/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
+
+# INICIAR MINIKUE
+minikube start
+
+# INICIAR DASHBOARD MINIKUBE
+minikube dashboard --port 8765
+http://localhost:8765/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
