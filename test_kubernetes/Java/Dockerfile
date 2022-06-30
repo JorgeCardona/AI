@@ -1,7 +1,9 @@
-# docker build -t jorgecardona/java-ip-for-test-kubernetes .
-# docker run --rm -d --name=javakubertest -p 9888:9999 jorgecardona/java-ip-for-test-kubernetes:latest
+# docker build -t jorgecardona/test-kubernetes-ip-java-17:v1 .
+# docker run --rm -d --name=javakubertest -p 9888:9999 jorgecardona/test-kubernetes-ip-java-17:v1
 # http://localhost:9888
 # http://localhost:9888/actuator
+# http://localhost:9888/api metodo POST -> body {"hostname": "http://localhost","port": 5555}
+# http://localhost:9888/web?url=https://raw.githubusercontent.com/JorgeCardona/skills/master/Python/DB/PeriodicTable.json
 
 FROM openjdk:17-alpine
 

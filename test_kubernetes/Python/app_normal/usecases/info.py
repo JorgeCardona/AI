@@ -2,6 +2,7 @@ import socket
 import sys
 from fastapi import __version__
 import requests
+# poner los dos . puntos literales para importar el modulo, sino genera error al crear la imagen de docker
 from models.hosts import Host
 
 def get_internal_info():
