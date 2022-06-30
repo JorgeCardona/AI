@@ -17,6 +17,12 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.7.1'
+	// https://mvnrepository.com/artifact/org.json/json
+	implementation group: 'org.json', name: 'json', version: '20220320'
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 
 }
 

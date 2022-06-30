@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script>
+function getResponse() {
+
+	// api url
+	const api_url = "http://localhost:9999";
+
+	// Defining async function
+	async function getapi(url) {
+		
+		// Storing response
+		const response = await fetch(url);
+		
+		// Storing data in form of JSON
+		var data = await response.json();
+		console.log(data); //muestra la respuesta en la consola del navegador
+		
+		if (response) {
+			hideloader();
+		}
+		
+		// muestra el contenido de la respuesta de la API en JSON
+		showResponse(data);
+	}
+	// Calling that async function
+	getapi(api_url);
+
+	// Function to hide the loader
+	function hideloader() {
+		document.getElementById('loading').style.display = 'none';
+	}
+
+	function showResponse(data){
+		// convierte un objecto tipo json a string
+		const myArray = JSON.stringify(data, null, 6);
+
+		document.getElementById("ApiResponse").innerHTML = myArray;
+	}
+}
+</script>
+
+
+<script>
+function postResponse() {
+
+	// api url
+	const api_url = "http://localhost:9999/api";
+	
+	// el body que debe recibir la api
+	const body_data = {
+			"host": {
+				"hostname": "http://localhost",
+				"port": 5555
+					}
+			}
+	// los headers		
+	const header = {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+	
+	// todos los parametros a enviar al request
+	const params = {
+		headers:header,
+		body:JSON.stringify(body_data),
+		method:"POST"
+	}
+
+	// Defining async function
+	async function getapi(url) {
+		
+		// Storing response
+		const response = await fetch(url,params);
+		
+		// Storing data in form of JSON
+		var data = await response.json();
+		console.log(data);//muestra la respuesta en la consola del navegador
+		
+		if (response) {
+			hideloader();
+		}
+		
+		// muestra el contenido de la respuesta de la API en JSON
+		showResponse(data);
+	}
+	// Calling that async function
+	getapi(api_url);
+
+	// Function to hide the loader
+	function hideloader() {
+		document.getElementById('loading').style.display = 'none';
+	}
+
+	function showResponse(data){
+		// convierte un objecto tipo json a string
+		const myArray = JSON.stringify(data, null, 6);
+
+		document.getElementById("ApiResponse").innerHTML = myArray;
+	}
+}
+</script>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Here a loader is created which 
+             loads till response comes -->
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" 
+                 role="status" id="loading">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <h1>Api Response</h1>
+		<button type="button" onclick="getResponse()">Api Response GET Method</button>
+		<button type="button" onclick="postResponse()">Api Response POST Method</button>		
+        <!-- table for showing data -->
+        <pre id="ApiResponse"></pre >
+    </body>
+</html>
