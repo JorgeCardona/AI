@@ -256,8 +256,20 @@ kubectl config set-context --current --namespace=nombre-del-name-space-a-donde-s
 kubectl port-forward nombre-del-pod-a-exponer 6543:9999#puerto original don de se expone la aplicacion
 springboot-deployment-load-balancer-577c887df6-29z9d
 
-# KUBERNETES DASHBOARD
-kubectl proxy --port 1978
+# DESPLEGAR EL DASHBOARD DE KUBERNETES
+# kubectl apply -f https://raw.githubusercontent.com/JorgeCardona/skills/master/Kubernetes/dashboard/dashboard-recommended.yaml
+
+# CREAR LOS USUARIOS PARA EL DASHBOARD
+# kubectl apply -f https://raw.githubusercontent.com/JorgeCardona/skills/master/Kubernetes/dashboard/dashboard-adminuser.yaml
+
+# HABILITAR EL ACCESO AL DASHBOARD
+# kubectl proxy --port=1978
+
+# GENERAR EL TOKEN PARA ACCEDER AL DASHBOARD
+# kubectl -n kubernetes-dashboard create token admin-user
+
+# ACCEDER AL DASHBOARD
+# http://localhost:1978/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy
 # http://localhost:1978/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
 
 # INICIAR MINIKUE
