@@ -175,6 +175,8 @@ docker rmi id-de-la-imagen-docker
 ##############################################################
 ################### COMANDOS KUBERNETES  #####################
 ##############################################################
+# MUESTRA LOS RECURSOS CONSUMIDOS POR EL NODO
+kubectl top node
 
 # ELIMINA TODOS LOS NODOS
 kubectl delete --all nodes
