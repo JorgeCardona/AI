@@ -209,6 +209,12 @@ kubectl delete --all namespaces
 # ELIMINAR UN NAMESPACE
 kubectl delete namespace nombre-del-name-space-a-eliminar
 
+# LISTAR TODOS LOS x DE UN NAMESPACE
+kubectl get x --all-namespaces
+kubectl get pods --all-namespaces
+kubectl get svc --all-namespaces
+kubectl get deploy --all-namespaces
+
 # CONSULTAR NODOS
 kubectl get nodes
 
