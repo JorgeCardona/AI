@@ -232,6 +232,7 @@ kubectl get namespaces
 kubectl get ns
 
 # CONSULTAR LOS PODS
+kubectl po
 kubectl get pods
 
 # CONSULTAR LAS REPLICAS
