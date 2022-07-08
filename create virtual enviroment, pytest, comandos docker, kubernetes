@@ -277,6 +277,9 @@ kubectl get pods
 # CONSULTAR LAS VARIABLES DE ENTORNO DE UN POD
 kubectl exec nombre-del-pod -- printenv
 
+# UTILIZAR LA LINEA DE COMANDOS DENTRO DE UN POD
+kubectl exec nombre-del-pod -it -- bash
+
 # CONSULTAR LAS REPLICAS
 kubectl get replicaset
 kubectl get rs
