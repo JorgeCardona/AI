@@ -274,6 +274,9 @@ kubectl get ns
 kubectl po
 kubectl get pods
 
+# CONSULTAR LAS VARIABLES DE ENTORNO DE UN POD
+kubectl exec nombre-del-pod -- printenv
+
 # CONSULTAR LAS REPLICAS
 kubectl get replicaset
 kubectl get rs
