@@ -175,6 +175,26 @@ docker rmi id-de-la-imagen-docker
 ##############################################################
 ################### COMANDOS KUBERNETES  #####################
 ##############################################################
+# MUESTRA EL LISTADO DE LOS NOMBRES DE COMANDOS DE KUBERNETES
+kubectl --help
+kubectl -h
+
+# MUESTRA LA DESCRIPCION DE UN MANIFIESTO DE UN RECURSO DE KUBERNETES CAMPO POR CAMPO
+#kubectl explain X
+kubectl explain pod
+kubectl explain deployment
+kubectl explain service
+# explica una etiqueta en especifico
+kubectl explain deployment.spec.replicas
+ 
+# MUESTRA LA LISTA DE RECURSOS ORDENADOS POR ORDEN ALFABETICO, https://kubernetes.io/docs/reference/kubectl/cheatsheet/#viewing-finding-resources
+kubectl get x --sort-by=metadata.name
+kubectl get namespaces --sort-by=metadata.name
+
+# MUESTRA LA LISTA DE RECURSOS ORDENADOS POR FECHA DE CREACION 
+kubectl get x --sort-by=metadata.creationTimestamp
+kubectl get pods --sort-by=metadata.creationTimestamp
+
 # MUESTRA LOS RECURSOS CONSUMIDOS POR TODOS LOS NODOS
 kubectl describe nodes
 kubectl top nodes
