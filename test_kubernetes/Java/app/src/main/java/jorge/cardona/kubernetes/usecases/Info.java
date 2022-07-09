@@ -13,9 +13,16 @@ import java.util.Map;
 
 public class Info {
 
-    public static Map<String, String> getInternalInfo() throws UnknownHostException {
+    public static Map<String, String> getEnvironmentVariables() {
+        Map<String, String> envMap = System.getenv();
 
-        Map<String, String> map = new HashMap<>();
+        return envMap;
+    }
+
+    public static Map<String, Object> getInternalInfo() throws UnknownHostException {
+
+        Map<String, Object> map = new HashMap<>();
+        Map<String, String> environmentVariables = getEnvironmentVariables();
 
         Runtime.Version runtimeVersion = Runtime.version();
         String version = String.valueOf(runtimeVersion.version().get(0));
@@ -34,10 +41,20 @@ public class Info {
 
     }
 
+    public static Map<String, Object> getAllInfo() throws UnknownHostException {
+
+        Map<String, Object> map = getInternalInfo();
+        Map<String, String> environmentVariables = getEnvironmentVariables();
+        map.put("Pod - Image  -> Environment Variables", environmentVariables);
+
+        return map;
+
+    }
+
     public static Map<Object, Object> getExternalWeb(String url) throws UnknownHostException {
 
         Map<Object, Object> map = new HashMap();
-        Map<String, String> internalInfo = getInternalInfo();
+        Map<String, Object> internalInfo = getInternalInfo();
 
         map.put("Local API Data Information", internalInfo);
 
@@ -62,7 +79,7 @@ public class Info {
     public static Map<Object, Object> getExternalApiResponse(String url, int port) throws UnknownHostException, JsonProcessingException {
 
         Map<Object, Object> map = new HashMap();
-        Map<String, String> internalInfo = getInternalInfo();
+        Map<String, Object> internalInfo = getInternalInfo();
 
         map.put("Local API Data Information",internalInfo);
 

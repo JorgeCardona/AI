@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # poner el . punto literal para importar el modulo, sino genera error al crear la imagen de docker
 from configuration.cors import origins
 from models.hosts import Host
-from usecases.info import get_internal_info, get_external_api_response, get_external_web
+from usecases.info import get_internal_info, get_external_api_response, get_external_web, get_enviroment_variables, get_all_info
 # uvicorn main:app --host 0.0.0.0 --reload --port 5555
 app = FastAPI()
 
@@ -25,6 +25,16 @@ def get_info():
 #def get_api_response(host: Host = Body(embed=True)):
 def get_api_response(host: Host):
     return get_external_api_response(host=host)
+
+@app.get("/all")
+def get_variables():
+    
+    return get_all_info()
+
+@app.get("/env")
+def get_variables():
+    
+    return get_enviroment_variables()
 
 @app.get("/web")
 def get_web(url:str):    

@@ -4,6 +4,10 @@ from fastapi import __version__
 import requests
 # poner los dos . puntos literales para importar el modulo, sino genera error al crear la imagen de docker
 from ..models.hosts import Host
+import os
+
+def get_enviroment_variables():
+    return os.environ.items()
 
 def get_internal_info():
     hostname=socket.gethostname()   
@@ -17,6 +21,12 @@ def get_internal_info():
         "Pod - Image  -> hostname/ip": f"{hostname}/{IPAddr}",
         "Pod - Image  -> ip": IPAddr
     }
+
+def get_all_info():
+    
+    actualinfo = get_internal_info()
+    actualinfo[ "Pod - Image  -> Environment Variables"] = get_enviroment_variables()
+    return actualinfo
 
 def get_external_info(host: Host):
     try:

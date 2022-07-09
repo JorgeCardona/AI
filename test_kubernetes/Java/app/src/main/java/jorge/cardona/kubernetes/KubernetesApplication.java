@@ -16,10 +16,16 @@ public class KubernetesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KubernetesApplication.class, args);
+
+		Map<String, String> envMap = System.getenv();
+
+		for (String envName : envMap.keySet()) {
+			System.out.format("%s = %s%n", envName, envMap.get(envName));
+		}
 	}
 
 	@GetMapping("/")
-	public Map<String, String> getInfo() throws UnknownHostException {
+	public Map<String, Object> getInfo() throws UnknownHostException {
 		return Info.getInternalInfo();
 	}
 
@@ -28,10 +34,22 @@ public class KubernetesApplication {
 		return Info.getExternalApiResponse(host.getHostname(), host.getPort());
 	}
 
+	@GetMapping("/all")
+	public Map<String, Object> getAllInfo() throws UnknownHostException {
+		return Info.getAllInfo();
+	}
+
+	@GetMapping("/env")
+	public Map<String, String> getVariables() {
+		return Info.getEnvironmentVariables();
+	}
+
 	@GetMapping("/web")
 	public Map<Object, Object> getApiResponseExternalSite(@RequestParam String url) throws IOException {
 		return Info.getExternalWeb(url);
 	}
+
+
 
 }
 
