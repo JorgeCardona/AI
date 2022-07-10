@@ -79,7 +79,7 @@ public class Info {
     public static Map<Object, Object> getExternalApiResponse(String url, int port) throws UnknownHostException, JsonProcessingException {
 
         Map<Object, Object> map = new HashMap();
-        Map<String, Object> internalInfo = getInternalInfo();
+        Map<String, Object> internalInfo = getAllInfo();
 
         map.put("Local API Data Information",internalInfo);
 
