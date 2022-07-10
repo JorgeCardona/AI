@@ -98,6 +98,10 @@ public class Info {
             map.put("error","website not found");
         }
         finally {
+
+            System.out.println("----");
+            System.out.println(map);
+            System.out.println("----");
             return map;
         }
     }

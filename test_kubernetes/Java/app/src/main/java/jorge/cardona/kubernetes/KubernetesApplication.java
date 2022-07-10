@@ -43,8 +43,4 @@ public class KubernetesApplication {
 		return Info.getExternalWeb(url);
 	}
 
-
-
 }
-
-
