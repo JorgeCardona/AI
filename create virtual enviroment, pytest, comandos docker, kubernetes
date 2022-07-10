@@ -187,6 +187,14 @@ kubectl explain service
 # explica una etiqueta en especifico
 kubectl explain deployment.spec.replicas
  
+# MUESTRA LA CONFIGURACION DEL MANIFIESTO DE UN RECURSO EXPECIFICO
+#kubectl get TIPO-DE-OBJETO NOMBRE-DEL-OBJETO -o yaml
+kubectl get svc multipod-svc -o yaml
+
+# EXPORTA LA CONFIGURACION DEL MANIFIESTO DE UN RECURSO EXPECIFICO
+#kubectl get TIPO-DE-OBJETO NOMBRE-DEL-OBJETO -o yaml > NOMBRE-DEL-ARCHIVO.yaml
+kubectl get svc multi-container-pod-svc -o yaml > manifest-svc-config.yaml
+
 # MUESTRA LA LISTA DE RECURSOS ORDENADOS POR ORDEN ALFABETICO, https://kubernetes.io/docs/reference/kubectl/cheatsheet/#viewing-finding-resources
 kubectl get x --sort-by=metadata.name
 kubectl get namespaces --sort-by=metadata.name
@@ -195,6 +203,9 @@ kubectl get namespaces --sort-by=metadata.name
 kubectl get x --sort-by=metadata.creationTimestamp
 kubectl get pods --sort-by=metadata.creationTimestamp
 
+# MUESTRA LOS NODOS DE UN CLUSTER
+kubectl get nodes
+ 
 # MUESTRA LOS RECURSOS CONSUMIDOS POR TODOS LOS NODOS
 kubectl describe nodes
 kubectl top nodes
@@ -250,7 +261,7 @@ kubectl run --rm -it --image=alpine -- sh
 # kubectl logs nombre del pod o contenedor a revisar los logs
 kubectl logs sh
 
-# MOSTRAR EL MANIFIESTO DE UN RECURSO
+# MOSTRAR COMO QUEDARIA EL MANIFIESTO DE UN RECURSO SIN CREAR EL RECURSO
 # kubectl run nombre-del-recurso --image=alpine --dry-run=client -o yaml
 kubectl run nombre-del-recurso --image=alpine --dry-run=client -o yaml
 # kubectl create deployment nombre-del-recurso --image=alpine --dry-run=client -o yaml # client porque es para solo kubectl local
