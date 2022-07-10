@@ -54,7 +54,7 @@ public class Info {
     public static Map<Object, Object> getExternalWeb(String url) throws UnknownHostException {
 
         Map<Object, Object> map = new HashMap();
-        Map<String, Object> internalInfo = getInternalInfo();
+        Map<String, Object> internalInfo = getAllInfo();
 
         map.put("Local API Data Information", internalInfo);
 

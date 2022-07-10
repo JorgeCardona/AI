@@ -26,7 +26,7 @@ def get_api_response(host: Host):
     return get_external_api_response(host=host)
 
 @app.get("/all")
-def get_variables():
+def get_all_info():
     
     return get_all_info()
 
