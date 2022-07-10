@@ -43,7 +43,7 @@ def get_external_api_response(host: Host):
     response = {}
     
     response["Response from External API Consumed"] = get_external_info(host)
-    response["Local API Base Data"] = get_internal_info() 
+    response["Local API Base Data"] = get_all_info() 
     
     return response
     
@@ -54,6 +54,6 @@ def get_external_web(url:str):
     except Exception:        
         response ={"error": "website not found"}
     else:        
-        response["Local API Base Data"] = get_internal_info()        
+        response["Local API Base Data"] = get_all_info()        
     finally:
         return response
