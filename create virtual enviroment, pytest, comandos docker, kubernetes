@@ -193,7 +193,7 @@ kubectl get svc multipod-svc -o yaml
 
 # EXPORTA LA CONFIGURACION DEL MANIFIESTO DE UN RECURSO EXPECIFICO
 #kubectl get TIPO-DE-OBJETO NOMBRE-DEL-OBJETO -o yaml > NOMBRE-DEL-ARCHIVO.yaml
-kubectl get svc multipod-svc -o yaml > manifest-svc-config.yaml
+kubectl get svc multi-container-pod-svc -o yaml > manifest-svc-config.yaml
 
 # MUESTRA LA LISTA DE RECURSOS ORDENADOS POR ORDEN ALFABETICO, https://kubernetes.io/docs/reference/kubectl/cheatsheet/#viewing-finding-resources
 kubectl get x --sort-by=metadata.name
