@@ -1,11 +1,13 @@
 # docker build -t jorgecardona/test-kubernetes-ip-python-3.10.5:v1 .
 # docker run --rm -d --name=pythonkubertest -p 5555:5000 jorgecardona/test-kubernetes-ip-python-3.10.5:v1
-# test la aplicacion en http://localhost:5555
+# test la aplicacion en 
+# http://localhost:5555
 # http://localhost:5555/items/7?q=31
 # http://localhost:5555/docs
 # http://localhost:5555/api metodo POST -> body {"hostname": "http://localhost","port": 9888}
 # http://localhost:5555/web?url=https://raw.githubusercontent.com/JorgeCardona/skills/master/Python/DB/PeriodicTable.json
-
+# http://localhost:5555/env -> muestra las variables de entorno
+# http://localhost:5555/all -> informacion base + variables de entorno
 
 # define la version de python a instalar basado en la imagen oficial -> python 3.10.5
 FROM python:alpine3.16
