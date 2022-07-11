@@ -22,7 +22,7 @@ def get_internal_info():
         "Pod - Image  -> ip": IPAddr
     }
 
-def get_all_info():
+def get_complete_info():
     
     actualinfo = get_internal_info()
     actualinfo[ "Pod - Image  -> Environment Variables"] = get_enviroment_variables()
@@ -43,7 +43,7 @@ def get_external_api_response(host: Host):
     response = {}
     
     response["Response from External API Consumed"] = get_external_info(host)
-    response["Local API Base Data"] = get_all_info() 
+    response["Local API Base Data"] = get_complete_info() 
     
     return response
     
@@ -54,6 +54,6 @@ def get_external_web(url:str):
     except Exception:        
         response ={"error": "website not found"}
     else:        
-        response["Local API Base Data"] = get_all_info()        
+        response["Local API Base Data"] = get_complete_info()        
     finally:
         return response
