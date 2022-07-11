@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from configuration.cors import origins
 from models.hosts import Host
 from usecases.info import get_internal_info, get_external_api_response, get_external_web, get_enviroment_variables, get_complete_info
-# uvicorn main:app --host 0.0.0.0 --reload --port 5555
+# uvicorn main:app --host localhost --reload --port 5555
 app = FastAPI()
 
 
