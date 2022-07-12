@@ -5,6 +5,15 @@ server:
     servlet:
         context-path: /
 
+#open API Swagger - http://localhost:9999/docs
+springdoc:
+    #path for load swagger documentation in html
+    swagger-ui:
+        path: /docs
+        #path for load swagger documentation in json
+    api-docs:
+        path: /json
+
 # actuator - http://localhost:9999/actuator
 management:
     endpoints:

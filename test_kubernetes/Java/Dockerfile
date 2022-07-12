@@ -3,6 +3,7 @@
 # test la aplicacion en 
 # http://localhost:9888
 # http://localhost:9888/actuator
+# http://localhost:9888/docs -> swagger
 # http://localhost:9888/api metodo POST -> body {"hostname": "http://localhost","port": 5555}
 # http://localhost:9888/web?url=https://raw.githubusercontent.com/JorgeCardona/skills/master/Python/DB/PeriodicTable.json
 # http://localhost:9888/env -> muestra las variables de entorno

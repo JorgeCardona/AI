@@ -24,6 +24,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	// permite documentar la aplicacion con anotaciones de OpenApi 3 - Swagger
+	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.9'
+
 }
 
 tasks.named('test') {
