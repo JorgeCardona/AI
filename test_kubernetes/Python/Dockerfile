@@ -8,6 +8,8 @@
 # http://localhost:5555/web?url=https://raw.githubusercontent.com/JorgeCardona/skills/master/Python/DB/PeriodicTable.json
 # http://localhost:5555/env -> muestra las variables de entorno
 # http://localhost:5555/all -> informacion base + variables de entorno
+# http://localhost:5555/info -> muestra el contenido guardado en un archivo compartido info.txt
+# http://localhost:5555/saveinfo -> guarda informacion en el archivo info.txt
 
 # define la version de python a instalar basado en la imagen oficial -> python 3.10.5
 FROM python:alpine3.16

@@ -6,11 +6,14 @@ import requests
 from ..models.hosts import Host
 import os
 
+from pathlib import Path
+
+
 def get_enviroment_variables():
     return os.environ.items()
 
 def get_internal_info():
-    hostname=socket.gethostname()   
+    hostname=socket.gethostname()
     IPAddr=socket.gethostbyname(hostname)
 
     return {
@@ -57,3 +60,41 @@ def get_external_web(url:str):
         response["Local API Base Data"] = get_complete_info()        
     finally:
         return response
+   
+   
+def set_directory_files(directory:str='/data/files'):
+
+    Path(f'{directory}').mkdir(parents=True, exist_ok=True)
+    
+    os.chdir(directory)
+    
+    return os.listdir()
+ 
+def get_content_file(file_name:str='info.txt'):
+    
+    set_directory_files()
+    print(os.getcwd())
+    print(os.listdir())
+    
+    try:
+        with open(file_name, "r") as file:
+            content = file.readlines()
+    except Exception:
+        content = None
+    finally:
+        return content
+    
+    
+def save_content_file(file_name:str='info.txt', message:str='Informacion Compartida'):
+    
+    set_directory_files()
+    
+    try:
+        with open(file_name, "a") as file:
+            file.write(f'Python {sys.version} Informacion Adicionada Usando Python -> {message} \n')
+    except Exception:
+        message ={"error": "File not found"}
+    else:
+        message = get_content_file()
+    finally:
+        return message

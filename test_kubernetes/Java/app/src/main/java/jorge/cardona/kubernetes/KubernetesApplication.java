@@ -1,5 +1,6 @@
 package jorge.cardona.kubernetes;
 
+import jorge.cardona.kubernetes.models.Content;
 import jorge.cardona.kubernetes.models.Host;
 import jorge.cardona.kubernetes.usecases.Info;
 import org.springframework.boot.SpringApplication;
@@ -43,4 +44,13 @@ public class KubernetesApplication {
 		return Info.getExternalWeb(url);
 	}
 
+	@PostMapping("/saveinfo")
+	public String getApiResponse(@RequestBody Content content) throws IOException {
+		return Info.setContentFile(content.getMessage());
+	}
+
+	@GetMapping("/info")
+	public String getInfoFromShareFile() throws IOException {
+		return Info.getContentFile();
+	}
 }

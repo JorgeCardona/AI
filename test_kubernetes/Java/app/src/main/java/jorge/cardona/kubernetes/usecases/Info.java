@@ -6,12 +6,66 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.core.SpringVersion;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.*;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.nio.charset.Charset;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Info {
+
+    public static final String path = "/data/files";
+    public static final String archivo = path + "/info.txt";
+
+    public static String setDirectorioDeArchivos() {
+
+        File directorio = new File(path);
+        String mensaje = null;
+
+        if (!directorio.exists()) {
+            try {
+                directorio.mkdirs();
+                mensaje = "Directorio creado";
+            } catch (SecurityException e) {
+                mensaje = "No se pudo crear el directorio";
+            }
+            return mensaje;
+
+        } else {
+            return "El directorio ya estaba creado";
+        }
+    }
+
+    public static String setContentFile(String message) throws IOException {
+
+        setDirectorioDeArchivos();
+        FileWriter archivoDeDatos = new FileWriter(archivo, Charset.forName("UTF-8"), true);
+        archivoDeDatos.append("Java Version " + System.getProperty("java.version") + " Informacion Adicionada Usando Java -> " + message + "\n");
+        archivoDeDatos.close();
+
+        return getContentFile();
+
+    }
+
+    public static String getContentFile() throws IOException {
+
+        Path filePath = Path.of(archivo);
+
+        StringBuilder contentBuilder = new StringBuilder();
+        try (BufferedReader br = new BufferedReader(new FileReader(String.valueOf(filePath)))) {
+            String sCurrentLine;
+            while ((sCurrentLine = br.readLine()) != null) {
+                contentBuilder.append(sCurrentLine).append("\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return contentBuilder.toString();
+    }
+
 
     public static Map<String, String> getEnvironmentVariables() {
         Map<String, String> envMap = System.getenv();
@@ -60,18 +114,17 @@ public class Info {
 
         RestTemplate request = new RestTemplate();
 
-        try{
+        try {
             String response = request.getForObject(url, String.class);
 
             ObjectMapper mapper = new ObjectMapper();
             JsonNode node = mapper.readTree(response);
 
-            map.put("Response from External API Consumed",node);
+            map.put("Response from External API Consumed", node);
 
         } catch (Exception e) {
-            map.put("error","website not found");
-        }
-        finally {
+            map.put("error", "website not found");
+        } finally {
             return map;
         }
     }
@@ -81,24 +134,25 @@ public class Info {
         Map<Object, Object> map = new HashMap();
         Map<String, Object> internalInfo = getAllInfo();
 
-        map.put("Local API Data Information",internalInfo);
+        map.put("Local API Data Information", internalInfo);
 
         RestTemplate request = new RestTemplate();
         String address = url + ":" + port;
 
-        try{
+        try {
             String response = request.getForObject(address, String.class);
 
             ObjectMapper mapper = new ObjectMapper();
             JsonNode node = mapper.readTree(response);
 
-            map.put("Response from External API Consumed",node);
+            map.put("Response from External API Consumed", node);
 
         } catch (Exception e) {
-            map.put("error","website not found");
-        }
-        finally {
+            map.put("error", "website not found");
+        } finally {
             return map;
         }
     }
+
+
 }
