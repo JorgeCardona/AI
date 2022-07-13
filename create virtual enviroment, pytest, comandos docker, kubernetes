@@ -261,6 +261,10 @@ kubectl run --rm -it --image=alpine -- sh
 # kubectl logs nombre del pod o contenedor a revisar los logs
 kubectl logs sh
 
+# MUESTRA LOS LOGS EN UN CONTENEDOR ESPECIFICO DENTRO DE UN POD - CUANDO HAY MULTIPLES CONTENEDORES EN UN POD
+# kubectl logs nombre-del-pod --container=nombre-del-contenedor
+kubectl logs multicontainer-pod-loadbalancer --container=python
+
 # MOSTRAR COMO QUEDARIA EL MANIFIESTO DE UN RECURSO SIN CREAR EL RECURSO
 # kubectl run nombre-del-recurso --image=alpine --dry-run=client -o yaml
 kubectl run nombre-del-recurso --image=alpine --dry-run=client -o yaml
@@ -291,6 +295,10 @@ kubectl exec nombre-del-pod -- printenv
 # UTILIZAR LA LINEA DE COMANDOS DENTRO DE UN POD
 kubectl exec nombre-del-pod -it -- sh
 kubectl exec nombre-del-pod -it -- bash
+
+# EJECUTAR COMANDOS EN UN CONTENEDOR ESPECIFICO DENTRO DE UN POD - CUANDO HAY MULTIPLES CONTENEDORES EN UN POD
+# kubectl exec nombre-del-pod --container=nombre-del-contenedor -it -- sh
+kubectl exec multicontainer-pod-loadbalancer --container=java -it -- sh
 
 # CONSULTAR LAS REPLICAS
 kubectl get replicaset
