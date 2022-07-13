@@ -1,9 +1,18 @@
+spring:
+    banner:
+        location: /banner/logo.txt
+
 # puerto donde se expone la aplicacion
 server:
     port : 9999
     # start path for the API
     servlet:
         context-path: /
+
+variablesconfigmap:
+    directorio: "${VARIABLE_1:/data/files}"
+    archivo: "${VARIABLE_2:info.txt}"
+    fullpath: "${variablesconfigmap.directorio}/${variablesconfigmap.archivo}"
 
 #open API Swagger - http://localhost:9999/docs
 springdoc:
