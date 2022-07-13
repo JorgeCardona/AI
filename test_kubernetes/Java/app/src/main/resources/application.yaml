@@ -10,8 +10,8 @@ server:
         context-path: /
 
 variablesconfigmap:
-    directorio: "${VARIABLE_1:/data/files}"
-    archivo: "${VARIABLE_2:info.txt}"
+    directorio: "${DIRECTORIO:/data/files}"
+    archivo: "${ARCHIVO:info.txt}"
     fullpath: "${variablesconfigmap.directorio}/${variablesconfigmap.archivo}"
 
 #open API Swagger - http://localhost:9999/docs

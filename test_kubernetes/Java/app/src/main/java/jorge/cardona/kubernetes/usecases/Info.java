@@ -170,14 +170,14 @@ public class Info {
         if (file.exists()) {
             try {
                 file.delete();
-                mensaje = "Archivo eliminado";
+                mensaje = config.getFullpath() + " Archivo eliminado";
             } catch (SecurityException e) {
-                mensaje = "No se pudo eliminar el archivo";
+                mensaje = "No se pudo eliminar el archivo " + config.getFullpath();
             }
             return mensaje;
 
         } else {
-            return "El archivo no existe";
+            return "El archivo " + config.getFullpath() +  " no existe";
         }
     }
 
@@ -189,14 +189,14 @@ public class Info {
         if (!file.exists()) {
             try {
                 file.createNewFile();
-                mensaje = "Archivo creado";
+                mensaje = config.getFullpath() + " Archivo creado";
             } catch (SecurityException | IOException e) {
                 mensaje = "No se pudo crear el archivo";
             }
             return mensaje;
 
         } else {
-            return "El archivo ya estaba creado";
+            return "El archivo " + config.getFullpath() + " ya estaba creado";
         }
     }
 

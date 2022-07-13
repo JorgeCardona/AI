@@ -1,6 +1,5 @@
 package jorge.cardona.kubernetes;
 
-import jorge.cardona.kubernetes.models.Config;
 import jorge.cardona.kubernetes.models.Content;
 import jorge.cardona.kubernetes.models.Host;
 import jorge.cardona.kubernetes.usecases.Info;
@@ -26,8 +25,6 @@ public class KubernetesApplication {
 
 	@GetMapping("/")
 	public Map<String, Object> getInfo() throws UnknownHostException {
-		System.out.println(info.getConfig());
-
 		return info.getInternalInfo();
 	}
 
