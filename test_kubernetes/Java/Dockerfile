@@ -4,10 +4,18 @@
 # http://localhost:9888
 # http://localhost:9888/actuator
 # http://localhost:9888/docs -> swagger
-# http://localhost:9888/api metodo POST -> body {"hostname": "http://localhost","port": 5555}
+# http://localhost:9888/env
+# http://localhost:9888/all
+# http://localhost:9888/api POST Method -> body {"hostname": "http://localhost","port": 5555}
+# http://localhost:9888/web -> GET METHOD http://localhost:9888/web?url=http://localhost:5555/env
 # http://localhost:9888/web?url=https://raw.githubusercontent.com/JorgeCardona/skills/master/Python/DB/PeriodicTable.json
-# http://localhost:9888/env -> muestra las variables de entorno
-# http://localhost:9888/all -> informacion base + variables de entorno
+# http://localhost:9888/readInfoFromFile -> read data from file
+# http://localhost:9888/saveInfoToFile POST->  POST Method -> body {"message": "Jorge Cardona have added Information"}
+# http://localhost:9888/createFile -> POST no boby is needed
+# http://localhost:9888/deleteFile DELETE -> delete created file
+# docker stop javakubertest 
+
+
 
 FROM openjdk:17-alpine
 
@@ -16,7 +24,7 @@ MAINTAINER JorgeCardona
 
 EXPOSE 9999
 
-ARG JAR_FILE=*.jar
+ARG JAR_FILE=./app/build/libs/kubernetes-0.0.1-SNAPSHOT.jar
 
 COPY ${JAR_FILE} app.jar
 

@@ -2,14 +2,16 @@
 # docker run --rm -d --name=pythonkubertest -p 5555:5000 jorgecardona/test-kubernetes-ip-python-3.10.5:v1
 # test la aplicacion en 
 # http://localhost:5555
-# http://localhost:5555/items/7?q=31
-# http://localhost:5555/docs
-# http://localhost:5555/api metodo POST -> body {"hostname": "http://localhost","port": 9888}
+# http://localhost:5555/docs -> swagger
+# http://localhost:5555/env
+# http://localhost:5555/all
+# http://localhost:5555/api POST Method -> body {"hostname": "http://localhost","port": 9888}
+# http://localhost:5555/web -> GET METHOD http://localhost:5555/web?url=http://localhost:9888/env
 # http://localhost:5555/web?url=https://raw.githubusercontent.com/JorgeCardona/skills/master/Python/DB/PeriodicTable.json
-# http://localhost:5555/env -> muestra las variables de entorno
-# http://localhost:5555/all -> informacion base + variables de entorno
-# http://localhost:5555/info -> muestra el contenido guardado en un archivo compartido info.txt
-# http://localhost:5555/saveinfo -> guarda informacion en el archivo info.txt
+# http://localhost:5555/readInfoFromFile -> read data from file
+# http://localhost:5555/saveInfoToFile POST->  POST Method -> body {"message": "Jorge Cardona have added Information"}
+# http://localhost:5555/createFile -> POST no boby is needed
+# http://localhost:5555/deleteFile DELETE -> delete created file
 
 # define la version de python a instalar basado en la imagen oficial -> python 3.10.5
 FROM python:alpine3.16

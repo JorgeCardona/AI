@@ -9,6 +9,10 @@ import os
 from pathlib import Path
 
 
+directorio = os.getenv('DIRECTORIO', default='/data/files')
+archivo = os.getenv('ARCHIVO', default='info.txt')
+fullpath = directorio + '/' + archivo
+
 def get_enviroment_variables():
     return os.environ.items()
 
@@ -62,19 +66,19 @@ def get_external_web(url:str):
         return response
    
    
-def set_directory_files(directory:str='/data/files'):
+def set_directory_files(directory:str=directorio):
 
     Path(f'{directory}').mkdir(parents=True, exist_ok=True)
     
     os.chdir(directory)
     
+    create_file()
+    
     return os.listdir()
  
-def get_content_file(file_name:str='info.txt'):
+def get_content_file(file_name:str=archivo):
     
     set_directory_files()
-    print(os.getcwd())
-    print(os.listdir())
     
     try:
         with open(file_name, "r") as file:
@@ -85,16 +89,41 @@ def get_content_file(file_name:str='info.txt'):
         return content
     
     
-def save_content_file(file_name:str='info.txt', message:str='Informacion Compartida'):
+def save_content_file(file_name:str=archivo, message:str='Informacion Compartida'):
     
     set_directory_files()
+    hostname=socket.gethostname()
     
     try:
         with open(file_name, "a") as file:
-            file.write(f'Python {sys.version} Informacion Adicionada Usando Python -> {message} \n')
+            file.write(f'Python {sys.version} Host {hostname} Informacion Adicionada-> {message} \n')
     except Exception:
         message ={"error": "File not found"}
     else:
         message = get_content_file()
+    finally:
+        return message
+    
+def delete_file(file_name:str=archivo):
+    
+    try:
+        os.remove(archivo)
+        os.chdir(directorio)
+    except Exception:
+        message ={"error": f"El archivo {fullpath} no existe"}
+    else:
+        message = f"El archivo {fullpath} fue eliminado"
+    finally:
+        return message
+    
+def create_file(file_name:str=archivo):
+    
+    try:
+        with open(file_name, "x") as file:
+            file.write(f'')
+    except Exception:
+        message ={"error": f"El archivo {fullpath} ya existe"}
+    else:
+        message = f"El archivo {fullpath} fue creado"
     finally:
         return message
