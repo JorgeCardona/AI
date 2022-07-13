@@ -8,7 +8,6 @@ import os
 
 from pathlib import Path
 
-
 directorio = os.getenv('DIRECTORIO', default='/data/files')
 archivo = os.getenv('ARCHIVO', default='info.txt')
 fullpath = directorio + '/' + archivo
@@ -93,10 +92,11 @@ def save_content_file(file_name:str=archivo, message:str='Informacion Compartida
     
     set_directory_files()
     hostname=socket.gethostname()
+    IPAddr=socket.gethostbyname(hostname)
     
     try:
         with open(file_name, "a") as file:
-            file.write(f'Python {sys.version} Host {hostname} Informacion Adicionada-> {message} \n')
+            file.write(f'Python {sys.version} Host {hostname} IP {IPAddr} Informacion Adicionada-> {message} \n')
     except Exception:
         message ={"error": "File not found"}
     else:

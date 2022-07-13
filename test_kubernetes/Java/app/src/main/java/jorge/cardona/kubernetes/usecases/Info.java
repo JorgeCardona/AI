@@ -48,7 +48,10 @@ public class Info {
 
         setDirectorioDeArchivos();
         FileWriter archivoDeDatos = new FileWriter(config.getFullpath(), Charset.forName("UTF-8"), true);
-        archivoDeDatos.append("Java Version " + System.getProperty("java.version") + " Host " + InetAddress.getLocalHost().getHostAddress() + "  Informacion Adicionada "+ message + "\n");
+        String ip = InetAddress.getLocalHost().getHostAddress();
+        String hostname = InetAddress.getLocalHost().getHostName();
+
+        archivoDeDatos.append("Java Version " + System.getProperty("java.version") + " Host " + hostname + " IP " + ip + "  Informacion Adicionada "+ message + "\n");
         archivoDeDatos.close();
 
         return getContentFile();
