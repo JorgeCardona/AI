@@ -298,6 +298,7 @@ kubectl exec nombre-del-pod -it -- bash
 
 # EJECUTAR COMANDOS EN UN CONTENEDOR ESPECIFICO DENTRO DE UN POD - CUANDO HAY MULTIPLES CONTENEDORES EN UN POD
 # kubectl exec nombre-del-pod --container=nombre-del-contenedor -it -- sh
+# # kubectl exec nombre-del-pod -c=nombre-del-contenedor -it -- sh
 kubectl exec multicontainer-pod-loadbalancer --container=java -it -- sh
 
 # CONSULTAR LAS REPLICAS
