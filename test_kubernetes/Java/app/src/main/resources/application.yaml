@@ -7,7 +7,7 @@ server:
     port : 9999
     # start path for the API
     servlet:
-        context-path: /
+        context-path: /java
 
 variablesconfigmap:
     directorio: "${DIRECTORIO:/data/files}"
@@ -23,7 +23,7 @@ springdoc:
     api-docs:
         path: /json
 
-# actuator - http://localhost:9999/actuator
+# actuator - http://localhost:9999/java/actuator
 management:
     endpoints:
         web:
