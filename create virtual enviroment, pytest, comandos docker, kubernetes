@@ -161,12 +161,18 @@ docker start id-del-contenedor
 # eliminar todas los contenedores creados
 docker rm $(docker ps -a -q)
 
+# forza la eliminacion de todos los contenedores creados
+docker rm -f $(docker ps -a -q)
+
 # eliminar un contenedores especifico
 docker rm nombre-del-contenedor
-docker rm ii-del-contenedor
+docker rm id-del-contenedor
 
 # eliminar todas las imagenes de docker
 docker rmi $(docker images -q)
+
+# forza la eliminacion de todas las imagenes de docker
+docker rmi -f $(docker images -q)
 
 # eliminar una imagen docker en especifico
 docker rmi nombre-de-la-imagen-docker
