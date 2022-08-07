@@ -144,6 +144,15 @@ https://httpbin.org/uuid
 ##############################################################
 ################### COMANDOS DOCKER  #####################
 ##############################################################
+# generar una imagen de un dockerfile
+# docker build -t nombre-que-se-le-quiere-poner-a-la-imagen:version-de-la-imagen .
+docker build -t jorgecardona/jupyter:v1 .
+
+# generar una imagen de un dockerfile en un directorio especifico
+# docker build -f ruta/del/archivo/dockerfile -t nombre-que-se-le-quiere-poner-a-la-imagen:version-de-la-imagen directorio/del/archivo-dockerfile
+docker build -f imagenes/docker/python/Dockerfile -t jorgecardona/jupyter-python:v1 imagenes/docker/python
+docker build -f imagenes/docker/r/Dockerfile -t jorgecardona/jupyter-r:v1 imagenes/docker/r
+
 # elimina todas las imagenes con nombre NONE
 docker rmi $(docker images -f “dangling=true” -q)
 
