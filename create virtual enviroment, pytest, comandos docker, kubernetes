@@ -35,6 +35,9 @@ virtualenv -p python3 virtual_enviroment_name
 # create virtualenv Python 3.7 o custome python version
 virtualenv -p python3.7 virtual_enviroment_name
 
+# create virtualenv with custome python version
+virtualenv --python=python3.10 virtual_enviroment_name
+
 #############################################################
 ###################### JUST ON WINDOWS ######################
 #############################################################
